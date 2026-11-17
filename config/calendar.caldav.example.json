@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "provider": "caldav",
+  "url": "https://caldav.icloud.com/",
+  "calendar_id": null,
+  "timezone": "Asia/Shanghai",
+  "timeout_seconds": 30,
+  "refresh_timeout_seconds": 120,
+  "allow_stale": false,
+  "username_env": "SMARTSCREEN_ICLOUD_USERNAME",
+  "password_file_env": "SMARTSCREEN_ICLOUD_PASSWORD_FILE"
+}

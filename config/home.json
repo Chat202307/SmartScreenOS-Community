@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "home": {
+    "id": "demo_home",
+    "name": "演示家庭"
+  },
+  "areas": [
+    {
+      "id": "demo_area",
+      "name": "演示区域",
+      "order": 10
+    }
+  ],
+  "rooms": [
+    {
+      "id": "living",
+      "name": "客厅",
+      "area": "demo_area",
+      "order": 10
+    },
+    {
+      "id": "study",
+      "name": "书房",
+      "area": "demo_area",
+      "order": 20
+    }
+  ],
+  "zones": []
+}

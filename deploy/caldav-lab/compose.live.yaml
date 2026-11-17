@@ -1,0 +1,36 @@
+# Add to compose.yaml only after explicit approval of live isolated testing.
+services:
+  calendar-probe:
+    command: [--host, 0.0.0.0, --port, '19081', --calendar-config-file, /lab/calendar.json]
+    environment:
+      HTTP_PROXY: http://egress-proxy:3128
+      HTTPS_PROXY: http://egress-proxy:3128
+      NO_PROXY: ''
+      ALL_PROXY: ''
+    secrets: [icloud_username, icloud_app_password]
+    depends_on: [egress-proxy]
+  egress-proxy:
+    image: smartscreenos:icloud-caldav-lab
+    platform: linux/amd64
+    container_name: smartscreenos-caldav-lab-egress
+    entrypoint: [python, -m, src.smartscreen_display.calendar_test_proxy]
+    command: [--host, 0.0.0.0, --port, '3128']
+    user: '10001:10001'
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 32
+    mem_limit: 64m
+    cpus: '0.25'
+    restart: 'no'
+    networks: [calendar-lab, calendar-egress]
+    tmpfs: ['/tmp:rw,noexec,nosuid,nodev,uid=10001,gid=10001,mode=0700,size=8m']
+networks:
+  calendar-egress:
+    name: smartscreenos_caldav_lab_egress
+    driver: bridge
+secrets:
+  icloud_username:
+    file: ${ICLOUD_LAB_USERNAME_FILE:?Set an absolute path to the isolated username secret file}
+  icloud_app_password:
+    file: ${ICLOUD_LAB_PASSWORD_FILE:?Set an absolute path to the isolated app-password secret file}

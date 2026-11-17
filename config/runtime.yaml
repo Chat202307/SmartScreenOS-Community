@@ -1,0 +1,8 @@
+scheduler:
+  intervalSeconds: 1
+capabilities:
+  - path: examples/capabilities/clock
+    sessionId: session-clock-main
+    configuration:
+      timezone: Asia/Shanghai
+      timeFormat: 24h

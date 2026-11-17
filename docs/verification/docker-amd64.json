@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "complete": true,
+  "evidence_source": "maintainer-reported iMac Docker verification; inventory hash matched the prepared candidate",
+  "image_published": false,
+  "nas_accessed": false,
+  "production_accessed": false,
+  "platform": "linux/amd64",
+  "checks": {
+    "docker_build": true,
+    "demo_http": true,
+    "nonroot_runtime_and_notices": true
+  },
+  "inventory_sha256": "f0ed756c15ac337d94c3003c094ef4ebdc98b5f51b7ef95afa4d79fab067d968",
+  "image_id": "sha256:5f67b7dd7068f15f4719ef776596787e34c33a47fbc185297326d22af8a3577e",
+  "own_container_removed": true
+}

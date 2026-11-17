@@ -1,0 +1,27 @@
+manifestVersion: "1.0"
+
+id: com.smartscreen.capability.weather
+
+name: Weather
+
+category: Information
+
+version: 1.0.0
+
+provider: SmartScreenOS
+
+description: Weather information capability
+
+entryPoint: WeatherCapability
+
+contracts:
+  - ObservationProvider
+
+dependencies:
+  required: []
+
+  optional: []
+
+configuration:
+  location: Dalian
+  temperatureUnit: celsius

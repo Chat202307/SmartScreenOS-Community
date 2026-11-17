@@ -1,0 +1,2066 @@
+{
+  "candidate": "2026-11-17-public-source-1",
+  "verified_pre_documentation_inventory": "f0ed756c15ac337d94c3003c094ef4ebdc98b5f51b7ef95afa4d79fab067d968",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "sha256": "477c79c66abf67a30bcfd6cd07a6fc31229e8aa19354ff80d6910e16485f49ad"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "71e62755ac1cb658f8ff42bb7b89a863f8a28d5a442321ea683b29f18367677a"
+    },
+    {
+      "path": ".python-version",
+      "sha256": "02e735b3dfe1c32833eb550b7ff8ffa17f5f2bc3fa1e7bae61a8f5a3883ce398"
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "9d3fa6c0570b6b7e43698c156d28324a196b7db345c73d7c6ac99ab54825cc2d"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "7850a3ceec9847800b7183743e5f359276cdb39bbd6dfc835ff0780affccaee4"
+    },
+    {
+      "path": "PLATFORM_VERSION",
+      "sha256": "d5df9d96b66db9d2ab9e1c8ca6a36b63ade254aa2d39af681105d784fa666a51"
+    },
+    {
+      "path": "README.md",
+      "sha256": "aa826884ef5a4255cef2970884c91f03e7e5b6586f3de8f257b9807d6aa7701d"
+    },
+    {
+      "path": "RELEASE_PREPARATION.md",
+      "sha256": "2ef59f491445827cda0421365041706870d8b1c168971e219cafdda65ad0f906"
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "bbecf064f400d2841e86b6a04147cbf09596c78b95e5f4424f02469ec62be8a7"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "3fd0c27f4dcf84d665afe9490fcb4fb4ea63bfd3488bf53306fa2ebeb562870e"
+    },
+    {
+      "path": "VALIDATION.json",
+      "sha256": "6c2a476265887c0e579fad2d2415b0862881d9dda7b48f94fc0b37d5fd55536d"
+    },
+    {
+      "path": "VERSION",
+      "sha256": "cf75a568098edbd5cd6fdecaf3e048ea7e7aa546eecbf6814fd6f4c0889f4798"
+    },
+    {
+      "path": "canon/INDEX.md",
+      "sha256": "ed2dd6c1ce193e8dc0ca131d4190104aa840e45caef75c93a89ca037eb5dae6f"
+    },
+    {
+      "path": "canon/INDEX_APPEND_0.9.1.md",
+      "sha256": "77e856a829df6e7ea76bfa0504ddd87f36a28176c78e545880c73751987c1819"
+    },
+    {
+      "path": "canon/INDEX_APPEND_0.9.2.md",
+      "sha256": "7e6178d8637b2008059cad8e502051a688ca09f91e6d2e603ba3533937b37f7f"
+    },
+    {
+      "path": "canon/README.md",
+      "sha256": "374877e0793a8fe0a3ac5ed6df0eca637173bcd0b877866297977f1c93a2cfa0"
+    },
+    {
+      "path": "canon/SC-0000_Canon_Governance/SC-0000.md",
+      "sha256": "e36fe82b5fd76819bc5db64a768af274e08a7684d9213fc1002e6a577126c875"
+    },
+    {
+      "path": "canon/SC-0100_Glossary/SC-0100.md",
+      "sha256": "db2b8ed49c109531844aa24dbe191f496a026724209362abe9b42caf45fe0616"
+    },
+    {
+      "path": "canon/SC-1000_Foundation_Specification/SC-1000.md",
+      "sha256": "a7a60308d8eca5790140a14cde4c183deebe70a95daf3587a390db7712df203c"
+    },
+    {
+      "path": "canon/SC-2100_Semantic_Context_Specification/SC-2100.md",
+      "sha256": "8bd213bdc8cfed7032d12e67fe616a0671d3e655de98c878224f61c13662e889"
+    },
+    {
+      "path": "canon/SC-2200_Proposal_Specification/SC-2200.md",
+      "sha256": "02b80975282f2e7198c576c9bba8001dd4a0cfaa341a9ebfe04905ac5122eb62"
+    },
+    {
+      "path": "canon/SC-3000_Architecture_Specification/SC-3000.md",
+      "sha256": "88dbc62c8b88d61eeaf35c826af6040c603da4cf5a63d8287b09e76a1bfee78e"
+    },
+    {
+      "path": "canon/SC-4000_Engineering_Standards/SC-4000.md",
+      "sha256": "2f878061ddaf27035e8d94535016bf5bccf47916145a945a5e50295db1c9a90a"
+    },
+    {
+      "path": "canon/SC-5000_Capability_SDK_Specification/SC-5000.md",
+      "sha256": "f53f4e38f45f85cf5727cf89305b728a26b11ae52bf1427cea4e65020b5e866f"
+    },
+    {
+      "path": "canon/templates/CANON_DOCUMENT_TEMPLATE.md",
+      "sha256": "8b8f6506b0bf4c17864c18341ca22fe1f4ccfe704bdfc74f22b6a68d9cc6a25a"
+    },
+    {
+      "path": "compose.demo.yaml",
+      "sha256": "72c6c9bd75fee81e44f931432aa726a78ba5a360155b8a8b2e6b1d38da3fbc4e"
+    },
+    {
+      "path": "config/calendar.caldav.example.json",
+      "sha256": "d85ce0c5d262db7a868347142fe3b449e94154c4a330cd0438caf12642167564"
+    },
+    {
+      "path": "config/calendar.example.json",
+      "sha256": "2bfa4576d35c6d0207c190e0c31d5fb8777df486a36266e8f95edb8dc4da5ea1"
+    },
+    {
+      "path": "config/calendar.json",
+      "sha256": "2bfa4576d35c6d0207c190e0c31d5fb8777df486a36266e8f95edb8dc4da5ea1"
+    },
+    {
+      "path": "config/dashboard_presentation.json",
+      "sha256": "fda940e701e790fdf3cd8ae7aa467329a655ae389cb32b23f9dd0b1ab7f6e515"
+    },
+    {
+      "path": "config/demo_home_status.json",
+      "sha256": "e36b6a5fb1f8c0cb5167188d038341f522ee188b281db0f6f633ced2488262f3"
+    },
+    {
+      "path": "config/device_data.json",
+      "sha256": "e99733df563c47f846aec1e737cf21f2e26848fc13ec3ef2d6a19fa43834cdc4"
+    },
+    {
+      "path": "config/home.json",
+      "sha256": "a866b959178f8197febf36ab111216a88b97cfce43ad79abeee31ee86e0eba66"
+    },
+    {
+      "path": "config/home_entities.json",
+      "sha256": "1092b862bf2f2b74234b19ecd1f956d4651db5118606643a4f58c1f0e25d7f75"
+    },
+    {
+      "path": "config/household_actions.json",
+      "sha256": "ef54045de095cbda5ea31bcb2cd2b4b0f76981b2342e5e7496cd83719019f27f"
+    },
+    {
+      "path": "config/lighting_interpretation.json",
+      "sha256": "8fdf34d8cc53f5f3d20448c63f3abaf11846703c63eb3f5213976b6d60a9cb0d"
+    },
+    {
+      "path": "config/mock_states.example.json",
+      "sha256": "e96e1255148f7870108e151b284b7f3f492efafc5cb37cdaa1961dfb104c83f6"
+    },
+    {
+      "path": "config/occupancy_interpretation.json",
+      "sha256": "a22dedf6efbb8e2882d0ef055b93d2eb07d25119af346ef2379ec9d0349471ad"
+    },
+    {
+      "path": "config/platform_entities.json",
+      "sha256": "1092b862bf2f2b74234b19ecd1f956d4651db5118606643a4f58c1f0e25d7f75"
+    },
+    {
+      "path": "config/runtime.display.yaml",
+      "sha256": "dddfc90cbc9692d1a41cc1b5f072bc6ea18f7e0e690a0e12dcbec79e83c7cde9"
+    },
+    {
+      "path": "config/runtime.test.yaml",
+      "sha256": "80f5cac495b25cdba01f99c21ea790305058e2d371b3734e0617a84f7378648d"
+    },
+    {
+      "path": "config/runtime.yaml",
+      "sha256": "99a6cc70758975518b50747a6358dbdf431325243ca1a6b630415f08d98403e1"
+    },
+    {
+      "path": "deploy/caldav-lab/README.md",
+      "sha256": "6ec59537ab2ff67d67fde2adbd88b1752627338da858c9c67879923e7f6412f4"
+    },
+    {
+      "path": "deploy/caldav-lab/compose.live.yaml",
+      "sha256": "1da60e6ff9296f7c7db0945c42a679e9141cca9b7639ab241b04a3b1a9f0ae48"
+    },
+    {
+      "path": "deploy/caldav-lab/compose.yaml",
+      "sha256": "e793aba28980e1a948ab7fb908fe3b9743d9f549aaa7510ce0846d3a4367fc71"
+    },
+    {
+      "path": "deploy/caldav-lab/fixtures/calendar.json",
+      "sha256": "0d9004f05cb0ee6d382a691a19145871e308ca318efd49c147b2fb36f663fe41"
+    },
+    {
+      "path": "deploy/caldav-lab/fixtures/events.json",
+      "sha256": "32056e12941f67a88987e4456544fb06fbd49a52704a514873856c91a811b6a7"
+    },
+    {
+      "path": "docs/verification/docker-amd64.json",
+      "sha256": "d4551b726c0612704cf8053f863fcc72bebc1e2e0ed8631add36f14d742b222e"
+    },
+    {
+      "path": "examples/capabilities/clock/capability.py",
+      "sha256": "5069f8f9b2ced486a817ae261d79f95c3be1c2c291905b4663b4b294cad4a279"
+    },
+    {
+      "path": "examples/capabilities/clock/manifest.yaml",
+      "sha256": "1472491d3f9534ebed08c70a9bd95493228486e52eef88aa16beb9d97c873d45"
+    },
+    {
+      "path": "examples/capabilities/weather/capability.py",
+      "sha256": "ebad95d5b802228b09db84308602cf81a34c98e23719c592fb610b8e9ab938ef"
+    },
+    {
+      "path": "examples/capabilities/weather/manifest.yaml",
+      "sha256": "896ce1f220435f8d706faeb086699ef1f0ecef29038cdf1924de333e0f21070a"
+    },
+    {
+      "path": "examples/capabilities/weather/provider_factory.py",
+      "sha256": "d8e63d1051071a75f82a267035c1ffa5a2894d0c4ba6cfc753c9bd503c67f312"
+    },
+    {
+      "path": "examples/capabilities/weather/qweather_provider.py",
+      "sha256": "6a09d42a65fc8e6295a8da736e500e27af2e0bd0f7abe0a8ab350550c89aeb8d"
+    },
+    {
+      "path": "pytest.ini",
+      "sha256": "2f7d01d6193e42194dad1d2f63f57f4daf1c3805409d72b54e06ba0773edcdd4"
+    },
+    {
+      "path": "requirements.lock",
+      "sha256": "7fcbd0feebb8d101b59025350fbc867ee77625d8848ca21b02da1464ce36c326"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "c6ada65b00f68420423562e4328fd8e809674e5827fb91a3bdad4582687b7bf7"
+    },
+    {
+      "path": "scripts/check_qweather.py",
+      "sha256": "681887f6d06701000947bc290c1f561b7ef00dd32ea8c87ba4ba0b5f38beca41"
+    },
+    {
+      "path": "src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/frontend/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/server/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/smartscreen/__init__.py",
+      "sha256": "31bbdab8b08ad0070ba09a304b4916240dba6453af0453922fae491b6c8fbb4c"
+    },
+    {
+      "path": "src/smartscreen/adapters/base.py",
+      "sha256": "d413afe30f871414a76a9f81f9aefb9e6beaa03a182ce99533c5f61a55a24389"
+    },
+    {
+      "path": "src/smartscreen/adapters/manager.py",
+      "sha256": "52a27ed56f138f07ab1c5b689c8562386ebba9e0085a64f65ca92f3ba2cb1f22"
+    },
+    {
+      "path": "src/smartscreen/adapters/mock.py",
+      "sha256": "34e75656cf7950e40efe1e51c1461ce55c939099008ab88d91a53b2c1708e049"
+    },
+    {
+      "path": "src/smartscreen/adapters/mqtt.py",
+      "sha256": "a90b6a5108ecf7559acc574ec26442b178b091a369ae426f0e99797ee16828de"
+    },
+    {
+      "path": "src/smartscreen/api.py",
+      "sha256": "cf69d5c065762b0391f2d67dd8fbf91dddbd79e457c3c3ab02863310927a96d2"
+    },
+    {
+      "path": "src/smartscreen/app.py",
+      "sha256": "2e79309b01585b26f8d98b7b757b9299d443f92ccf8ba5e96fa302d9edd17f75"
+    },
+    {
+      "path": "src/smartscreen/companion/__init__.py",
+      "sha256": "7460085e127ac12fcbdc4eeeb504c5eaa2e19a2a6f9fbcb87f98ed2e456650ef"
+    },
+    {
+      "path": "src/smartscreen/config_loader.py",
+      "sha256": "5f02c11b45be1bcf60776fa3624f6b1252ea3ad0f7eecb59f8569f46403da31f"
+    },
+    {
+      "path": "src/smartscreen/connection.py",
+      "sha256": "503cab9e6e64f624b657867b8d4c52a16e0190cab95f042ca4941b2afc906d0a"
+    },
+    {
+      "path": "src/smartscreen/context.py",
+      "sha256": "b0ca3b73c4c85159af14e6dd1772ff39581e2751363eefbeefb7fc9521d8f1bf"
+    },
+    {
+      "path": "src/smartscreen/context_engine/__init__.py",
+      "sha256": "7460085e127ac12fcbdc4eeeb504c5eaa2e19a2a6f9fbcb87f98ed2e456650ef"
+    },
+    {
+      "path": "src/smartscreen/contracts/__init__.py",
+      "sha256": "7460085e127ac12fcbdc4eeeb504c5eaa2e19a2a6f9fbcb87f98ed2e456650ef"
+    },
+    {
+      "path": "src/smartscreen/contracts/base.py",
+      "sha256": "dac4afef063dff58fcb34dc70e2f31c180b3448120bc83218b195d86601f4630"
+    },
+    {
+      "path": "src/smartscreen/contracts/types.py",
+      "sha256": "a6ecd502fe8f59f54a5c556cbdf1731be5ad8ccd6208ae2e113b31d255fe2134"
+    },
+    {
+      "path": "src/smartscreen/core/__init__.py",
+      "sha256": "baae851475e66a1d46bd06c5d03cabc9ec2db3775a7962663c80bf98333df1a3"
+    },
+    {
+      "path": "src/smartscreen/core/runtime.py",
+      "sha256": "ad03c79957a2a5b625e85fb6d91ee93cae98d91126d67db3541c6bfff7ad72a5"
+    },
+    {
+      "path": "src/smartscreen/dashboard.py",
+      "sha256": "6847753c7ca0b119f2e44177e04a1557350b52219a95a214826ec4a8458797ad"
+    },
+    {
+      "path": "src/smartscreen/device_types.py",
+      "sha256": "3fb612254958070797a45a1c6c09e67a496399be341439e9f98090f99f8da4ff"
+    },
+    {
+      "path": "src/smartscreen/diagnostics.py",
+      "sha256": "630c1b3d5a003e1040b7488bc2fc923f90238ad4e8f2ff358edd6040fc4d10f8"
+    },
+    {
+      "path": "src/smartscreen/events.py",
+      "sha256": "97f5d2bf71fcc600bcae3f142621122dcfdbfc85cf7f5665d495d985a87123fc"
+    },
+    {
+      "path": "src/smartscreen/experience/__init__.py",
+      "sha256": "7460085e127ac12fcbdc4eeeb504c5eaa2e19a2a6f9fbcb87f98ed2e456650ef"
+    },
+    {
+      "path": "src/smartscreen/experience/contract.py",
+      "sha256": "5f30e3d5fb7886a3ada3abac1c7ee7810516f336e9ec89c9a6253522b996ae0c"
+    },
+    {
+      "path": "src/smartscreen/feed.py",
+      "sha256": "5e58e6348710adcd1a5731182c48c0b319b40fa53a56164b1badd47d1789c779"
+    },
+    {
+      "path": "src/smartscreen/home_event.py",
+      "sha256": "c44f03a4dac27d45c31b37678191b7b52bc0577894c7e1197c14b8f081c64088"
+    },
+    {
+      "path": "src/smartscreen/home_event_bus.py",
+      "sha256": "17d66930a3d489a16218ed4166e0000dc583f92a7bc4e4f3212b60f04254b8d7"
+    },
+    {
+      "path": "src/smartscreen/home_event_mapper.py",
+      "sha256": "9e88d31cc45714ce251a3b9393e9355116a320ec7ed4d97ff85594033c8fbdfc"
+    },
+    {
+      "path": "src/smartscreen/home_profile.py",
+      "sha256": "a554f4088e26ad79b71d8ae86fbd030166d46f37c90d642257384400a0a07361"
+    },
+    {
+      "path": "src/smartscreen/house.py",
+      "sha256": "86a9e59854dcb0e7e1b96247a433b62c16d1415148e70f1cb1fd249c08b43c5b"
+    },
+    {
+      "path": "src/smartscreen/memory/__init__.py",
+      "sha256": "7460085e127ac12fcbdc4eeeb504c5eaa2e19a2a6f9fbcb87f98ed2e456650ef"
+    },
+    {
+      "path": "src/smartscreen/models.py",
+      "sha256": "d9df2fb4377cbc70893cc519f5478bf74349758e89f534c044e0d6106b4fb7ed"
+    },
+    {
+      "path": "src/smartscreen/policy.py",
+      "sha256": "23fdae42e36fca657ee89ebfc6901ecefaf395d056eaeadebd7b4c061ad4f1d5"
+    },
+    {
+      "path": "src/smartscreen/registry.py",
+      "sha256": "d821d4b3367316942448eba4c0141c531f1631514ee8b47390e459e9e80f6a6b"
+    },
+    {
+      "path": "src/smartscreen/state_change.py",
+      "sha256": "2e2e422dfe0f00be4a397643910e6dad95477933ee7ba6b8408dac7892f63827"
+    },
+    {
+      "path": "src/smartscreen/state_store.py",
+      "sha256": "88b5c1ce44346a0cac5440e50ebed1214f02e6ccacd1310a628727e495fbad75"
+    },
+    {
+      "path": "src/smartscreen/story/__init__.py",
+      "sha256": "7460085e127ac12fcbdc4eeeb504c5eaa2e19a2a6f9fbcb87f98ed2e456650ef"
+    },
+    {
+      "path": "src/smartscreen_display/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/smartscreen_display/application.py",
+      "sha256": "97ee7b24109a79641bcab304fbcb011f92688d93e3d66a8eb3d8cff0df08bb72"
+    },
+    {
+      "path": "src/smartscreen_display/caldav_calendar_source.py",
+      "sha256": "7c0e988e2aac51fe4455c3310463a185f521ae91a1b3f91099cae59f39af914b"
+    },
+    {
+      "path": "src/smartscreen_display/calendar_background.py",
+      "sha256": "847edaac0ae273d5d83cba48e8ef79a620dac904854bb6d329c85a4da83c47f9"
+    },
+    {
+      "path": "src/smartscreen_display/calendar_config.py",
+      "sha256": "f892cfeae76d9f01a27506f46e1a05d0ac09d916adefd6cae301444317812409"
+    },
+    {
+      "path": "src/smartscreen_display/calendar_mock_dav.py",
+      "sha256": "02c405268f162a5cab95cc46049f8855d06d70602cb5449e5239269d566ed94d"
+    },
+    {
+      "path": "src/smartscreen_display/calendar_source.py",
+      "sha256": "553c1ce8cb7780d7e674660cb61ca6142f4091cecd130f0adf71ffe780ce7701"
+    },
+    {
+      "path": "src/smartscreen_display/calendar_test_proxy.py",
+      "sha256": "29f47e59d8163fae831fa852655fd1cf86a326393edaec8497e34904c93f0536"
+    },
+    {
+      "path": "src/smartscreen_display/calendar_test_server.py",
+      "sha256": "a21bdc0b959452fdff70af9851bff5ccd29c3d4f3648b2108274c868c6c52d36"
+    },
+    {
+      "path": "src/smartscreen_display/dashboard.py",
+      "sha256": "699bb3fc49c757819b9c46bbf805330d0c4ed5f73232640a9064bcddf9ec0ea7"
+    },
+    {
+      "path": "src/smartscreen_display/dashboard_presentation_config.py",
+      "sha256": "a0660cae34ba7df8c630dd1f5072b8e2565dded67358c213484f0f097fb8d65f"
+    },
+    {
+      "path": "src/smartscreen_display/device_data_config.py",
+      "sha256": "67525bf9e482eac381f157caa8b75b7c02be07d398ccbf31f7ed33a218f9542c"
+    },
+    {
+      "path": "src/smartscreen_display/dnake_mqtt_device_control_executor.py",
+      "sha256": "64def49b52ff693271f171800e6edb1fe6a723923a0caad492ddc5838e4f7540"
+    },
+    {
+      "path": "src/smartscreen_display/dnake_mqtt_device_data.py",
+      "sha256": "eee22802db1447f6df7aa1ddc9a58de5db3f6d3cbb40c40ba9b535f37b208a2d"
+    },
+    {
+      "path": "src/smartscreen_display/dnake_mqtt_source.py",
+      "sha256": "3e13aca266a52d94c9f2e7cb661db2c46ec8da550ab882141e03ec9f4c98c1af"
+    },
+    {
+      "path": "src/smartscreen_display/eventkit_calendar_source.py",
+      "sha256": "752e6800d7039b727fbd9de2065d8c3d96a27dabc07ee28cb5f3a1ad14947686"
+    },
+    {
+      "path": "src/smartscreen_display/home_assistant_client.py",
+      "sha256": "fec05e4b9d58c36ba9b86d17fe750ffb52afead43d6597b038ddc4f716234e01"
+    },
+    {
+      "path": "src/smartscreen_display/home_assistant_device_control_executor.py",
+      "sha256": "9000b38d77e13b66421aaa4b65012dd66ad3d7354594c50a254ec22d6b9c9a1b"
+    },
+    {
+      "path": "src/smartscreen_display/home_assistant_device_data.py",
+      "sha256": "76d698a69e76f155007ace65a500da2f54225d9cd643166f03c9f602ce2c06ce"
+    },
+    {
+      "path": "src/smartscreen_display/home_assistant_observations.py",
+      "sha256": "f1624b4de6c97348003bd7902f9924798423f8acea06ac75cff6de4282fe56f5"
+    },
+    {
+      "path": "src/smartscreen_display/home_assistant_source.py",
+      "sha256": "5dc2edd56376eb8100737176188ed5922c9d69de5ab52d93d56f1631a5a23640"
+    },
+    {
+      "path": "src/smartscreen_display/home_assistant_state_events.py",
+      "sha256": "bff053852e9e4a6ff9809e4d6bdcd94c4e75dd727fed584e416b169ec81cbfcc"
+    },
+    {
+      "path": "src/smartscreen_display/home_assistant_state_stream.py",
+      "sha256": "22303f51c263a95cb584b46c017635d965fc01a43663ad38baf03a37685ab28d"
+    },
+    {
+      "path": "src/smartscreen_display/home_assistant_weather.py",
+      "sha256": "e4856bfb8ce4871fd62443b49d22ee4d67972977fcd0840b5862ed59650a3016"
+    },
+    {
+      "path": "src/smartscreen_display/home_status.py",
+      "sha256": "b47fcf9d754a5f0735d820645c7276925aa60d70a87341123fd514889808d344"
+    },
+    {
+      "path": "src/smartscreen_display/home_status_change_notifier.py",
+      "sha256": "2f12c4bcfa2efe7536263076aaf2c8833688e579f3d203a2e7a1700f0a9d52bc"
+    },
+    {
+      "path": "src/smartscreen_display/home_status_config.py",
+      "sha256": "220646f1e8c96a0789a2b5fb2d956dea4597b265b42bccbaf230f987cc529b2c"
+    },
+    {
+      "path": "src/smartscreen_display/household_actions.py",
+      "sha256": "d6117effd58631af80148085bd93aa7c8627a79f225160f7500c508c5ba9b686"
+    },
+    {
+      "path": "src/smartscreen_display/household_actions_config.py",
+      "sha256": "13bc67031356e562d4f53cf63aa5ae547278e6129720913fc6d75bb8b7f837c5"
+    },
+    {
+      "path": "src/smartscreen_display/lighting_interpretation_config.py",
+      "sha256": "faecdf35b19908f7b68c403d3e7fe9897b49148a92a05f299dc76ea64125ad91"
+    },
+    {
+      "path": "src/smartscreen_display/location_labels_config.py",
+      "sha256": "f54b0e107a96dc662abaa9b2bbe592dc51f60512880f3c3ee25f24304db5710e"
+    },
+    {
+      "path": "src/smartscreen_display/occupancy_interpretation_config.py",
+      "sha256": "3e3e93aab3b4900284931dcad83cd8356856814e0dbf2079f4a5358061c57225"
+    },
+    {
+      "path": "src/smartscreen_display/platform_entities_config.py",
+      "sha256": "7e92bfbc7ac0085ebd7aae58e27b429749b9836e7c4c5377f0831280eb11edb7"
+    },
+    {
+      "path": "src/smartscreen_display/presentation/__init__.py",
+      "sha256": "a05304f70b89775b45a9345845e42329a715ae128fc4c56e5f02a4d94877f50c"
+    },
+    {
+      "path": "src/smartscreen_display/presentation/builder.py",
+      "sha256": "be79c1b9bc15c53b6ff508c6c77c9299e31fe60f12573b079c92ffc45be29c88"
+    },
+    {
+      "path": "src/smartscreen_display/presentation/model.py",
+      "sha256": "9e27750e15beb4373242fa649a1bf64e5067db0ffcc7b23f53afb9628d274976"
+    },
+    {
+      "path": "src/smartscreen_display/server.py",
+      "sha256": "bb78ad586e7065e7d17e7b772f782e368d0e82c9eb495d99be0490a006be8615"
+    },
+    {
+      "path": "src/smartscreen_display/static/dashboard.css",
+      "sha256": "3fa8ce5566cb99c79e784b83c23d3319e43cbc9f72ff91534ae8859ea6d5dad2"
+    },
+    {
+      "path": "src/smartscreen_display/static/dashboard.js",
+      "sha256": "375ed8363622ed495f3493815333b11292a2c3700324501c8ac0f15af4d56e1e"
+    },
+    {
+      "path": "src/smartscreen_display/todo_store.py",
+      "sha256": "105b33f553cc381ff13198ff0cc421eae68685a23184d16e519ba016ab08cc6e"
+    },
+    {
+      "path": "src/smartscreen_display/xingoo_client.py",
+      "sha256": "1a9437f68c8b0b284edc6cffad9fc9e0ba0fcf299b8b230c15fb9bc6df532cd1"
+    },
+    {
+      "path": "src/smartscreen_display/xingoo_device_control_executor.py",
+      "sha256": "9408787aee0c2705dcab365ff82a06d51e7cf2f208ebdbbbadd5ec28f333dfc4"
+    },
+    {
+      "path": "src/smartscreen_display/xingoo_device_controller.py",
+      "sha256": "303652aecfc88e32ab58e4acdfe687b104c605478d175490fda0727309eda021"
+    },
+    {
+      "path": "src/smartscreen_display/xingoo_device_data.py",
+      "sha256": "a444a3969b9f510f0887bca188ee56be05307811d1be01dac2707c912b347f66"
+    },
+    {
+      "path": "src/smartscreen_display/xingoo_source.py",
+      "sha256": "7e15d8bd8b5554e79f63e79dfa7ee14a93a730bef35586ccbeace30193ec01bf"
+    },
+    {
+      "path": "src/smartscreen_platform/__init__.py",
+      "sha256": "029af6951bbab9bbf0e40c36ce43fcd27c2010199f635e0b5c611a7fc131adb0"
+    },
+    {
+      "path": "src/smartscreen_platform/capabilities/comfort/__init__.py",
+      "sha256": "9bd9866657bbd19a529fc35dc5d2a853767158cd08c472d667f9d7c0d2d0bbe9"
+    },
+    {
+      "path": "src/smartscreen_platform/capabilities/comfort/capability.py",
+      "sha256": "ec90a4365b688081c683e50e28c7049bf66526d0a5e3b9e65695c9ad3146422d"
+    },
+    {
+      "path": "src/smartscreen_platform/capabilities/comfort/model.py",
+      "sha256": "6adbcb1e7e214df6992e35334afec6bd904c28758c19d072b6e2c652b1d9dbd7"
+    },
+    {
+      "path": "src/smartscreen_platform/capabilities/lighting/__init__.py",
+      "sha256": "f992e524f884c5963bf702ab8f1b9fdb325a9d02e11960132317fc0b3cad80e4"
+    },
+    {
+      "path": "src/smartscreen_platform/capabilities/lighting/capability.py",
+      "sha256": "569b4fd752991a1cc69fd96d50d4eadc5cf3318562cccbf54966a864e6d1dea0"
+    },
+    {
+      "path": "src/smartscreen_platform/capabilities/occupancy/__init__.py",
+      "sha256": "2c1ff4113788800a3b77892fc381e26ee2b81c1516928438de6dc2859dcc7676"
+    },
+    {
+      "path": "src/smartscreen_platform/capabilities/occupancy/capability.py",
+      "sha256": "fc18195eaa547d386c1d0d0b4609942e72582db6c1927a617f6165e199d149f4"
+    },
+    {
+      "path": "src/smartscreen_platform/capabilities/weather_advice/__init__.py",
+      "sha256": "d6cd80cb35f7f0ecfc0df5c1dead5c39b4bb01110e046cbace9e6971d0dceaab"
+    },
+    {
+      "path": "src/smartscreen_platform/capabilities/weather_advice/capability.py",
+      "sha256": "ccb5d098b4a070ac2a287f8d55808fdf62204e9ea7dbc4691d7654e8aebf8604"
+    },
+    {
+      "path": "src/smartscreen_platform/capabilities/weather_status/__init__.py",
+      "sha256": "264a917be2ff83ff6154886f802385c63a0d88f4e9bc58a5ead16ab8112cbd61"
+    },
+    {
+      "path": "src/smartscreen_platform/capabilities/weather_status/capability.py",
+      "sha256": "9fa6fb7f686a9341dd0e6a81d47cdc24984d60aa037bb112f61ce847536f9c9c"
+    },
+    {
+      "path": "src/smartscreen_platform/contracts/__init__.py",
+      "sha256": "b91fe21d55743269fca365270a214bd70419b2f2403e1654b5f90a7ce60ed2d9"
+    },
+    {
+      "path": "src/smartscreen_platform/contracts/interpretation.py",
+      "sha256": "91dbee9f606db86a2febcf86a27327bb0189904c054e25eac3c72861de55e93d"
+    },
+    {
+      "path": "src/smartscreen_platform/contracts/observation.py",
+      "sha256": "5721255d81c46bc6a5341b00b77f90bd01e660b3f36d180dae2aab0b7032e597"
+    },
+    {
+      "path": "src/smartscreen_platform/contracts/state.py",
+      "sha256": "3beb310c18caa3389783047a241efacd731c0832aecaa0777e2e666b89d65125"
+    },
+    {
+      "path": "src/smartscreen_platform/device_control/__init__.py",
+      "sha256": "657677b5af784161c80708e333aeb808ccedf950d496784eb83488af579fe859"
+    },
+    {
+      "path": "src/smartscreen_platform/device_control/builder.py",
+      "sha256": "8a0a89351e332bf1d5811c65ca29699485db2041af8bf012e6bdf7d532a69bf4"
+    },
+    {
+      "path": "src/smartscreen_platform/device_control/dispatcher.py",
+      "sha256": "02b97ae6651b3e452cf99c0fc3b01b861fa97ab8cf2a2e6bd6d8254897e3e911"
+    },
+    {
+      "path": "src/smartscreen_platform/device_control/model.py",
+      "sha256": "39690997ec11738cbcc97e2f2307bd2a004ef629bdfed2560988744d983d1376"
+    },
+    {
+      "path": "src/smartscreen_platform/device_control/registry.py",
+      "sha256": "760fe17031875dfd538b2aa9b7bd3b0e44b5129e0326c59475c5a66d5e390a86"
+    },
+    {
+      "path": "src/smartscreen_platform/device_data/__init__.py",
+      "sha256": "5ae95f4ce7bead3ecaa684f67d1d56090dc64bd13ebbc09401d94b126a26da4e"
+    },
+    {
+      "path": "src/smartscreen_platform/device_data/ingestion.py",
+      "sha256": "df90ef2a71e16c88f8b669d00984d9372f594ad47269104b810cfe97f5e07a23"
+    },
+    {
+      "path": "src/smartscreen_platform/device_data/model.py",
+      "sha256": "e0ac43fd38212417038ce2829782dd0129015eebcd411f9850ee6d6cfecb0b50"
+    },
+    {
+      "path": "src/smartscreen_platform/device_data/observation_bridge.py",
+      "sha256": "981459a4e93bdedd52bf896ff949bfafb855162abf4193032c6f66109265e3dd"
+    },
+    {
+      "path": "src/smartscreen_platform/device_data/power_dependency.py",
+      "sha256": "5aee447b66a23acdbaf439c890e1efa0c28186d912c339c13c25918d818389d5"
+    },
+    {
+      "path": "src/smartscreen_platform/device_data/registry.py",
+      "sha256": "146379c63fd40498ed1bf9d1178ab20eed2d8eca07cc9e8e0b93326e3501299c"
+    },
+    {
+      "path": "src/smartscreen_platform/device_data/store.py",
+      "sha256": "6ebd351aca2ee1095db1f66c6cd0bc95882796f5e6a3ec95ba78215ebdecec57"
+    },
+    {
+      "path": "src/smartscreen_platform/freshness_sweep.py",
+      "sha256": "6130ef8c456c4b7ff5db0d6ff17ee44bc607693f23e4243e27e2ba7a4fa90691"
+    },
+    {
+      "path": "src/smartscreen_platform/household_state/__init__.py",
+      "sha256": "8064b87f4ab61749e24e016f07f662afde66a4df2caa80c6c89f5d2987c996c9"
+    },
+    {
+      "path": "src/smartscreen_platform/household_state/engine.py",
+      "sha256": "0437b791a751cb6e677e926e4feb717b6d3e0e7af449caa628608ceb8ca7f463"
+    },
+    {
+      "path": "src/smartscreen_platform/household_state/notifier.py",
+      "sha256": "4e7bdb3214ac280cd2ca73d967c17de3d73ca0e5321e9f63bc66bd7d39f2b18b"
+    },
+    {
+      "path": "src/smartscreen_platform/interpretation/__init__.py",
+      "sha256": "2b653126a112b3f021447c0e92fd8ef2b29935afa9d9d4c3ede3e77f72d43288"
+    },
+    {
+      "path": "src/smartscreen_platform/interpretation/illuminance.py",
+      "sha256": "c903f6a359e8fe04ff0daaf271a98b8271d0fab4c99f3df749014a87c7124af2"
+    },
+    {
+      "path": "src/smartscreen_platform/interpretation/presence.py",
+      "sha256": "7abf5e17450564f8a5113ad9da6ff7c52e92def675128498820b8c7b9afb8a95"
+    },
+    {
+      "path": "src/smartscreen_platform/interpretation/thermal.py",
+      "sha256": "55d4d950cc3f6c121e093cf1d0a0532fac430e854c199398a97c8687e140f3dc"
+    },
+    {
+      "path": "src/smartscreen_platform/knowledge/__init__.py",
+      "sha256": "c4ed9fc52c681a956e0b09f7f98cad3996a4c3881f75ee382f273d30df5cc784"
+    },
+    {
+      "path": "src/smartscreen_platform/knowledge/static.py",
+      "sha256": "c676927f6d5bd5121abef4bb82f4d65073d4787f5fb65c98e04395780bfc0e7a"
+    },
+    {
+      "path": "src/smartscreen_platform/observation_accumulator.py",
+      "sha256": "e6664f20341cb408e714269719fee09e021c5cc4228fdf0f34b2ebcb8d610ca7"
+    },
+    {
+      "path": "src/smartscreen_platform/state_pipeline.py",
+      "sha256": "3d28f40476d7b9df1faf72ca63fcf66f4ff16e23dd3bf8b5a61809702cc47e7e"
+    },
+    {
+      "path": "src/smartscreen_runtime/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/smartscreen_runtime/manifest/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/smartscreen_runtime/manifest/loader.py",
+      "sha256": "aa0a290a18e5adb68a52eddd9c5186b2df30f73571abd1f184d3e0dfff8a6fad"
+    },
+    {
+      "path": "src/smartscreen_runtime/manifest/model.py",
+      "sha256": "cfd3c0d62bbdd42ac2c282f2bba85b5933734563f6cb1a98fbf2a46b7868e05a"
+    },
+    {
+      "path": "src/smartscreen_runtime/manifest/validator.py",
+      "sha256": "fdc791f8fcce449e5b9f991fd491ceeb17826310345b4d78718ea26129227c04"
+    },
+    {
+      "path": "src/smartscreen_runtime/registry/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/smartscreen_runtime/registry/errors.py",
+      "sha256": "73ce9887dd5cf448a081a86a2da099efdb3cf8bc5dcc737d8fe06d1edcf33d3b"
+    },
+    {
+      "path": "src/smartscreen_runtime/registry/registry.py",
+      "sha256": "a6a66b6589ffa561e88572a430c23951c038c2b6d733f1b2cf490a9239878b98"
+    },
+    {
+      "path": "src/smartscreen_runtime/runtime/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/smartscreen_runtime/runtime/application.py",
+      "sha256": "442c3faa73be6fe572487d7062b6365b65f075d742dc6cc1ffd61398dbc6b38d"
+    },
+    {
+      "path": "src/smartscreen_runtime/runtime/bootstrap.py",
+      "sha256": "9a53d52662d02172f8718b79be929238c68117c8e96d6e703c465dd95f17d053"
+    },
+    {
+      "path": "src/smartscreen_runtime/runtime/capability.py",
+      "sha256": "530197465fe4df250ae3eb57a23d86fc5bb0ba3028a478b3894b0d86cd48af6a"
+    },
+    {
+      "path": "src/smartscreen_runtime/runtime/capability_api.py",
+      "sha256": "6f98df408c482b7d38cc24928b00045c596b70d81bc0bd702e06f14d00669602"
+    },
+    {
+      "path": "src/smartscreen_runtime/runtime/capability_factory.py",
+      "sha256": "fb01770958813ea51cce597615b38fb2346394a8e97e18b4734386a4ab6b44b0"
+    },
+    {
+      "path": "src/smartscreen_runtime/runtime/capability_loader.py",
+      "sha256": "c5b74005e273c2d3b6195bcacd7279463fd17b297edd2effae77c7e5cee4114a"
+    },
+    {
+      "path": "src/smartscreen_runtime/runtime/capability_registry.py",
+      "sha256": "b9d5f5d4c64a104be8f1a7e304967a03f217b4c409b7edd63279239bbc6fcaf8"
+    },
+    {
+      "path": "src/smartscreen_runtime/runtime/core.py",
+      "sha256": "26a1e7bb3b876743eed31fe3e176283088d5ffe2b91018daced823944a848e5b"
+    },
+    {
+      "path": "src/smartscreen_runtime/runtime/engine.py",
+      "sha256": "4a02a2f395d2e40c80c4d2a21b3a602de6323031d763eecf42b8b3c83efcf432"
+    },
+    {
+      "path": "src/smartscreen_runtime/runtime/errors.py",
+      "sha256": "abc0ade27816ef27aeece2daf9cc80c5f138d2a501df02164731a73ff5f822f0"
+    },
+    {
+      "path": "src/smartscreen_runtime/runtime/host.py",
+      "sha256": "8993c235a50b2e9c2145985f871faf361bf746990382f06a936146249f397828"
+    },
+    {
+      "path": "src/smartscreen_runtime/runtime/lifecycle.py",
+      "sha256": "7de3799d8b3376fd51c27b2e56d0ca1d233317b6bc64c61105c0dd4f0fc9452e"
+    },
+    {
+      "path": "src/smartscreen_runtime/runtime/runtime_config.py",
+      "sha256": "1a75c37a0ae7da0905f3838a807e1de53c8a27d5bc5a2c3c554cdd869a67535e"
+    },
+    {
+      "path": "src/smartscreen_runtime/runtime/scheduler.py",
+      "sha256": "9645d8cad16c575cbe76f9eddd3614656a78498bd99b32252565e75a03a0f039"
+    },
+    {
+      "path": "src/smartscreen_runtime/runtime/session.py",
+      "sha256": "4fed8e9893b92ea670fdb26dccbc60830416d15b942b88fc0e6907bd0539a6ec"
+    },
+    {
+      "path": "src/smartscreen_runtime/runtime/session_manager.py",
+      "sha256": "349271e04f8d32ffd0abffb3e6ea5aef060f4967ad7e333f892ad6374b2a936b"
+    },
+    {
+      "path": "src/smartscreen_runtime/runtime/snapshot_schema.py",
+      "sha256": "2f18303ca1340f070e3bfe5464d8bd0ac064dd1ab859f62d409d5ef7c3599cf5"
+    },
+    {
+      "path": "src/smartscreen_runtime/runtime/state.py",
+      "sha256": "8667cbf8fdf523902a1fbd5a5f88abf880ec9a5641069c38a44beb31c8c8d297"
+    },
+    {
+      "path": "src/smartscreen_runtime/runtime/state_store.py",
+      "sha256": "fa8c09256b47711d4868277b7dac442225ad4dd9e24f64456e48938c63201752"
+    },
+    {
+      "path": "tests/__init__.py",
+      "sha256": "4bba7b1116e961486fd55224f5a90f02efac40895d748df1d2cc4fd9d9e9bf20"
+    },
+    {
+      "path": "tests/architecture/__init__.py",
+      "sha256": "49fa0bbc31b7b0a03d70cff21b48dbefc8365ef84a494becf4d97fedbad0c176"
+    },
+    {
+      "path": "tests/architecture/test_canon_repository_boundaries.py",
+      "sha256": "2ac7d426f1f75efd1d31c68e359bceaed09888cade24b81582a0d43bfc950aa8"
+    },
+    {
+      "path": "tests/architecture/test_comfort_boundaries.py",
+      "sha256": "9fb81939b0397b9bdfd14295154c0b3cfb69309e3e2b9a0b19a9dbb46d138ec8"
+    },
+    {
+      "path": "tests/architecture/test_dashboard_presentation_boundaries_v1.py",
+      "sha256": "7a09d74f229896069c3fff1f31de395a503498714db226053df1264cb5e17a04"
+    },
+    {
+      "path": "tests/architecture/test_dependency_boundaries.py",
+      "sha256": "cbb2de746f0eee5244672a7d0aa128a0ce0086e134d433ef810551dce15de945"
+    },
+    {
+      "path": "tests/architecture/test_device_data_boundaries_v1.py",
+      "sha256": "d1cbd47283dbe562284b49482781623baf3f30c1c0864503745ab2f41d3f5b82"
+    },
+    {
+      "path": "tests/architecture/test_interpretation_boundaries.py",
+      "sha256": "929190e2a5ebc3c71d6454f67003086015e8b800ddf4ba29bd4432c2f7294edc"
+    },
+    {
+      "path": "tests/architecture/test_module_contracts.py",
+      "sha256": "e18c181841eb5bee12d52708a9dbe640dc86cc9aa62c6c614dbd56ed31883746"
+    },
+    {
+      "path": "tests/architecture/test_platform_namespace.py",
+      "sha256": "4c7cc5e8ff95e4cd970cf181325529fa94487df6b9d842cdb5d41ea07c3a88b5"
+    },
+    {
+      "path": "tests/display/calendar_ui_runner.cjs",
+      "sha256": "b1a11c63669b6c2bac417b6763e8b6262992ebc60f8cbbc57f71db5edeceec4d"
+    },
+    {
+      "path": "tests/display/conftest.py",
+      "sha256": "c9742fc990f7f9a3c77d797fe0dd78994b351de082206e8d74a13dc49f59e978"
+    },
+    {
+      "path": "tests/display/test_caldav_calendar_source.py",
+      "sha256": "71ea414517625ee32b0860491d8cf407d34b4aa84bd1706dfe298fb4399e73bf"
+    },
+    {
+      "path": "tests/display/test_calendar_api_v1.py",
+      "sha256": "97da8c0f09bfe12cb32341aef779496fa5c218374b3e95b77250af3d694c1610"
+    },
+    {
+      "path": "tests/display/test_calendar_application_wiring_v1.py",
+      "sha256": "d0ee1fe3454029fefb55c4efc9bcebfb9289c1785120bb79f83205f370d3e931"
+    },
+    {
+      "path": "tests/display/test_calendar_background.py",
+      "sha256": "b15819697c80fd8c23ff1bd269703f25110f3c3add2a08760a332b39e0d89af5"
+    },
+    {
+      "path": "tests/display/test_calendar_config_v1.py",
+      "sha256": "fc027af851855df0566b9a38968beb90d6e46dbcc115a7bcda6690381b65e3b9"
+    },
+    {
+      "path": "tests/display/test_calendar_lab.py",
+      "sha256": "cc4515be5224201269ba42c0e13e0cc91dfb000b93b0a46d07f6cba14d4f5403"
+    },
+    {
+      "path": "tests/display/test_calendar_mock_execution.py",
+      "sha256": "e7b6a7cb2afcebd44558650645229310a9cc0ddac91ce6a859bc4ffc37222c61"
+    },
+    {
+      "path": "tests/display/test_calendar_source_v1.py",
+      "sha256": "528731118db94574f31f4466a0f74530dcaeb672c5c5daf052b1d3770fd7d35c"
+    },
+    {
+      "path": "tests/display/test_calendar_ui_freshness.py",
+      "sha256": "29320e091cdc75b5997ba335c7745c5e4f55ccec17d2ccb45db0e0256451f525"
+    },
+    {
+      "path": "tests/display/test_dashboard_cards.py",
+      "sha256": "477e2ba6e92252e3113156ad02d3c6a76a127984afad664c5aac800ec3daf696"
+    },
+    {
+      "path": "tests/display/test_dashboard_comfort_ui_v1.py",
+      "sha256": "c2a5aa6c86fdaa68052476e38ad14e3755e3aade94c6e75aae22d58e5e0e3023"
+    },
+    {
+      "path": "tests/display/test_dashboard_content_layout.py",
+      "sha256": "9a3dd99b73a89bd37e71e492ed8b1a11ca02ad5a5e5f27faebda8ece3dad7318"
+    },
+    {
+      "path": "tests/display/test_dashboard_device_control_metadata_v1.py",
+      "sha256": "1662c96b6ce60e6ba4105c7dc1e28096f3362dcce6fca1f5ed6855ce0e14716b"
+    },
+    {
+      "path": "tests/display/test_dashboard_generic_observations_ui_v1.py",
+      "sha256": "ab27284d5c02f8756bd2629b7cc65b69fa596852d7e804a5b2d372c02cc9675a"
+    },
+    {
+      "path": "tests/display/test_dashboard_home_status_card.py",
+      "sha256": "d7549d91abf19e9ffe4b74d9f4eec3b390dc5d30297606583ca1d2e1f4eff02a"
+    },
+    {
+      "path": "tests/display/test_dashboard_home_status_events.py",
+      "sha256": "5a744c5f87612fc9b233f93dd7701e953889cea3aa1dec8a23203b5a2cd4d3f1"
+    },
+    {
+      "path": "tests/display/test_dashboard_home_v11.py",
+      "sha256": "f29f4cae92f70d5661c6513e5e7a4cf96910d4098f309cae2f302142c3edfc16"
+    },
+    {
+      "path": "tests/display/test_dashboard_household_state_wiring_v1.py",
+      "sha256": "5238506d2026f86158037700dabfbe62328dd174237f211a21ca500cc3c1b663"
+    },
+    {
+      "path": "tests/display/test_dashboard_layout.py",
+      "sha256": "4a39602d40a250b670b941457f0c56b4f37ce7c073a35a8c0eeecc91efb68066"
+    },
+    {
+      "path": "tests/display/test_dashboard_lighting_ui_v1.py",
+      "sha256": "15aa11b7daaba49e7f0c8deaa490751730849d557647c708837f468b54dffb25"
+    },
+    {
+      "path": "tests/display/test_dashboard_live_data.py",
+      "sha256": "0a3e29b92a0a09a7af0dcafc0384a1d5d9d9f1a8570e22b2a548d802c56bceb2"
+    },
+    {
+      "path": "tests/display/test_dashboard_location_labels_config_v11.py",
+      "sha256": "9263af71d3bac672480b8e1db5f15b7485dfe5928f7d4cade4bb8b940a3d83ed"
+    },
+    {
+      "path": "tests/display/test_dashboard_location_labels_v11.py",
+      "sha256": "dbea53bba4825ae9dd45b282de27b46863c85f841401593e004301921e07699b"
+    },
+    {
+      "path": "tests/display/test_dashboard_location_labels_wiring_v11.py",
+      "sha256": "c9c8acb1b251b0e35585510bf23bd7b019e0a8d56ac546d1e0136dcce8dc617b"
+    },
+    {
+      "path": "tests/display/test_dashboard_module.py",
+      "sha256": "e5cc72ac31eef6dc51e0303d0f1933ab0fe19d22ebf6812d70059d9ec851b5b2"
+    },
+    {
+      "path": "tests/display/test_dashboard_occupancy_projection_v1.py",
+      "sha256": "cfb3579d50dce66a79e892f2084e78bf86e2c3504ab723673877a7be2692fd5b"
+    },
+    {
+      "path": "tests/display/test_dashboard_occupancy_ui_v1.py",
+      "sha256": "ad470c92e5650a1fe917ce2bee8c7894110cbb7fef327254b30e3d5bc691dea7"
+    },
+    {
+      "path": "tests/display/test_dashboard_page.py",
+      "sha256": "dbec43c92e56da579271c3e226142a40fbfce1da2e03a66b4c0bd5d980dc9616"
+    },
+    {
+      "path": "tests/display/test_dashboard_photo_card.py",
+      "sha256": "d75ecd16fed389a92a607444a4e7c02dc561d66ad610b2c678533b0d48993dd2"
+    },
+    {
+      "path": "tests/display/test_dashboard_photo_slideshow.py",
+      "sha256": "48788f13c56eb4f98a645b97a6c4e7c8a2724ef73bdb666849d6cc31d0999bd3"
+    },
+    {
+      "path": "tests/display/test_dashboard_presentation_api_v1.py",
+      "sha256": "0a31495eb1775497935d78380ebbaac69bb27ee19ae8d6389232723099cb1523"
+    },
+    {
+      "path": "tests/display/test_dashboard_presentation_application_wiring_v1.py",
+      "sha256": "0e039b9fbc16ff16c41efa5ffce4b82c5402998ee5f65dca6878ae691b5afcb8"
+    },
+    {
+      "path": "tests/display/test_dashboard_presentation_config_v1.py",
+      "sha256": "e2d8888c59423f190c23d5bd7b04dab40da6e5281108fa37d7098c47f33fe9ab"
+    },
+    {
+      "path": "tests/display/test_dashboard_presentation_v1.py",
+      "sha256": "f5d3b34cf13593afe9208e05d71aba2ac50b5808fe2e9ee4667dd158598111f4"
+    },
+    {
+      "path": "tests/display/test_dashboard_responsive.py",
+      "sha256": "70c5ef5590454a10db1e3db111182f6ebead2501434302a594b271c730f97965"
+    },
+    {
+      "path": "tests/display/test_dashboard_room_availability_integration_v11.py",
+      "sha256": "678e8aa03adaf0b1e72b586694cb6ea9420409fbd25efbdc08f2458ac2b91f92"
+    },
+    {
+      "path": "tests/display/test_dashboard_room_availability_ui_v11.py",
+      "sha256": "3f5e71cd14c2d714a79aaff8b2621a0b4fff051d911b6ca06e3fdca8705845ec"
+    },
+    {
+      "path": "tests/display/test_dashboard_room_availability_v11.py",
+      "sha256": "6b6226df9b19abe95c8b1b4bedf3d8a65bbb288bd1d4f3121818fb3e6f6fe9fa"
+    },
+    {
+      "path": "tests/display/test_dashboard_room_partial_semantic_availability_v11.py",
+      "sha256": "ec61869a9921681b776ef94c109c4f5825f1e74946be2ad6c1203989116403e6"
+    },
+    {
+      "path": "tests/display/test_dashboard_room_semantic_recovery_v11.py",
+      "sha256": "f28e2e7e405c0bfa85f9472c1270d7d37b366c92d022eeb285dca90fd9e60c39"
+    },
+    {
+      "path": "tests/display/test_dashboard_room_semantic_targets_v11.py",
+      "sha256": "3d1aa2ad03a8a255a094c9a711036c96308bf785a86825c3e30dac875d24cfc0"
+    },
+    {
+      "path": "tests/display/test_dashboard_semantic_empty_state_v11.py",
+      "sha256": "3cb3f04287a11d2c58475b9c687cb33b85f8d551d712fb30eb8dc7832b232b39"
+    },
+    {
+      "path": "tests/display/test_dashboard_semantic_event_subscription_v1.py",
+      "sha256": "f1dc7d8d0be63a5542e6a652968398bced6b6cde9dc7a1e4eef91eca131296fb"
+    },
+    {
+      "path": "tests/display/test_dashboard_semantic_events_v1.py",
+      "sha256": "03fd072b191c8b2aba7f59d5fd65fca1f130c910cf6be9a9a818a557bb2d6f7d"
+    },
+    {
+      "path": "tests/display/test_dashboard_semantic_freshness_ui_v1.py",
+      "sha256": "be165be1aa1248cdd68047a39d104ff5aeb8b0a602701449d4b8b99bf6eaf67b"
+    },
+    {
+      "path": "tests/display/test_dashboard_semantic_location_context_v11.py",
+      "sha256": "09ea696ad3619c8d57c3d178c829cfc82baea146c86c2b14ee119f20aaa81dce"
+    },
+    {
+      "path": "tests/display/test_dashboard_semantic_multi_location_v11.py",
+      "sha256": "260a484362a1e39e004dd2fa0c81a017e6e145304585581e2f257960acf1f2d3"
+    },
+    {
+      "path": "tests/display/test_dashboard_semantic_ordering_v11.py",
+      "sha256": "b78b386cd13d01e683b49c8cdbddcfa130d725993d3a2f9d9383e6a35a382cd4"
+    },
+    {
+      "path": "tests/display/test_dashboard_semantic_refresh_resilience_v11.py",
+      "sha256": "21688d4a72b68729e7a1d384f20d60a9507d1eca7a301b84774184d06961beff"
+    },
+    {
+      "path": "tests/display/test_dashboard_semantic_status_css_v1.py",
+      "sha256": "e23a44c7cfbfffbe275513a5b67685a4ce59afacd0354e320c0a46ed025059f9"
+    },
+    {
+      "path": "tests/display/test_dashboard_status.py",
+      "sha256": "a4efc705576c5bb7857fd4bc768d18b9d2db3224617d03a2dd6b9949d90ac8f4"
+    },
+    {
+      "path": "tests/display/test_dashboard_todo_card.py",
+      "sha256": "1f334ee8ba6a76161f69e249fb8ed888f73ab97a723a79ccd9c8cc5ddbc1648b"
+    },
+    {
+      "path": "tests/display/test_dashboard_weather_advice_projection_v11.py",
+      "sha256": "b69b66012bc9b07e587673ab7fa1796e175fcbd08d166495428f6da38126471a"
+    },
+    {
+      "path": "tests/display/test_dashboard_weather_advice_recovery_v11.py",
+      "sha256": "f2ed04dc54b8764fdd5f05c96f50a87503d7939f2da8188d1b670604de1786d0"
+    },
+    {
+      "path": "tests/display/test_dashboard_weather_advice_ui_v11.py",
+      "sha256": "cdea4c4246a7d2e251a3838dd50655aa90937c13c6c8a2fe29f0f9d1138fda20"
+    },
+    {
+      "path": "tests/display/test_dashboard_weather_apparent_temperature_ui_v12.py",
+      "sha256": "894b6f4fdab0d525b6367496b4bf7d27c956c2aa6d655c75b778803a224bb5a4"
+    },
+    {
+      "path": "tests/display/test_dashboard_weather_condition_ui_v12.py",
+      "sha256": "4d551d0b3cff397005a10a7faabbcbbeb09eb4ca84536eab96f7f944e4c5462b"
+    },
+    {
+      "path": "tests/display/test_dashboard_weather_details.py",
+      "sha256": "c530fb647bce745c6205d6471e7270f39cc940fce7b363fbc76f87f35ac2d1d5"
+    },
+    {
+      "path": "tests/display/test_dashboard_weather_status_ui_v11.py",
+      "sha256": "cc903f2938674591380b9d7503f79164e2939a67621081434f131792f91cfd0f"
+    },
+    {
+      "path": "tests/display/test_dashboard_xingoo_controls_ui_v1.py",
+      "sha256": "1464e42fbef54421177e091ca18fda4162fd1cef16f4364c39c74d2dd9ad900c"
+    },
+    {
+      "path": "tests/display/test_device_data_config_file_v1.py",
+      "sha256": "4b910c4bb3c38d56a422e0034975f64b474a9180d9727446b3a401303b668227"
+    },
+    {
+      "path": "tests/display/test_device_data_config_v1.py",
+      "sha256": "c9c7c1c85fb4b1820755afdd9fd3c7a187ca0d30fc503215b39417864a60f796"
+    },
+    {
+      "path": "tests/display/test_device_data_observation_parity_v1.py",
+      "sha256": "254abaa3b11b63403341d79d6455f2a8f9df9dc210ab8bb507cd17c868c59033"
+    },
+    {
+      "path": "tests/display/test_device_data_platform_entities_consistency_v1.py",
+      "sha256": "324b7d39582a56bce1f13c4a7561d1f8a192effce8a7af292a613829965f60c5"
+    },
+    {
+      "path": "tests/display/test_device_parameter_observation_location_config_v11.py",
+      "sha256": "1dce3241c9be720a853069e3a078cd6a4228736734b62c7ecfaa4a1f0ea7d437"
+    },
+    {
+      "path": "tests/display/test_display_application.py",
+      "sha256": "c4134aee719f9aeeba9c6dc4e1978ceed6d1e392db6926f0f8c3e80106c18025"
+    },
+    {
+      "path": "tests/display/test_display_runtime_config_v11.py",
+      "sha256": "46362149c33fe0e9246770c62c159d5709099f468f0b23537ff10a68bda0db54"
+    },
+    {
+      "path": "tests/display/test_display_runtime_integration.py",
+      "sha256": "3176a5f5f3fc3fa682758faf384b27af5202129687cf3b5fd07affb6b3bfeaf5"
+    },
+    {
+      "path": "tests/display/test_display_v1_integration.py",
+      "sha256": "63d46df2e57213d965fc19f91895533e6643ccd4f63a56091b8c2554ce07d0ca"
+    },
+    {
+      "path": "tests/display/test_dnake_mqtt_application_wiring_v1.py",
+      "sha256": "ef7267de44f12004bf74bc261af897e05d293bd33df960115c903bacae2387bc"
+    },
+    {
+      "path": "tests/display/test_dnake_mqtt_device_control_executor_v1.py",
+      "sha256": "ce8e6c81c317d2eb89bdeba35e2954ab13b4a58d2501423b23bc3dba73232efd"
+    },
+    {
+      "path": "tests/display/test_dnake_mqtt_device_data_adapter_v1.py",
+      "sha256": "f0b3ab971541cdf4f2b0e0dca2460dd1845c858826d450a3ae0d6d7099907dcf"
+    },
+    {
+      "path": "tests/display/test_dnake_mqtt_source_v1.py",
+      "sha256": "5699047b86798406ec035e652674666eae2b306e43e0bac42132480157e30422"
+    },
+    {
+      "path": "tests/display/test_eventkit_calendar_source_v1.py",
+      "sha256": "b7fb1818dc8e627bd8cb066d4ff5a91880fb41e961acc4ac514976f26bc5f028"
+    },
+    {
+      "path": "tests/display/test_home_action_api.py",
+      "sha256": "d17d5c50bd4273bf6ad5261eaa9b30d6bc8b419a72597974e9744e4f826450fd"
+    },
+    {
+      "path": "tests/display/test_home_assistant_client.py",
+      "sha256": "52527c7e852ec39baab9453815c506d474ed62edca1370e93a391eeb6ce31f79"
+    },
+    {
+      "path": "tests/display/test_home_assistant_device_control_executor_v1.py",
+      "sha256": "118c558e5bbb65e09ad50d820728ad889cbce269475dacb6e1ac4fa29c51bcc4"
+    },
+    {
+      "path": "tests/display/test_home_assistant_device_data_adapter_v1.py",
+      "sha256": "69db9fbb11fe74f2532b8f2af6616566b5f14ebe5a38fbb32cccd196043078f9"
+    },
+    {
+      "path": "tests/display/test_home_assistant_observation_adapter_v1.py",
+      "sha256": "7f6eee4d3a9e0288472979fe2481a0b11640fc43548304b8b0c7ee08b55d2eb9"
+    },
+    {
+      "path": "tests/display/test_home_assistant_provider.py",
+      "sha256": "987a2632001f27cd97f85f6bf8c3eb927c8ea4d0208f78afe7494436e7ad8138"
+    },
+    {
+      "path": "tests/display/test_home_assistant_source.py",
+      "sha256": "2627f317bbaf63ba9f48b8cb152cde8ff508ad1ccbbb71217b118bc44be3a41d"
+    },
+    {
+      "path": "tests/display/test_home_assistant_state_events.py",
+      "sha256": "132c45112713ef55d42feebff1b550b089f36aadaa7ac5b3f1c684a6ebad1655"
+    },
+    {
+      "path": "tests/display/test_home_assistant_state_stream.py",
+      "sha256": "7968bc6363c7b2a51a472d826acc41296fd3ad8ad6fd12a9d7d4ffc4ee5cbb4f"
+    },
+    {
+      "path": "tests/display/test_home_assistant_weather_forecast_adapter_v11.py",
+      "sha256": "87701f9ce5415b6822b6dbff68ff5a4e894614548efe4b57e277fce0594ad046"
+    },
+    {
+      "path": "tests/display/test_home_assistant_weather_forecast_source_v11.py",
+      "sha256": "7d698740b97b588f3fedbb4b27f3852b512e244a7c72883b5ac80fbfd8286035"
+    },
+    {
+      "path": "tests/display/test_home_assistant_weather_forecast_wiring_v11.py",
+      "sha256": "f6f5434b429472d65369232ccef9e71695c08a50ec8297bbdde802b465c55f12"
+    },
+    {
+      "path": "tests/display/test_home_entities_config_file.py",
+      "sha256": "70779bbbe82433af4c416faa74c379f79681e45d50766aa2a932da8eac5d7d97"
+    },
+    {
+      "path": "tests/display/test_home_status_api.py",
+      "sha256": "1cc0e94f71f2800af3100000e704bfb335c5a92f189e51ea06a0833f0a1c1adf"
+    },
+    {
+      "path": "tests/display/test_home_status_change_notifier.py",
+      "sha256": "0dc6259884599d8789ebaec87ebc2a1618c9cad625529c993f4f1c25c7e5a088"
+    },
+    {
+      "path": "tests/display/test_home_status_config.py",
+      "sha256": "be8b2d8587e29624e92f3c8d996a0b141f6468d36dceb1d134a7a610cbfa4ec7"
+    },
+    {
+      "path": "tests/display/test_home_status_provider.py",
+      "sha256": "85a0e3f2facfa9b988a2ca30cfee59abe476fe56a1b44f0c6fc73eb04535376e"
+    },
+    {
+      "path": "tests/display/test_household_action_api_v1.py",
+      "sha256": "626fc4d0801896836e162551ba799c09f2a8da6c7698fc445cb06379e8d2e3eb"
+    },
+    {
+      "path": "tests/display/test_household_action_application_wiring_v1.py",
+      "sha256": "8263cc95e9ef553ad9310d49f3d4c14f9907876fdc04de3a7628f64d948d3c90"
+    },
+    {
+      "path": "tests/display/test_household_actions_config_v1.py",
+      "sha256": "9533587df0782da5f0b6106bb6d41efec1190cf3fe6d01edcbb5b793870e2d0d"
+    },
+    {
+      "path": "tests/display/test_household_actions_v1.py",
+      "sha256": "8aba905c440c63d1f91db33668ba07f6270fe81ef8833816d782906c37d502a3"
+    },
+    {
+      "path": "tests/display/test_http_server.py",
+      "sha256": "ad14975834a25211995c458c3e81bc87809844228be9129a4c7253cb3387128f"
+    },
+    {
+      "path": "tests/display/test_lighting_interpretation_config_v1.py",
+      "sha256": "28d38c9a0eec2f54d106c834bc172fd60d14bf4ffafaf53d35b9cdbd0c6c0e6f"
+    },
+    {
+      "path": "tests/display/test_occupancy_interpretation_config_v1.py",
+      "sha256": "8a0b253e43ad1149c49b413dd1b48f6de2d40ae007bf067af4bc019dd088e186"
+    },
+    {
+      "path": "tests/display/test_open_public_area_config_v11.py",
+      "sha256": "3d62564f38c25a60a1080b6e2c00afe3a6fbecbbf62cdb8752f2cceccab7de2c"
+    },
+    {
+      "path": "tests/display/test_photo_library.py",
+      "sha256": "a815ad48dd23bed86040ba4bb48685a985c7922ade34da1693d919049cbfd1d4"
+    },
+    {
+      "path": "tests/display/test_photo_server.py",
+      "sha256": "177b6418b635f94bd3ef9469a7b1f83c3c9e448e7952e84e2fb9e2a20a99a76f"
+    },
+    {
+      "path": "tests/display/test_platform_entities_config_v1.py",
+      "sha256": "6c2dbe2d88b22f9a6f8fba4c96ec282a840337894f87f480266f3a9cb6075fd9"
+    },
+    {
+      "path": "tests/display/test_platform_state_application_wiring_v1.py",
+      "sha256": "2bb7f6ca474950a91575eec54cdeb5c759fa9a6442674f436611667bd1d404c3"
+    },
+    {
+      "path": "tests/display/test_platform_weather_default_pipeline_v11.py",
+      "sha256": "ac164f306edebf18842d4f146b17e3cc5b6e53990babb55ce57749de66d9243c"
+    },
+    {
+      "path": "tests/display/test_platform_weather_entities_config_v11.py",
+      "sha256": "3d7a1cf82fe603b2cf0f47ed7eed9217b08bbe107d2d0e8132ee3617fe0d7029"
+    },
+    {
+      "path": "tests/display/test_platform_weather_observation_adapter_v11.py",
+      "sha256": "45ea15531307d9c77873ba495fec0de129276a9f6922e59195b566167d2586ce"
+    },
+    {
+      "path": "tests/display/test_snapshot_server.py",
+      "sha256": "0963008cf9c43aed3e01361e0c8a3f930fee953537c7da8eb7c5f3569af782d4"
+    },
+    {
+      "path": "tests/display/test_static_assets.py",
+      "sha256": "18d6fafe9f708e179fad863e5d0be09da9d1c218ef1ece4d0488048c6430d3e7"
+    },
+    {
+      "path": "tests/display/test_todo_api.py",
+      "sha256": "1c7aec52296c327c42741af565a27c7464a5cd77e8d1ac2228da558a3cb54d91"
+    },
+    {
+      "path": "tests/display/test_todo_management.py",
+      "sha256": "57151ebd591eca776eb2279d72c78c62207cc8ef56e237e80ec44798e89f79e3"
+    },
+    {
+      "path": "tests/display/test_weather_status_application_wiring_v11.py",
+      "sha256": "6e5e35cd41e70ed0ef49ed78dc8b41d3b0187ffdad73b231ba4924df8d47f743"
+    },
+    {
+      "path": "tests/display/test_xingoo_application_wiring_v1.py",
+      "sha256": "f854961f1d7800d830b6bc9ec920a12595cebcfe0bff736e8eadc1c63ac04a85"
+    },
+    {
+      "path": "tests/display/test_xingoo_client_v1.py",
+      "sha256": "1b7cc99509d76fb7a10829c48fe22d27eef5f6df539396db6aed77aff01d710e"
+    },
+    {
+      "path": "tests/display/test_xingoo_device_action_api_v1.py",
+      "sha256": "7c2df78948783e4d3c1bde54f48118993d1b40f953a76d192d9a730a3c589ea7"
+    },
+    {
+      "path": "tests/display/test_xingoo_device_control_executor_v1.py",
+      "sha256": "9e72710283d098adefc28737ba20935566e0b39c4e008610e34b16154e79b5d2"
+    },
+    {
+      "path": "tests/display/test_xingoo_device_controller_v1.py",
+      "sha256": "fa42260c68ac36ae5f294189b6f4623bef6a97e38e62e4a3958a4e4a3545fdd7"
+    },
+    {
+      "path": "tests/display/test_xingoo_device_data_adapter_v1.py",
+      "sha256": "a5ff4076e4a67d596cbc212d33380911a4f33edcfccc016ea2b4937876b5b95f"
+    },
+    {
+      "path": "tests/display/test_xingoo_source_v1.py",
+      "sha256": "d620221c708d81ebbee68aa837140a6cbf71199dc7b697d7129418886f7bd66b"
+    },
+    {
+      "path": "tests/packaging/test_release_verifier.py",
+      "sha256": "7c689b674d87d319dc9b4d9b6b79dea46e161b398bf0ca58b9ebd3cc337794a2"
+    },
+    {
+      "path": "tests/platform/__init__.py",
+      "sha256": "f166ff06ab5fc6c1b0cab708a5996a4d9e3f5f753ded2b6be1deff8f26310eca"
+    },
+    {
+      "path": "tests/platform/test_canon_foundation.py",
+      "sha256": "d579ad6e271d1d2a5568a40a172427cfa10b382ecc302f85869ef86f311eff94"
+    },
+    {
+      "path": "tests/platform/test_comfort_capability_v1.py",
+      "sha256": "726411fe50fcda29677569a897dd40915668338346177774fa84d5b5d0471b38"
+    },
+    {
+      "path": "tests/platform/test_device_control_builder_v1.py",
+      "sha256": "6b5e3bad5f73e6685919bb0285e1f1da2c60e8756c67a7625e5594991a3038fe"
+    },
+    {
+      "path": "tests/platform/test_device_control_dispatcher_v1.py",
+      "sha256": "25e89a7c90007adb627207a774485ab74ce4e761a7a4e8491f11262099f903af"
+    },
+    {
+      "path": "tests/platform/test_device_control_model_v1.py",
+      "sha256": "bb975ae4724743a4d8db952597cfb1faf7c42c00d3088a47721f20a929122724"
+    },
+    {
+      "path": "tests/platform/test_device_control_registry_v1.py",
+      "sha256": "b45fca4310df1b04b841267ec93c0ac85728ac7c9a4c89c3ef41b8173b620a7c"
+    },
+    {
+      "path": "tests/platform/test_device_data_ingestion_v1.py",
+      "sha256": "613c4488edaf8fe12cde4b1a6f751079ade985304f7d759199c540ad066687e6"
+    },
+    {
+      "path": "tests/platform/test_device_data_model_v1.py",
+      "sha256": "e11136fdbdb5220c545e0c13ecfcac0d0c0eea1aa02e63d0caf1e233b26b00a8"
+    },
+    {
+      "path": "tests/platform/test_device_data_registry_v1.py",
+      "sha256": "b3bbfa2d41d17ac6971c878cdc3d57a8a3631e75e1161e07aca509e493f6935c"
+    },
+    {
+      "path": "tests/platform/test_device_observation_bridge_v1.py",
+      "sha256": "dbfb9b6e2b47b6d3afecaf4f8889c926ce9ccc95736a4dfccb7b9e40d4c806b6"
+    },
+    {
+      "path": "tests/platform/test_device_parameter_observation_location_v11.py",
+      "sha256": "ee11d907bc1581ed062c77bea7dd70a12f34b21f7f70f18f8cb21cb0c43e2e5e"
+    },
+    {
+      "path": "tests/platform/test_device_parameter_store_v1.py",
+      "sha256": "fe2870620da12e5d6caf9f984d8eccd2a7b2ac3ddb924046e4ad5f11fe1759fb"
+    },
+    {
+      "path": "tests/platform/test_device_power_dependency_v1.py",
+      "sha256": "b915ae75e3bc7dbf9580b06a3a48965bcb8c2837806b9401b9ede241c998681a"
+    },
+    {
+      "path": "tests/platform/test_empty_location_state_withdrawal_v11.py",
+      "sha256": "44f1ac77f4ffa90d61c3976c183cb8e1843a5ea91dd2bcfeeb440ff07343f8e0"
+    },
+    {
+      "path": "tests/platform/test_evidence_state_withdrawal_v11.py",
+      "sha256": "94a9ab798f4257f07cda1594086ae8f7beb6277a10365d184c17a8f015a0cd42"
+    },
+    {
+      "path": "tests/platform/test_household_state_change_notifier_v1.py",
+      "sha256": "fcd3c3a3a9c2c2f371c75cf4cb95d9bc9b33bf2c7d4866f64915cd19aa6ee6e8"
+    },
+    {
+      "path": "tests/platform/test_household_state_freshness_v1.py",
+      "sha256": "39fbaea832ec87ed682b96d609ec4baa7d8a367fd0b8960897e7e11cab3a1bb3"
+    },
+    {
+      "path": "tests/platform/test_household_state_withdrawal_v11.py",
+      "sha256": "b534c746862fde4dadc7891c0b79c99f0ce26f62a5637250da95231d5fabaac9"
+    },
+    {
+      "path": "tests/platform/test_interpretation_framework.py",
+      "sha256": "c954fa857310a645e2f40913cf3a7a71dcbb983255134d46c5fdeb36f65fc9d9"
+    },
+    {
+      "path": "tests/platform/test_lighting_capability_v1.py",
+      "sha256": "cb7f0328834d52518abc39e42e1444bd8585845ab0127feffd00fde1c69b012d"
+    },
+    {
+      "path": "tests/platform/test_observation_accumulator_v1.py",
+      "sha256": "4394133779c9a872d7e65e98e7ce8f3e84a07f95e0ead6587bb5dea280b1ca33"
+    },
+    {
+      "path": "tests/platform/test_observation_contract.py",
+      "sha256": "1bfb6f11606d7904cb55861efc56e09dcb36bb552971803c7ae1424ea20d51d6"
+    },
+    {
+      "path": "tests/platform/test_observation_freshness_sweep_v11.py",
+      "sha256": "ff69d537f86dfb37b834d05e5909493675a610771894e8410f6bf60a76975da9"
+    },
+    {
+      "path": "tests/platform/test_observation_freshness_v1.py",
+      "sha256": "1d311313d6fb177df766d87d03603d927c030097783b476429dd3cc536b96ea1"
+    },
+    {
+      "path": "tests/platform/test_occupancy_capability_v1.py",
+      "sha256": "c2b23abcd11fe83ccac169079dee418b91b9a61c1f8119321f29c17f3724bf6d"
+    },
+    {
+      "path": "tests/platform/test_occupancy_freshness_pipeline_v1.py",
+      "sha256": "62a3a92a9a5494599644ed273cd7a71efe81028cde1996dbf6c872c5ee8fb1a8"
+    },
+    {
+      "path": "tests/platform/test_state_data_availability_v11.py",
+      "sha256": "34b9db2714c0e856344db2699c1eebeda591419e40e4ddb431eb5462d95bf7d1"
+    },
+    {
+      "path": "tests/platform/test_state_pipeline_v1.py",
+      "sha256": "616da8c8403f899336086ac772b826e82bf53dbeccd911d3f64442b748afa1a9"
+    },
+    {
+      "path": "tests/platform/test_static_knowledge.py",
+      "sha256": "74a7090e12e997a3fbf6cdedb3ef2283ef95e1a8bec2e620f8c62762a50f2a52"
+    },
+    {
+      "path": "tests/platform/test_weather_advice_capability_v11.py",
+      "sha256": "340f339f7a82440682d3e88a90e5fdfa8ce3ea5e464d7d17ac46034420f25819"
+    },
+    {
+      "path": "tests/platform/test_weather_advice_withdrawal_v11.py",
+      "sha256": "b3efaed8d523bd9b322c3a323b2b9b7100692b7e3552645fee982d194f6bf764"
+    },
+    {
+      "path": "tests/platform/test_weather_status_capability_v11.py",
+      "sha256": "5e85d1412bd7f559d96c155994c529a361ff260b3d899b5c30e87959c0d66e55"
+    },
+    {
+      "path": "tests/runtime/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tests/runtime/test_bootstrap.py",
+      "sha256": "141a0bfc0b434458bc4272d92d2da181e06cbad74c3d23e35660d29deb42bfbe"
+    },
+    {
+      "path": "tests/runtime/test_bootstrap_atomic_rollback.py",
+      "sha256": "ecf059f73581f3987d0efd933df2352f88e06299e058ff26e71f0a80bf164ede"
+    },
+    {
+      "path": "tests/runtime/test_bootstrap_capabilities.py",
+      "sha256": "cf7db8cf9996bf2112ac3ee192b9afa73a47a005af86a21a3c70204a44a15b58"
+    },
+    {
+      "path": "tests/runtime/test_bootstrap_from_config.py",
+      "sha256": "5e49d13b44261fb891e776861d6c322271f89c97335ee59e4f7e25e86d4bb695"
+    },
+    {
+      "path": "tests/runtime/test_bootstrap_rollback.py",
+      "sha256": "b34c304cf249aba06b83e4121619da04cb20c2394a6cff22cf6841bdb29d50c6"
+    },
+    {
+      "path": "tests/runtime/test_capability_api.py",
+      "sha256": "e1e250c9b8b85ab5b9e78e8a3fd6b32a80880b757309b499a869d6ba8425b100"
+    },
+    {
+      "path": "tests/runtime/test_capability_context.py",
+      "sha256": "09a6689e2df142b81170ca09721fa855c34be462940f9c1c08326edcfaf84c5e"
+    },
+    {
+      "path": "tests/runtime/test_capability_factory.py",
+      "sha256": "6c2515c22d6804767b180cfe5c49f273b1dfd17e4df30e04c399798db61b301c"
+    },
+    {
+      "path": "tests/runtime/test_capability_loader.py",
+      "sha256": "92f1e17e1079b9edf2f102eddb8fecd9c007dd67af123fc925823000afb299d4"
+    },
+    {
+      "path": "tests/runtime/test_capability_registry.py",
+      "sha256": "5c4c9eb6655a24d8d1edcd6d259df256e9f64d3b3e932f7354772bb662aec6e2"
+    },
+    {
+      "path": "tests/runtime/test_check_qweather_script.py",
+      "sha256": "a8121c0f6d957eed0d0b86917955fa63ef99c9ba029ffb40312645422ce8bf80"
+    },
+    {
+      "path": "tests/runtime/test_clock_capability.py",
+      "sha256": "420620459bc5c513faa489e5369c135ebfeb2759299ac258f6a03a9e496cc9cb"
+    },
+    {
+      "path": "tests/runtime/test_engine.py",
+      "sha256": "026aeded0d94797ad1ec9a6df49703ab02963ec3cd40477c869a5c1d92b5a0e0"
+    },
+    {
+      "path": "tests/runtime/test_engine_configuration.py",
+      "sha256": "6373481500db721c454ee4482d0158da29aee35c6247ae90cd9ad63ff95545c0"
+    },
+    {
+      "path": "tests/runtime/test_engine_execution.py",
+      "sha256": "af9c861838824cac11833ada068ea77c0cc4018f85f4f3903d2313463d04fd9c"
+    },
+    {
+      "path": "tests/runtime/test_engine_instances.py",
+      "sha256": "b1cd9fdc8f9dfb8e6e6565bf559a47350a392c90815152d44b11a237a4a11a89"
+    },
+    {
+      "path": "tests/runtime/test_engine_snapshot.py",
+      "sha256": "f640daf7141df6d51e7ff86f4ce6d9f8359ed1c9c8752b1320999a34fe234835"
+    },
+    {
+      "path": "tests/runtime/test_engine_tick.py",
+      "sha256": "1d2ec03859f4a8a2872760c1097e9a148b3e3fd5fe7ad3903f2859baf2242516"
+    },
+    {
+      "path": "tests/runtime/test_engine_tick_health.py",
+      "sha256": "62072e8e53c5d22e4bd8bd40391fe960d69b0de6b2e77f9283ab30c9b4c2c962"
+    },
+    {
+      "path": "tests/runtime/test_engine_tick_health_status.py",
+      "sha256": "a95a1e03931903d7ac028a4188172df544c0eee174dc09279743489397e21135"
+    },
+    {
+      "path": "tests/runtime/test_engine_tick_health_summary.py",
+      "sha256": "ff6f505927bee37513342a7c08684c819816d51be40d562853c3da200757a942"
+    },
+    {
+      "path": "tests/runtime/test_engine_tick_results.py",
+      "sha256": "a90b46cd8a7f698781eeaad76eed132e993309be9717cb56bffd5d6b4ff60aee"
+    },
+    {
+      "path": "tests/runtime/test_engine_uninstall_guard.py",
+      "sha256": "6c95dea0f3d0039890d93e8e7325d08b8c1d8f15e99436692b4a60b8448625b6"
+    },
+    {
+      "path": "tests/runtime/test_lifecycle.py",
+      "sha256": "d055f24015f944a18b6860d161324d2bb0186de2e70700be29b3349983dd73c6"
+    },
+    {
+      "path": "tests/runtime/test_manifest.py",
+      "sha256": "adc39421ba12ae0a617b4c1bec2b8b0427f1da9b3ad6886ecd9662a0eaa88854"
+    },
+    {
+      "path": "tests/runtime/test_qweather_provider.py",
+      "sha256": "0b17a307e802c808d62edb79f2d628dfdda44797ac940065f81fc67df7fde53c"
+    },
+    {
+      "path": "tests/runtime/test_registry.py",
+      "sha256": "9041aa0496037b7e6d8120e0157b170a770c8e94605125d2c0ff86691556bf6c"
+    },
+    {
+      "path": "tests/runtime/test_runtime_application.py",
+      "sha256": "0e18365bcdb377bbff7e55305628f8c19eaa9f10c386c6600a14b2420224faef"
+    },
+    {
+      "path": "tests/runtime/test_runtime_application_background_failure.py",
+      "sha256": "e44b0835ad461013008c9a218c56446bb1de4a3cb0fa4ce165e50b9c9f770d6f"
+    },
+    {
+      "path": "tests/runtime/test_runtime_application_cli.py",
+      "sha256": "5f21e7f39939412e04db5d24b6a340a10ac3416f1d75cbb29d7ec7db4dda5c1e"
+    },
+    {
+      "path": "tests/runtime/test_runtime_application_errors.py",
+      "sha256": "35b8833ee89d8958d3b49995e7012656454c72346a34cc6668ef620f9d537263"
+    },
+    {
+      "path": "tests/runtime/test_runtime_application_output.py",
+      "sha256": "f57e9d6552977c17a335b7051ed273ad9aea667974e7252344ad9f220dca4337"
+    },
+    {
+      "path": "tests/runtime/test_runtime_application_snapshot_cli.py",
+      "sha256": "63d38cd056b540a6fd16a6dabb6f11f581d5e6858572b8525b7ef3a38411b10d"
+    },
+    {
+      "path": "tests/runtime/test_runtime_application_snapshot_wait.py",
+      "sha256": "9e259c530c37f7669aab15f526e249966508eb11aa3bb0e1d8e4165be5acd52f"
+    },
+    {
+      "path": "tests/runtime/test_runtime_config_loader.py",
+      "sha256": "d487d161e014b201ced40a0d2f3d5c070eda5a16731353c0d6e29f78be2c6aa4"
+    },
+    {
+      "path": "tests/runtime/test_runtime_core.py",
+      "sha256": "5a6b1d2128259e8ea774b751c4c17449bef9bde70f2543cc567d24e0f3a7bceb"
+    },
+    {
+      "path": "tests/runtime/test_runtime_host.py",
+      "sha256": "07bb5c83786f16d02089d80953145dc7b2b2eeadbe7dc421282630deefd54b2a"
+    },
+    {
+      "path": "tests/runtime/test_runtime_host_capability_snapshot_errors.py",
+      "sha256": "efb988bbc6a5daa51c1dec71de620f8c87461ae13dd7c1fdf3956e315f2c9ca5"
+    },
+    {
+      "path": "tests/runtime/test_runtime_host_capability_snapshots.py",
+      "sha256": "692cbf1f851041f61d0ccb8b3d1b74eac533f0deccd47668a2b2495958467b77"
+    },
+    {
+      "path": "tests/runtime/test_runtime_host_instance_api.py",
+      "sha256": "8656dfb27305e8fa25d131b125b972a4f9ef5f6091183634b721e6e2dcf5d325"
+    },
+    {
+      "path": "tests/runtime/test_runtime_host_lifecycle.py",
+      "sha256": "db71dbd551451b2dd37700a9851ac9b7a92295aa3831b20253ba705f5d9edd70"
+    },
+    {
+      "path": "tests/runtime/test_runtime_integration.py",
+      "sha256": "e3f176de6d4a9debeaa042d62c5599916430beedd03ceab93e5b6800b5709cbb"
+    },
+    {
+      "path": "tests/runtime/test_runtime_resilience.py",
+      "sha256": "07d56d818580513ce8a133cbf912ea0a8e4821d733f1dee55427f1a8fecf1d49"
+    },
+    {
+      "path": "tests/runtime/test_runtime_state.py",
+      "sha256": "bcf3da6049ed429a029f588599eb32ad825bf010b39e4345a5d80baba9cd17a3"
+    },
+    {
+      "path": "tests/runtime/test_scheduler.py",
+      "sha256": "6a8d21c4bb2a30f6dafcf09d98bbef217421504eadb87bfbf347b1129fe83e0c"
+    },
+    {
+      "path": "tests/runtime/test_scheduler_background.py",
+      "sha256": "c97672e782dbd7611b8bc16732eb1fded03b624a4b281733cf5870eef2c42d05"
+    },
+    {
+      "path": "tests/runtime/test_scheduler_background_health.py",
+      "sha256": "d14025e6dbd2fa5e5e45dc0f58d7304b80647a9f2a94450ecc3ff7570a4bc9f8"
+    },
+    {
+      "path": "tests/runtime/test_scheduler_lifecycle.py",
+      "sha256": "b61ce3b1d06c00433e91343d6e2eaca161499f365784d8fb7deafd3f58649b21"
+    },
+    {
+      "path": "tests/runtime/test_scheduler_run_loop.py",
+      "sha256": "1b9e49558d1a23a6cc4351e5efe9e17fe3c76706afb105b7c0ee4c67dba8a405"
+    },
+    {
+      "path": "tests/runtime/test_session.py",
+      "sha256": "7d38f27fbed6e82ceb4dbab5a4a2da6d248a9507047fbbdffd4a7f4cd54b0fef"
+    },
+    {
+      "path": "tests/runtime/test_session_manager.py",
+      "sha256": "fa4e5c4b303550edefa41be3713cdd3fbf05a390067606db8299f9655dca58a1"
+    },
+    {
+      "path": "tests/runtime/test_snapshot_contract.py",
+      "sha256": "f1b24e070047743994f7712081db4a6b5a2eac75bddc38772104f7a5eb0c3eb2"
+    },
+    {
+      "path": "tests/runtime/test_snapshot_generated_at.py",
+      "sha256": "e26a7c3dc5c65d5ad1644adbf80366abe053bc4db618e0e7b2820f9695a32607"
+    },
+    {
+      "path": "tests/runtime/test_snapshot_schema.py",
+      "sha256": "3a652df466b2ba32945fdcb019e8564d4ce40a9da23128be418487a19a535667"
+    },
+    {
+      "path": "tests/runtime/test_snapshot_schema_version.py",
+      "sha256": "3fe78f8ee7e17a77dc788d63e4499c412a4baa0adea47ec1eae37e6727d81bb9"
+    },
+    {
+      "path": "tests/runtime/test_state_store.py",
+      "sha256": "03bf632ca6f34e6ce697503a40f9e0a117ccd7c5afe2e8f99460354f5e81400f"
+    },
+    {
+      "path": "tests/runtime/test_validator.py",
+      "sha256": "bdd45c7dbd6f96f3c25e95ad9949daa14b86ef512c7f159770a7130d1d34c211"
+    },
+    {
+      "path": "tests/runtime/test_weather_cache.py",
+      "sha256": "37d8614ec3d7c818901dc18fa13471bb2a304c37785164cae5bbaf92e11c4932"
+    },
+    {
+      "path": "tests/runtime/test_weather_capability.py",
+      "sha256": "20fc44e94325b7a7a8d1e70d86c1240dcc19f561e6e1c52d37343bc92fd69c43"
+    },
+    {
+      "path": "tests/runtime/test_weather_provider_factory.py",
+      "sha256": "1f987a7e3ac01ed54415a744f3e54ec7489dbcd1e42b7b9d5edd0b17fef9abe8"
+    },
+    {
+      "path": "tests/runtime/test_weather_provider_injection.py",
+      "sha256": "c979e5f308f2076f088f778b303735dedc0ee0a8dddb919a90bb5c587b6de7d1"
+    },
+    {
+      "path": "tests/runtime/test_weather_refresh_policy.py",
+      "sha256": "cfc96d225b4a3b7fb096601929cc891a44c165f84a8689e20d3cf5f62725d04b"
+    },
+    {
+      "path": "tests/test_api.py",
+      "sha256": "bf17adb6b2d171c6bc869a69149475684eb6c159595be0925e4898ae023f140d"
+    },
+    {
+      "path": "tests/test_config.py",
+      "sha256": "d35f3f1000635f6fe69d06001b57dc203695924045a164af827be1c1c461cf36"
+    },
+    {
+      "path": "tests/test_connection.py",
+      "sha256": "fa5e48004530d406603cc95b83fe9492ba971667d065f0524330f3fa8c764cdc"
+    },
+    {
+      "path": "tests/test_context.py",
+      "sha256": "0c1d77bf37cab580882470cfdb911426eb6ed62182a446b9a4fd05b6ec3d8ffb"
+    },
+    {
+      "path": "tests/test_core_adapter_routing.py",
+      "sha256": "7d9e017b8d7261fbc3a1fa5bc94cd8f23d8733745a641e56d0332a9ec55bb6a6"
+    },
+    {
+      "path": "tests/test_dashboard.py",
+      "sha256": "0f2860971ddd30cbdbe00473b4973565d868e1bab22cd33114df81936e112f5c"
+    },
+    {
+      "path": "tests/test_device_cards.py",
+      "sha256": "78da9fc92ae155f78718d67a50ab5d3c2903e240a0aac81f6c15d7ca3f4f174b"
+    },
+    {
+      "path": "tests/test_device_types.py",
+      "sha256": "2e49e190ba1febe43ddb9195c9a7d2c18547429246866593a35dc9f98ffa9980"
+    },
+    {
+      "path": "tests/test_diagnostics.py",
+      "sha256": "af1240f222f39016c4b58032dfbd526ce87b03ed82feb2b5c25ac82336b71a76"
+    },
+    {
+      "path": "tests/test_events.py",
+      "sha256": "a1fc2f02ce503f26b60e78b5dbcae105409da14aaa89770f3fcfb9b4e73ea2a8"
+    },
+    {
+      "path": "tests/test_feed.py",
+      "sha256": "d9d8560945ff847abc07f68abed0a71a660424dcdd15247378570ae766456a0d"
+    },
+    {
+      "path": "tests/test_home_dashboard.py",
+      "sha256": "c7f30868cd0eccdb627551eb50e2c59b0214b5cf74f38dad7cdfee6e65a4f470"
+    },
+    {
+      "path": "tests/test_home_event.py",
+      "sha256": "f96a7813eb9db60f70771ba487b7cdc14c338de2d72b4fcbdabd09f68fff639f"
+    },
+    {
+      "path": "tests/test_home_event_bus.py",
+      "sha256": "bf53aa77deca8d2c89108c09e926c6c49a2926999316a1d86b0d9518f67cec61"
+    },
+    {
+      "path": "tests/test_home_event_mapper.py",
+      "sha256": "6b2ac487bbc146043e4625bf9de536f1a4e510e6296101d0c4c2ec8878685d16"
+    },
+    {
+      "path": "tests/test_home_profile.py",
+      "sha256": "bcb0416ba4945670059e3e3243a89ccc5a93048e9f1107796eb722cd18f7a5f0"
+    },
+    {
+      "path": "tests/test_house.py",
+      "sha256": "3fbc60b7e6a37f6aad94aad48c1e1e7bd7af081051204b9e521160077868bf5f"
+    },
+    {
+      "path": "tests/test_house_dashboard.py",
+      "sha256": "0de4cf4ba57bd6e02b10a4fd21ed4fc195f56942616d7b788c68f01c1fccdccd"
+    },
+    {
+      "path": "tests/test_house_dedup.py",
+      "sha256": "546ceb18a741457953544fa36feb8fef37f5c29f9b210fc972efa0d676add20e"
+    },
+    {
+      "path": "tests/test_mock_adapter.py",
+      "sha256": "6ac5b3a9fc7488e2f938c42fb8a28fd0246137de2d21e5f2627d26e5251e3a72"
+    },
+    {
+      "path": "tests/test_mqtt_adapter.py",
+      "sha256": "239ba69023065dff95524d97c219b7ea8aabc7766cc8ce04471d03dd40709d55"
+    },
+    {
+      "path": "tests/test_platform_release_integrity.py",
+      "sha256": "e16ab3a2a337f01322375ca90fb5c93888edc5e90c01f89b89875b27f21411bc"
+    },
+    {
+      "path": "tests/test_policy.py",
+      "sha256": "639be68104bec2e170bb8a5d27152a8bc6a8474eaa6bb09cd318a07e361af3eb"
+    },
+    {
+      "path": "tests/test_registry.py",
+      "sha256": "3d62402ea50bf2542b42f0c200492a9f0dafb3e4b2de833e682fe2c2cde0ea1b"
+    },
+    {
+      "path": "tests/test_state_change.py",
+      "sha256": "83d6c5137451c290f5c6a3a25f2f220a617bb08679937de30c8d26f90c29cef6"
+    },
+    {
+      "path": "tests/test_test_framework.py",
+      "sha256": "73579718311b5dc839bee67091ee2c5a7c89c6375eb5edcbfc99cb8cbf1b6414"
+    },
+    {
+      "path": "third_party/dependencies.json",
+      "sha256": "1959a4467c908d3b4f672aaa048a1c4d9569881c7485fd958a7542bc7bbe9041"
+    },
+    {
+      "path": "third_party/licenses/GPL-3.0.txt",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "third_party/licenses/LGPL-3.0.txt",
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118"
+    },
+    {
+      "path": "third_party/licenses/caldav/licenses/COPYING.APACHE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "third_party/licenses/caldav/licenses/COPYING.GPL",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "third_party/licenses/calendaring-config/licenses/COPYING.APACHE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "third_party/licenses/calendaring-config/licenses/COPYING.GPL",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "third_party/licenses/charset-normalizer/licenses/LICENSE",
+      "sha256": "6d0d41bfe170ac6c7dc248c9a63e254d0fb45a60d50a8257d0af92c6e249b887"
+    },
+    {
+      "path": "third_party/licenses/click/licenses/LICENSE.txt",
+      "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+    },
+    {
+      "path": "third_party/licenses/dnspython/licenses/LICENSE",
+      "sha256": "c3ea3ff5654b329c19d3bc5f7481af623c3dded4a6145585499f843ad3d741cd"
+    },
+    {
+      "path": "third_party/licenses/h11/licenses/LICENSE.txt",
+      "sha256": "37db5bb85926db28a427a25867f10b1232003aea1be69ccb851138adb8e6f361"
+    },
+    {
+      "path": "third_party/licenses/icalendar/licenses/LICENSE.rst",
+      "sha256": "b947bc38239297209e92af36c02baad1099ec65a93104ca326b85a9dbb3cac50"
+    },
+    {
+      "path": "third_party/licenses/icalendar-searcher/licenses/COPYING.APACHE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "third_party/licenses/icalendar-searcher/licenses/COPYING.GPL",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "third_party/licenses/iniconfig/licenses/LICENSE",
+      "sha256": "3409fa91f7ace557894632676656e32264fe5ef7581535725dc9a23774551bd4"
+    },
+    {
+      "path": "third_party/licenses/jh2/licenses/LICENSE",
+      "sha256": "22602e44568a908c8b259d9255dff5f791603804a759e23f51379d2d17302a6c"
+    },
+    {
+      "path": "third_party/licenses/lxml/licenses/LICENSE.txt",
+      "sha256": "8fc2b568133516e46845d2147917adeee1648e70ae9ab5ed6c5417afef4ce855"
+    },
+    {
+      "path": "third_party/licenses/lxml/licenses/LICENSES.txt",
+      "sha256": "388fa99f3bde4447cd5a4cbb114037be026854db6cfe89e112691c1d8abdcf3c"
+    },
+    {
+      "path": "third_party/licenses/niquests/licenses/LICENSE",
+      "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+    },
+    {
+      "path": "third_party/licenses/packaging/licenses/LICENSE",
+      "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+    },
+    {
+      "path": "third_party/licenses/packaging/licenses/LICENSE.APACHE",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "path": "third_party/licenses/packaging/licenses/LICENSE.BSD",
+      "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+    },
+    {
+      "path": "third_party/licenses/paho-mqtt/licenses/LICENSE.txt",
+      "sha256": "66408b049249c3bdb0ba1ed285f5422ce67e371d40151bebd4d806af454ffe7c"
+    },
+    {
+      "path": "third_party/licenses/paho-mqtt/licenses/edl-v10",
+      "sha256": "e8cf7d54ea46c19aba793983889b7f7425e1ebfcaaccec764a7db091646e203c"
+    },
+    {
+      "path": "third_party/licenses/paho-mqtt/licenses/epl-v20",
+      "sha256": "8c349f80764d0648e645f41ef23772a70c995a0924b5235f735f4a3d09df127c"
+    },
+    {
+      "path": "third_party/licenses/pluggy/licenses/LICENSE",
+      "sha256": "d6b65e6c213a5d0b577911d34d6e5949b9f59d76c238c5071a2f3fc16cfb2606"
+    },
+    {
+      "path": "third_party/licenses/pygments/licenses/AUTHORS",
+      "sha256": "71a83872ad82f57be692cf827e048e2cd51d45169cfa1ea3f28706d97a872c0f"
+    },
+    {
+      "path": "third_party/licenses/pygments/licenses/LICENSE",
+      "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+    },
+    {
+      "path": "third_party/licenses/pytest/licenses/LICENSE",
+      "sha256": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b"
+    },
+    {
+      "path": "third_party/licenses/python-dateutil/LICENSE",
+      "sha256": "ba00f51a0d92823b5a1cde27d8b5b9d2321e67ed8da9bc163eff96d5e17e577e"
+    },
+    {
+      "path": "third_party/licenses/pyyaml/licenses/LICENSE",
+      "sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4"
+    },
+    {
+      "path": "third_party/licenses/qh3/licenses/LICENSE",
+      "sha256": "85beac6e7c12428f69d72349754e12e8155a0ce609960fd99e3889af4ee5ba7e"
+    },
+    {
+      "path": "third_party/licenses/recurring-ical-events/licenses/LICENSE",
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118"
+    },
+    {
+      "path": "third_party/licenses/six/LICENSE",
+      "sha256": "4375ba20e2b9c6c4e7cad2940a628fd90e95cc3d50ee92aae755715d8ba1fbd0"
+    },
+    {
+      "path": "third_party/licenses/tzdata/licenses/LICENSE",
+      "sha256": "df58f69ea88683035d720b5375bcef0cf5aeaa98a1d098d572e0992c378deb46"
+    },
+    {
+      "path": "third_party/licenses/tzdata/licenses/licenses/LICENSE_APACHE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "third_party/licenses/urllib3-future/licenses/LICENSE.txt",
+      "sha256": "3a387d8ea43ca7ac1edfff291862cb5913feb7949108a46c7154287552293dad"
+    },
+    {
+      "path": "third_party/licenses/wassima/licenses/LICENSE",
+      "sha256": "3465c55e04631360aaa79364091d41979d78eb5c6c8e6c15b6cd55b62a4711f5"
+    },
+    {
+      "path": "third_party/licenses/websockets/licenses/LICENSE",
+      "sha256": "3d6a0c050d8bec52fabad502e45fb25bd02bcadbd70dea34d447b6a0ff4e6da8"
+    },
+    {
+      "path": "third_party/licenses/x-wr-timezone/LICENSE",
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118"
+    },
+    {
+      "path": "tools/build.py",
+      "sha256": "5dc4f186a2a95cc5e476473b5effcc9ea5ec6ef7621dc85ffa58d4591a187947"
+    },
+    {
+      "path": "tools/check_calendar_lab.py",
+      "sha256": "51e550d528a8f5e11c6bb2bf5207c5cf5f8667082422c6070d755001c871b538"
+    },
+    {
+      "path": "tools/check_candidate_permissions.py",
+      "sha256": "048d454c5f6c00cab8bc265c6566ec53f361ded1d30c57a2dac530a0d4bedf24"
+    },
+    {
+      "path": "tools/check_lab_permissions.py",
+      "sha256": "8d5df082066081dd795d988f6676e6e8cae5d0a01b3e45ab32650ea58436d917"
+    },
+    {
+      "path": "tools/icloud_local/read_only_transport.py",
+      "sha256": "b35ee713a4031bd4d98aa0150fa2c2bbe19535ef73439397480e71b98587ab24"
+    },
+    {
+      "path": "tools/run_demo.py",
+      "sha256": "d24c8c51edbcd304464eb305421027cd914afcf3b094634f9979a7d7e7e3bee7"
+    },
+    {
+      "path": "tools/run_isolated_caldav_e2e.py",
+      "sha256": "ea526a0a671d62dd987641ab97b8ee6a4ac5c3e9d831decd11f9195d8910cab7"
+    },
+    {
+      "path": "tools/run_offline_tests.py",
+      "sha256": "21637552cf4ca03b3ee9fc93a340e0ec1e675365cefefab2edf4a3511b125a04"
+    },
+    {
+      "path": "tools/test_runner.py",
+      "sha256": "605cc89814f26517c433aecb06aac3d9613074ecabe4675a2a036f6c77bbf630"
+    },
+    {
+      "path": "tools/verify_docker_release.py",
+      "sha256": "24aba4d481041fde1c0e9d4657179a66b13b7acd9d9304bf3c721b2056616995"
+    },
+    {
+      "path": "tools/verify_mock_caldav_container.py",
+      "sha256": "e358e8c5634e1b8b71c89ad1995182e0be3324f85a7ff132be7ec3a63d8210df"
+    }
+  ]
+}

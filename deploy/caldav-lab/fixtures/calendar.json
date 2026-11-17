@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "provider": "caldav",
+  "url": "https://caldav.icloud.com/",
+  "calendar_id": null,
+  "timezone": "Asia/Shanghai",
+  "timeout_seconds": 10,
+  "refresh_timeout_seconds": 30,
+  "allow_stale": false
+}

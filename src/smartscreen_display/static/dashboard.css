@@ -1,0 +1,7268 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #111;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dashboard {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 8%;
+  text-align: center;
+}
+
+.clock-panel {
+  margin-bottom: 50px;
+}
+
+#time {
+  font-size: 110px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+#date {
+  margin-top: 18px;
+  font-size: 32px;
+}
+
+.weather-panel {
+  padding-top: 35px;
+  border-top: 1px solid #555;
+}
+
+#condition {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#temperature {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+#humidity {
+  margin-top: 18px;
+  font-size: 28px;
+}
+
+#update-status {
+  margin-top: 32px;
+  font-size: 18px;
+  color: #aaa;
+}
+
+.weather-details {
+  margin-top: 22px;
+  text-align: center;
+}
+
+.weather-details div {
+  display: inline-block;
+  margin: 0 18px;
+}
+
+#apparent-temperature,
+#wind {
+  font-size: 28px;
+}
+
+.primary-panel {
+  width: 100%;
+}
+
+.content-panel {
+  width: 100%;
+  min-height: 80px;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+}
+
+#dashboard-content {
+  width: 100%;
+}
+
+.dashboard-cards {
+  width: 100%;
+  text-align: left;
+}
+
+.dashboard-card {
+  width: 100%;
+  min-height: 80px;
+  padding: 18px 20px;
+  box-sizing: border-box;
+  background: #1a1a1a;
+  border: 1px solid #333;
+}
+
+.dashboard-card-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ddd;
+}
+
+.dashboard-card-body {
+  margin-top: 12px;
+  min-height: 30px;
+  font-size: 20px;
+  color: #bbb;
+}
+
+#photo-card {
+  text-align: center;
+}
+
+#photo-image {
+  display: none;
+  max-width: 100%;
+  max-height: 280px;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+#photo-empty {
+  padding: 28px 0;
+  text-align: center;
+  color: #888;
+}
+
+@media screen and (max-width: 1024px) {
+  .dashboard {
+    width: 92%;
+    padding-top: 6%;
+  }
+
+  #time {
+    font-size: 96px;
+  }
+
+  #date {
+    font-size: 28px;
+  }
+
+  #condition {
+    font-size: 42px;
+  }
+
+  #temperature {
+    font-size: 56px;
+  }
+
+  .dashboard-card {
+    padding: 16px 18px;
+  }
+
+  #photo-image {
+    max-height: 260px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard {
+    width: 94%;
+    padding-top: 5%;
+  }
+
+  .clock-panel {
+    margin-bottom: 36px;
+  }
+
+  #time {
+    font-size: 78px;
+  }
+
+  #date {
+    font-size: 24px;
+  }
+
+  .weather-panel {
+    padding-top: 26px;
+  }
+
+  #condition {
+    font-size: 36px;
+  }
+
+  #temperature {
+    font-size: 48px;
+  }
+
+  .weather-details div {
+    display: block;
+    margin: 8px 0;
+  }
+
+  #apparent-temperature,
+  #humidity,
+  #wind {
+    font-size: 24px;
+  }
+
+  .content-panel {
+    margin-top: 24px;
+  }
+
+  .dashboard-cards {
+    width: 100%;
+  }
+
+  .dashboard-card {
+    padding: 14px 16px;
+  }
+
+  #photo-image {
+    max-height: 220px;
+  }
+
+  #update-status {
+    margin-top: 24px;
+    font-size: 16px;
+  }
+}
+
+#todo-card {
+  margin-top: 18px;
+}
+
+#todo-list {
+  width: 100%;
+}
+
+.todo-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #2f2f2f;
+  font-size: 20px;
+  color: #ddd;
+}
+
+.todo-item:last-child {
+  border-bottom: 0;
+}
+
+.todo-completed {
+  color: #777;
+  text-decoration: line-through;
+}
+
+#home-status-card {
+  margin-top: 18px;
+}
+
+#home-status-list {
+  width: 100%;
+}
+
+.home-status-row {
+  padding: 10px 0;
+  border-bottom: 1px solid #2f2f2f;
+  overflow: hidden;
+}
+
+.home-status-row:last-child {
+  border-bottom: 0;
+}
+
+.home-status-name {
+  float: left;
+  color: #aaa;
+  font-size: 20px;
+}
+
+.home-status-value {
+  float: right;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.home-status-row.state-active .home-status-value {
+  color: #7fdc7f;
+}
+
+.home-status-row.state-inactive .home-status-value {
+  color: #aaa;
+}
+
+.home-status-row.state-warning .home-status-value {
+  color: #ffb347;
+}
+
+.home-status-row.state-unknown .home-status-value {
+  color: #888;
+}
+
+
+/* Home status device icons */
+
+.home-status-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  vertical-align: -2px;
+  position: relative;
+  box-sizing: border-box;
+  color: #aaa;
+}
+
+/* Door / contact sensor */
+.home-status-icon.icon-door {
+  border: 2px solid currentColor;
+  border-radius: 1px;
+}
+
+.home-status-icon.icon-door:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  right: 2px;
+  top: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* Presence / motion sensor */
+.home-status-icon.icon-presence {
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+
+.home-status-icon.icon-presence:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  left: 4px;
+  top: 4px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* Light */
+.home-status-icon.icon-light {
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+
+.home-status-icon.icon-light:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 3px;
+  left: 2px;
+  bottom: -5px;
+  border-top: 2px solid currentColor;
+}
+
+/* Climate */
+.home-status-icon.icon-climate {
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+
+.home-status-icon.icon-climate:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  left: 5px;
+  top: 1px;
+  background: currentColor;
+}
+
+/* Cover / curtain */
+.home-status-icon.icon-cover {
+  border: 2px solid currentColor;
+  border-top-width: 3px;
+}
+
+.home-status-icon.icon-cover:after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 1px;
+  width: 1px;
+  height: 11px;
+  background: currentColor;
+}
+
+.home-status-name {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.home-status-icon {
+  float: left;
+  margin-top: 2px;
+}
+
+.home-status-actionable {
+  cursor: pointer;
+}
+
+.home-status-actionable:active {
+  opacity: 0.6;
+}
+
+.home-status-busy .home-status-actionable {
+  opacity: 0.55;
+}
+
+.home-status-busy .home-status-actionable .home-status-value {
+  font-style: italic;
+}
+
+.home-action-error .home-status-actionable {
+  opacity: 1;
+}
+
+.home-action-error .home-status-actionable .home-status-value {
+  color: #ff6b6b;
+}
+
+.home-status-offline {
+  margin: 8px 0 12px;
+  padding: 8px 10px;
+  border: 1px solid #665f45;
+  border-radius: 4px;
+  background: #2c2a22;
+  color: #d9cf9a;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.home-status-offline div + div {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.home-status-detail {
+  clear: both;
+  margin-left: 26px;
+  margin-top: 4px;
+  color: #aaa;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.home-temperature-controls {
+  clear: both;
+  margin-left: 26px;
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.home-temperature-controls button {
+  width: 28px;
+  height: 24px;
+  margin: 0 8px;
+  padding: 0;
+  border: 1px solid #666;
+  border-radius: 4px;
+  background: #222;
+  color: #fff;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.home-temperature-controls span {
+  display: inline-block;
+  min-width: 38px;
+  text-align: center;
+  color: #fff;
+}
+
+.home-fan-controls {
+  clear: both;
+  margin-left: 26px;
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.home-fan-controls span {
+  margin-right: 8px;
+  color: #aaa;
+}
+
+.home-fan-controls button {
+  height: 24px;
+  margin-right: 8px;
+  padding: 0 10px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  background: #222;
+  color: #fff;
+  font-size: 14px;
+}
+
+.home-hvac-controls {
+  clear: both;
+  margin-left: 26px;
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.home-hvac-controls span {
+  margin-right: 8px;
+  color: #aaa;
+}
+
+.home-hvac-controls button {
+  height: 24px;
+  margin-right: 8px;
+  padding: 0 10px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  background: #222;
+  color: #fff;
+  font-size: 14px;
+}
+
+
+.home-light-controls {
+  clear: both;
+  margin-left: 26px;
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.home-light-controls button {
+  height: 24px;
+  padding: 0 12px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  background: #222;
+  color: #fff;
+  font-size: 14px;
+}
+
+.home-control-active {
+  border-color: #fff !important;
+  background: #555 !important;
+  font-weight: bold;
+}
+
+.home-control-pending .home-fan-controls button,
+.home-control-pending .home-hvac-controls button {
+  opacity: 0.65;
+}
+
+.home-cover-controls {
+  clear: both;
+  margin-left: 26px;
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.home-cover-controls button {
+  height: 24px;
+  margin-right: 8px;
+  padding: 0 10px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  background: #222;
+  color: #fff;
+  font-size: 14px;
+}
+
+#semantic-status-list {
+  width: 100%;
+  margin-top: 10px;
+  border-top: 1px solid #2f2f2f;
+}
+
+.semantic-status-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #2f2f2f;
+  color: #ddd;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.semantic-status-item:last-child {
+  border-bottom: 0;
+}
+
+.semantic-status-empty {
+  padding: 10px 0;
+  color: #888;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+
+.observation-status-section {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.observation-status-title {
+  margin-bottom: 8px;
+  font-size: 13px;
+  opacity: 0.65;
+}
+
+.observation-status-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+.observation-status-location {
+  min-width: 42px;
+  opacity: 0.72;
+}
+
+.observation-status-name {
+  flex: 1;
+  opacity: 0.82;
+}
+
+.observation-status-value {
+  font-variant-numeric: tabular-nums;
+}
+
+.observation-status-empty {
+  padding: 6px 0;
+  font-size: 14px;
+  opacity: 0.55;
+}
+
+.device-control-section {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.device-control-title {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #eee;
+}
+
+.device-control-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 7px 0;
+}
+
+.device-control-label {
+  width: 58px;
+  flex: 0 0 58px;
+  font-size: 14px;
+  opacity: 0.72;
+}
+
+.device-control-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.device-control-buttons button {
+  min-width: 48px;
+  padding: 7px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #ddd;
+  font: inherit;
+  cursor: pointer;
+}
+
+.device-control-buttons button:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.device-control-buttons button:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+.device-control-status {
+  min-height: 18px;
+  margin-top: 8px;
+  font-size: 13px;
+  opacity: 0.68;
+}
+
+.device-control-status.device-control-error {
+  opacity: 1;
+}
+
+.device-control-state-note {
+  margin: -5px 0 5px;
+  font-size: 12px;
+  opacity: 0.55;
+}
+
+.device-control-buttons button.device-control-active {
+  border-color: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.28);
+  color: #fff;
+  font-weight: bold;
+  box-shadow:
+    inset 0 0 0 1px
+    rgba(255, 255, 255, 0.34);
+}
+
+/* Dashboard v1.1 home structure */
+
+#photo-card,
+#home-status-card {
+  display: none;
+}
+
+.dashboard {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 18px;
+}
+
+.primary-panel {
+  display: flex;
+  width: 100%;
+  min-height: 150px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.clock-panel {
+  width: 38%;
+  margin: 0;
+  padding-right: 28px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+#time {
+  font-size: 72px;
+  line-height: 1;
+}
+
+#date {
+  margin-top: 10px;
+  font-size: 23px;
+}
+
+.weather-panel {
+  width: 62%;
+  padding: 8px 0 8px 30px;
+  box-sizing: border-box;
+  border-top: 0;
+  border-left: 1px solid #444;
+  text-align: center;
+}
+
+#condition {
+  margin-bottom: 4px;
+  font-size: 27px;
+}
+
+#temperature {
+  font-size: 44px;
+}
+
+.weather-details {
+  margin-top: 10px;
+}
+
+.weather-details div {
+  margin: 0 8px;
+}
+
+#apparent-temperature,
+#humidity,
+#wind {
+  font-size: 18px;
+}
+
+.content-panel {
+  margin-top: 14px;
+  border-top: 1px solid #333;
+}
+
+.dashboard-card {
+  box-sizing: border-box;
+  padding: 14px 16px;
+}
+
+.dashboard-card-title {
+  font-size: 18px;
+}
+
+.dashboard-card-body {
+  margin-top: 7px;
+  font-size: 17px;
+}
+
+.home-summary {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.home-overview-row {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  align-items: stretch;
+}
+
+#todo-card {
+  width: 38%;
+  margin-top: 0;
+  min-height: 108px;
+}
+
+.todo-item {
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+.family-summary {
+  width: 62%;
+  min-height: 108px;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  text-align: left;
+}
+
+.family-summary-title {
+  font-size: 16px;
+  color: #999;
+}
+
+.family-summary-primary {
+  margin-top: 7px;
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: bold;
+  color: #fff;
+}
+
+.family-summary-attention {
+  margin-top: 7px;
+  min-height: 20px;
+  font-size: 15px;
+  line-height: 1.3;
+  color: #aaa;
+}
+
+.household-actions {
+  display: flex;
+  gap: 9px;
+  margin-top: 10px;
+}
+
+.household-actions button {
+  flex: 1 1 0;
+  min-height: 42px;
+  padding: 0 10px;
+  border: 1px solid #3a3a3a;
+  border-radius: 11px;
+  background: #1a1a1a;
+  color: #eee;
+  font-size: 16px;
+}
+
+.area-overview {
+  display: grid;
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+  gap: 9px;
+  margin-top: 10px;
+}
+
+.area-card {
+  min-height: 70px;
+  padding: 11px 13px;
+  box-sizing: border-box;
+  border: 1px solid #333;
+  border-radius: 12px;
+  background: #1a1a1a;
+  color: #fff;
+  text-align: left;
+}
+
+.area-card-name,
+.area-card-state {
+  display: block;
+}
+
+.area-card-name {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.area-card-state {
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #999;
+}
+
+#update-status {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+/*
+ * 4:3 tablet landscape is the primary dashboard target.
+ * Keep this conservative for older Safari versions.
+ */
+@media screen and (max-width: 1024px) {
+  .dashboard {
+    width: 96%;
+    padding-top: 12px;
+  }
+
+  .primary-panel {
+    min-height: 132px;
+  }
+
+  .clock-panel {
+    width: 36%;
+    padding-right: 20px;
+  }
+
+  .weather-panel {
+    width: 64%;
+    padding-left: 20px;
+  }
+
+  #time {
+    font-size: 62px;
+  }
+
+  #date {
+    font-size: 20px;
+  }
+
+  #condition {
+    font-size: 24px;
+  }
+
+  #temperature {
+    font-size: 39px;
+  }
+
+  #apparent-temperature,
+  #humidity,
+  #wind {
+    font-size: 16px;
+  }
+
+  #todo-card {
+    width: 36%;
+  }
+
+  .family-summary {
+    width: 64%;
+  }
+
+  .area-overview {
+    grid-template-columns:
+      repeat(4, minmax(0, 1fr));
+  }
+
+  .area-card {
+    min-height: 66px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .primary-panel {
+    display: block;
+  }
+
+  .clock-panel,
+  .weather-panel {
+    width: 100%;
+  }
+
+  .clock-panel {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .weather-panel {
+    margin-top: 16px;
+    padding: 16px 0 0;
+    border-left: 0;
+    border-top: 1px solid #444;
+  }
+
+  .home-overview-row {
+    display: block;
+  }
+
+  #todo-card,
+  .family-summary {
+    width: 100%;
+  }
+
+  .family-summary {
+    margin-top: 10px;
+  }
+
+  .household-actions {
+    flex-wrap: wrap;
+  }
+
+  .household-actions button {
+    flex: 1 1 40%;
+  }
+
+  .area-overview {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* Dashboard v1.1 area sheet */
+
+.area-sheet {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.area-sheet.area-sheet-open {
+  display: block;
+}
+
+.area-sheet-backdrop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: rgba(0, 0, 0, 0.66);
+}
+
+.area-sheet-panel {
+  position: absolute;
+  top: 6%;
+  right: 4%;
+  bottom: 6%;
+  width: 64%;
+  max-width: 720px;
+  box-sizing: border-box;
+  padding: 22px;
+  overflow-y: auto;
+  border: 1px solid #3a3a3a;
+  border-radius: 18px;
+  background: #171717;
+  color: #fff;
+  text-align: left;
+}
+
+.area-sheet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.area-sheet-eyebrow {
+  font-size: 14px;
+  color: #888;
+}
+
+#area-sheet-title {
+  margin: 4px 0 0;
+  font-size: 28px;
+}
+
+.area-sheet-close {
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid #444;
+  border-radius: 12px;
+  background: #222;
+  color: #eee;
+  font-size: 28px;
+  line-height: 38px;
+}
+
+.area-sheet-content {
+  margin-top: 20px;
+}
+
+.area-sheet-device {
+  padding: 15px 0;
+  border-top: 1px solid #303030;
+}
+
+.area-sheet-device:first-child {
+  border-top: 0;
+}
+
+.area-sheet-device-name {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.area-sheet-device-location {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #8f8f8f;
+}
+
+.area-sheet-empty {
+  padding: 24px 0;
+  color: #999;
+  font-size: 16px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .area-sheet-panel {
+    top: 3%;
+    right: 3%;
+    bottom: 3%;
+    left: 3%;
+    width: auto;
+    max-width: none;
+    padding: 18px;
+  }
+}
+
+
+.area-sheet-device-note {
+  margin-top: 9px;
+  font-size: 14px;
+  line-height: 1.35;
+  color: #999;
+}
+
+.area-sheet-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.area-sheet-control-label {
+  font-size: 15px;
+  color: #aaa;
+}
+
+.area-sheet-control .device-control-buttons {
+  flex: 0 0 auto;
+}
+
+.area-sheet-device-detail {
+  margin-top: 8px;
+  padding: 7px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #ddd;
+  font: inherit;
+  cursor: pointer;
+}
+
+.area-sheet-device-detail:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.special-device-overlay {
+  position: fixed;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 2000;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px;
+
+  box-sizing: border-box;
+
+  background:
+    rgba(0, 0, 0, 0.58);
+}
+
+.special-device-overlay.special-device-overlay-open {
+  display: flex;
+}
+
+.special-device-sheet {
+  position: relative;
+
+  width: 680px;
+  max-width: 92%;
+
+  max-height: 88%;
+
+  overflow: auto;
+
+  padding: 28px 26px 24px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  background: #1f2024;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.42);
+}
+
+.special-device-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #eee;
+  font: inherit;
+  font-size: 24px;
+  line-height: 34px;
+  cursor: pointer;
+}
+
+.special-device-body .device-control-section {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+
+/* Dashboard v1.1 UI polish */
+
+.area-card-state-primary,
+.area-card-state-secondary {
+  display: block;
+}
+
+.area-card-state-primary {
+  color: #d8d8d8;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.area-card-state-secondary {
+  margin-top: 3px;
+  color: #8f8f8f;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.area-sheet-control-label {
+  flex: 0 0 auto;
+  min-width: 76px;
+  white-space: nowrap;
+}
+
+.area-sheet-control .device-control-buttons {
+  flex: 1 1 auto;
+  justify-content: flex-end;
+}
+
+
+/*
+ * Dashboard Warm Minimal v2
+ *
+ * Presentation-only styling.
+ * Keep device semantics and control behavior outside this layer.
+ */
+
+body {
+  background:
+    radial-gradient(
+      circle at 72% -15%,
+      rgba(91, 76, 57, 0.16),
+      rgba(15, 15, 14, 0) 44%
+    ),
+    #0f0f0e;
+  color: #f3f0ea;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    "SF Pro Text",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.dashboard {
+  width: 94%;
+  max-width: 1500px;
+  padding-top: 24px;
+}
+
+.primary-panel {
+  min-height: 156px;
+}
+
+.clock-panel {
+  padding-right: 36px;
+}
+
+#time {
+  color: #f7f4ee;
+  font-size: 76px;
+  font-weight: 600;
+  letter-spacing: -3px;
+}
+
+#date {
+  margin-top: 12px;
+  color: #b8b3aa;
+  font-size: 21px;
+  font-weight: 450;
+}
+
+.weather-panel {
+  padding-left: 36px;
+  border-left-color: rgba(255, 255, 255, 0.10);
+}
+
+#condition {
+  color: #d9d4cc;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#temperature {
+  color: #f7f4ee;
+  font-size: 46px;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+}
+
+.weather-details {
+  margin-top: 14px;
+  color: #aaa49a;
+}
+
+#apparent-temperature,
+#humidity,
+#wind {
+  font-size: 15px;
+  font-weight: 450;
+}
+
+.content-panel {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top-color: rgba(255, 255, 255, 0.09);
+}
+
+.home-summary {
+  margin-top: 0;
+}
+
+.home-overview-row {
+  gap: 12px;
+}
+
+#todo-card,
+.family-summary {
+  min-height: 102px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(38, 37, 34, 0.92),
+      rgba(27, 27, 25, 0.92)
+    );
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.035),
+    0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+#todo-card {
+  padding: 15px 17px;
+}
+
+.dashboard-card-title {
+  color: #aaa49b;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dashboard-card-body {
+  margin-top: 8px;
+}
+
+.todo-item {
+  padding: 4px 0;
+  color: #e5e1da;
+  font-size: 15px;
+}
+
+.todo-item + .todo-item {
+  border-top: 1px solid rgba(255, 255, 255, 0.055);
+}
+
+.family-summary {
+  padding: 15px 18px;
+}
+
+.family-summary-title {
+  color: #8e8980;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.family-summary-primary {
+  margin-top: 6px;
+  color: #ece8e1;
+  font-size: 18px;
+  line-height: 1.28;
+  font-weight: 560;
+}
+
+.family-summary-attention {
+  margin-top: 6px;
+  min-height: 0;
+  color: #a49e94;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.area-overview {
+  gap: 11px;
+  margin-top: 14px;
+}
+
+.area-card {
+  min-height: 88px;
+  padding: 13px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.065);
+  border-radius: 16px;
+  background:
+    linear-gradient(
+      150deg,
+      rgba(34, 34, 31, 0.96),
+      rgba(25, 25, 23, 0.96)
+    );
+  color: #f1eee8;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.025),
+    0 8px 24px rgba(0, 0, 0, 0.10);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.area-card:active {
+  background:
+    linear-gradient(
+      150deg,
+      rgba(45, 43, 39, 0.98),
+      rgba(31, 30, 27, 0.98)
+    );
+}
+
+.area-card-name {
+  color: #ebe7df;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 580;
+}
+
+.area-card-state {
+  margin-top: 7px;
+}
+
+.area-card-state-primary {
+  color: #d8d2c8;
+  font-size: 18px;
+  line-height: 1.15;
+  font-weight: 520;
+  letter-spacing: -0.3px;
+}
+
+.area-card-state-secondary {
+  margin-top: 5px;
+  color: #8f8a82;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.household-actions {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  width: fit-content;
+  max-width: 100%;
+  margin: 14px auto 0;
+  padding: 3px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  background: rgba(29, 29, 27, 0.78);
+}
+
+.household-actions button {
+  flex: 0 0 auto;
+  min-width: 102px;
+  min-height: 32px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 11px;
+  background: transparent;
+  color: #99948b;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.household-actions button:active {
+  background: rgba(255, 255, 255, 0.07);
+  color: #e7e2da;
+}
+
+#update-status {
+  margin-top: 11px;
+  color: #77736c;
+  font-size: 12px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .dashboard {
+    width: 95%;
+    padding-top: 18px;
+  }
+
+  .primary-panel {
+    min-height: 138px;
+  }
+
+  #time {
+    font-size: 66px;
+  }
+
+  #date {
+    font-size: 18px;
+  }
+
+  #condition {
+    font-size: 21px;
+  }
+
+  #temperature {
+    font-size: 40px;
+  }
+
+  .area-card {
+    min-height: 82px;
+    padding: 12px 13px;
+  }
+
+  .area-card-state-primary {
+    font-size: 17px;
+  }
+
+  .household-actions button {
+    min-width: 88px;
+    padding: 0 13px;
+  }
+}
+
+
+/*
+ * Home V2
+ * Apple-inspired, presentation-only dashboard polish.
+ *
+ * Keep the visual hierarchy quiet:
+ * content first, decoration second.
+ */
+
+body {
+  background:
+    radial-gradient(
+      circle at 50% -18%,
+      #262727 0,
+      #171818 42%,
+      #0d0e0e 100%
+    );
+  color: #f5f5f7;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    "SF Pro Text",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.dashboard {
+  position: relative;
+}
+
+.home-summary {
+  margin-top: 0;
+}
+
+
+/*
+ * Today / Todo / Reminder
+ */
+
+.home-overview-row {
+  display: flex;
+  width: auto;
+  margin: 0 -5px;
+  gap: 0;
+  align-items: stretch;
+}
+
+.home-overview-card {
+  width: calc(33.333% - 10px);
+  flex: 0 0 calc(33.333% - 10px);
+  min-height: 94px;
+  margin: 5px;
+  padding: 15px 17px;
+  box-sizing: border-box;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.055);
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(42, 43, 43, 0.74),
+      rgba(29, 30, 30, 0.70)
+    );
+
+  box-shadow:
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.035),
+    0 9px 28px
+      rgba(0, 0, 0, 0.12);
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+.home-overview-card .dashboard-card-title {
+  color: rgba(235, 235, 245, 0.56);
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+}
+
+.home-overview-card .dashboard-card-body {
+  margin-top: 9px;
+  color: rgba(245, 245, 247, 0.92);
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+#today-summary {
+  font-size: 17px;
+  line-height: 1.3;
+  font-weight: 560;
+  letter-spacing: -0.15px;
+}
+
+.todo-item {
+  padding: 3px 0;
+  color: rgba(245, 245, 247, 0.88);
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.todo-item + .todo-item {
+  border-top:
+    1px solid rgba(255, 255, 255, 0.045);
+}
+
+.todo-completed {
+  color: rgba(235, 235, 245, 0.34);
+}
+
+#reminder-list {
+  color: rgba(235, 235, 245, 0.62);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+/*
+ * Rooms — fixed visual 4 × 2 arrangement.
+ * Actual ordering remains presentation-config driven.
+ */
+
+.area-overview {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  margin: 9px -5px 0;
+  gap: 0;
+}
+
+.area-card {
+  width: calc(25% - 10px);
+  flex: 0 0 calc(25% - 10px);
+
+  min-height: 82px;
+  margin: 5px;
+  padding: 13px 15px;
+  box-sizing: border-box;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      150deg,
+      rgba(36, 37, 37, 0.82),
+      rgba(25, 26, 26, 0.78)
+    );
+
+  color: #f5f5f7;
+  text-align: left;
+
+  box-shadow:
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.026),
+    0 7px 22px
+      rgba(0, 0, 0, 0.09);
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+.area-card:active {
+  background:
+    linear-gradient(
+      150deg,
+      rgba(48, 49, 49, 0.86),
+      rgba(31, 32, 32, 0.84)
+    );
+}
+
+.area-card-name {
+  display: block;
+  color: rgba(245, 245, 247, 0.76);
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 560;
+  letter-spacing: -0.08px;
+}
+
+.area-card-state {
+  display: block;
+  margin-top: 8px;
+}
+
+.area-card-state-primary,
+.area-card-state-secondary {
+  display: block;
+}
+
+.area-card-state-primary {
+  margin-top: 0;
+  color: rgba(255, 255, 255, 0.96);
+  font-size: 18px;
+  line-height: 1.12;
+  font-weight: 560;
+  letter-spacing: -0.35px;
+}
+
+.area-card-state-secondary {
+  margin-top: 5px;
+  color: rgba(235, 235, 245, 0.43);
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+
+/*
+ * Household action dock.
+ */
+
+.household-actions {
+  display: flex;
+  justify-content: center;
+
+  width: fit-content;
+  max-width: calc(100% - 34px);
+
+  gap: 2px;
+  margin: 9px auto 8px;
+  padding: 4px;
+
+  box-sizing: border-box;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.055);
+  border-radius: 16px;
+
+  background:
+    rgba(35, 36, 36, 0.68);
+
+  box-shadow:
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.03),
+    0 8px 24px
+      rgba(0, 0, 0, 0.12);
+}
+
+.household-actions button {
+  flex: 0 0 auto;
+
+  min-width: 96px;
+  min-height: 31px;
+  padding: 0 15px;
+
+  border: 0;
+  border-radius: 12px;
+
+  background: transparent;
+
+  color: rgba(235, 235, 245, 0.52);
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 520;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+.household-actions button:active {
+  background:
+    rgba(255, 255, 255, 0.075);
+  color:
+    rgba(255, 255, 255, 0.90);
+}
+
+.household-actions button:disabled {
+  opacity: 0.38;
+}
+
+
+/*
+ * Compact maintenance freshness indicator.
+ * Deliberately no visible text line.
+ */
+
+.update-status {
+  position: absolute;
+  right: 2px;
+  bottom: 13px;
+
+  width: 8px;
+  height: 8px;
+  margin: 0;
+
+  border-radius: 50%;
+  box-sizing: border-box;
+
+  background: #66686a;
+
+  box-shadow:
+    0 0 0 1px
+      rgba(255, 255, 255, 0.055);
+}
+
+.update-status-fresh {
+  background: #769078;
+}
+
+.update-status-pending {
+  background: #797979;
+}
+
+.update-status-error {
+  background: #a66762;
+}
+
+
+/*
+ * Primary 4:3 tablet target.
+ */
+
+@media screen and (max-width: 1024px) {
+  .home-overview-card {
+    width: calc(33.333% - 8px);
+    flex: 0 0 calc(33.333% - 8px);
+
+    min-height: 87px;
+    margin: 4px;
+    padding: 13px 15px;
+  }
+
+  .area-overview {
+    margin:
+      7px -4px 0;
+  }
+
+  .area-card {
+    width: calc(25% - 8px);
+    flex: 0 0 calc(25% - 8px);
+
+    min-height: 75px;
+    margin: 4px;
+    padding: 11px 13px;
+  }
+
+  .area-card-state-primary {
+    font-size: 17px;
+  }
+
+  .household-actions {
+    margin-top: 6px;
+  }
+
+  .household-actions button {
+    min-width: 82px;
+    min-height: 29px;
+    padding: 0 12px;
+  }
+
+  .update-status {
+    right: 1px;
+    bottom: 11px;
+    width: 7px;
+    height: 7px;
+  }
+}
+
+
+/*
+ * Narrow fallback.
+ */
+
+@media screen and (max-width: 768px) {
+  .home-overview-row {
+    display: block;
+    margin: 0;
+  }
+
+  .home-overview-card {
+    width: 100%;
+    min-height: 0;
+    margin: 8px 0 0;
+  }
+
+  .area-card {
+    width: calc(50% - 8px);
+    flex: 0 0 calc(50% - 8px);
+  }
+
+  .household-actions {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .household-actions button {
+    flex: 1 1 40%;
+  }
+}
+
+
+/*
+ * ==========================================================
+ * Area Sheet Device Icon Layer V1
+ *
+ * Presentation only.
+ * Small monochrome line icons improve scanability without
+ * changing Device Data or control semantics.
+ * ==========================================================
+ */
+
+.area-sheet-device-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.area-sheet-device-name-text {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.area-sheet-device-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+
+  min-width: 20px;
+  flex: 0 0 20px;
+
+  color:
+    rgba(226, 220, 211, 0.62);
+}
+
+.area-sheet-device-icon svg {
+  display: block;
+
+  width: 20px;
+  height: 20px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.65;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.area-sheet-device-light
+.area-sheet-device-icon-light {
+  color:
+    rgba(228, 219, 203, 0.68);
+}
+
+.area-sheet-device-boolean-on
+.area-sheet-device-icon-light {
+  color:
+    rgba(255, 183, 28, 0.98);
+}
+
+.area-sheet-device-climate
+.area-sheet-device-icon-climate {
+  color:
+    rgba(198, 215, 220, 0.78);
+}
+
+.area-sheet-device-special
+.area-sheet-device-icon-purifier {
+  color:
+    rgba(229, 190, 126, 0.82);
+}
+
+.area-sheet-device-readonly
+.area-sheet-device-icon {
+  color:
+    rgba(205, 199, 190, 0.58);
+}
+
+.area-sheet-device-name-opener {
+  display: flex;
+  align-items: center;
+}
+
+.area-sheet-device-name-arrow {
+  flex: 0 0 auto;
+  margin-left: 2px;
+}
+
+@media screen and (min-width: 769px)
+  and (max-width: 1366px) {
+
+  .area-sheet-device-icon {
+    width: 19px;
+    height: 19px;
+
+    min-width: 19px;
+    flex-basis: 19px;
+  }
+
+  .area-sheet-device-icon svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .area-sheet-device-name {
+    gap: 7px;
+  }
+}
+
+
+
+/*
+ * ==========================================================
+ * Area Sheet HA Tile Visual V1
+ *
+ * Presentation only.
+ *
+ * Simple one-boolean devices use the Home Assistant inspired
+ * entity-tile composition:
+ *
+ *   [device icon]  name / state          [power]
+ *
+ * Existing SmartScreenOS device identity, delegated power
+ * targeting and control dispatch remain unchanged.
+ * ==========================================================
+ */
+
+.area-sheet-device-boolean {
+  position: relative;
+}
+
+
+/*
+ * Circular entity icon.
+ */
+
+.area-sheet-device-boolean
+.area-sheet-device-icon {
+  width: 40px;
+  height: 40px;
+
+  min-width: 40px;
+  flex: 0 0 40px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255, 255, 255, 0.075);
+
+  color:
+    rgba(222, 218, 211, 0.72);
+
+  transition:
+    background 140ms ease,
+    color 140ms ease;
+}
+
+
+.area-sheet-device-boolean
+.area-sheet-device-icon svg {
+  width: 22px;
+  height: 22px;
+
+  stroke-width: 1.75;
+}
+
+
+/*
+ * Active entity icon.
+ */
+
+.area-sheet-device-boolean-on
+.area-sheet-device-icon {
+  background:
+    rgba(245, 166, 35, 0.18);
+
+  color:
+    rgba(255, 183, 28, 0.98);
+}
+
+
+/*
+ * Name + state are stacked beside the icon.
+ */
+
+.area-sheet-device-boolean
+.area-sheet-device-name {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  min-width: 0;
+
+  padding-right: 56px;
+}
+
+
+.area-sheet-device-boolean
+.area-sheet-device-name-text {
+  display: block;
+
+  min-width: 0;
+
+  line-height: 1.22;
+}
+
+
+/*
+ * State subtitle.
+ */
+
+.area-sheet-device-boolean
+.area-sheet-device-name-text:after {
+  display: block;
+
+  margin-top: 3px;
+
+  color:
+    rgba(220, 216, 209, 0.58);
+
+  font-size: 13px;
+  line-height: 1.15;
+  font-weight: 450;
+}
+
+
+.area-sheet-device-boolean-on
+.area-sheet-device-name-text:after {
+  content: "开启";
+}
+
+
+.area-sheet-device-boolean-off
+.area-sheet-device-name-text:after {
+  content: "关闭";
+}
+
+
+.area-sheet-device-boolean-unknown
+.area-sheet-device-name-text:after {
+  content: "状态未知";
+}
+
+
+/*
+ * The boolean body no longer behaves like a wide switch row.
+ */
+
+.area-sheet-device-boolean
+.area-sheet-device-body {
+  margin: 0;
+}
+
+
+.area-sheet-device-boolean
+.area-sheet-control-ha-tile {
+  position: static;
+
+  width: auto;
+  min-height: 0;
+
+  margin: 0;
+}
+
+
+.area-sheet-device-boolean
+.area-sheet-control-ha-tile
+.area-sheet-control-label {
+  display: none;
+}
+
+
+.area-sheet-device-boolean
+.area-sheet-control-ha-tile
+.device-control-buttons {
+  position: static;
+
+  width: auto;
+}
+
+
+/*
+ * HA-style boolean tile control.
+ *
+ * The existing SmartScreenOS boolean control keeps its
+ * control semantics. Presentation follows the HA tile:
+ * identity/state above, wide two-position action below.
+ */
+
+.area-sheet-device-boolean-on {
+  border-color:
+    rgba(228, 170, 67, 0.18);
+}
+
+.area-sheet-device-boolean-unknown {
+  opacity: 0.58;
+}
+
+
+/*
+ * iPad Final Base V1
+ * Fixed 4:3 landscape composition for legacy Safari.
+ *
+ * Do not depend on viewport-height sizing or nested flex height propagation.
+ * Explicit dimensions keep the dedicated smart-screen layout stable.
+ */
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  html,
+  body {
+    width: 100%;
+    min-height: 100%;
+  }
+
+  body {
+    overflow: auto;
+  }
+
+  .dashboard {
+    width: 95%;
+    max-width: none;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px 0 8px;
+    box-sizing: border-box;
+  }
+
+  /*
+   * Clock + weather
+   */
+
+  .primary-panel {
+    width: 100%;
+    height: 172px;
+    min-height: 172px;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+  .clock-panel {
+    width: 38%;
+    margin: 0;
+    padding-right: 22px;
+    box-sizing: border-box;
+  }
+
+  .weather-panel {
+    width: 62%;
+    padding: 5px 0 5px 22px;
+    box-sizing: border-box;
+  }
+
+  #time {
+    font-size: 62px;
+    line-height: 0.96;
+    letter-spacing: -2px;
+  }
+
+  #date {
+    margin-top: 6px;
+    color: rgba(235, 231, 223, 0.62);
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: -0.15px;
+  }
+
+  #condition {
+    margin-bottom: 4px;
+    font-size: 19px;
+  }
+
+  #temperature {
+    font-size: 38px;
+  }
+
+  .weather-details {
+    margin-top: 8px;
+  }
+
+  #apparent-temperature,
+  #humidity,
+  #wind {
+    font-size: 13px;
+  }
+
+  /*
+   * Main home content
+   */
+
+  .content-panel {
+    width: 100%;
+    min-height: 0;
+    margin-top: 7px;
+    padding-top: 8px;
+  }
+
+  #dashboard-content,
+  .dashboard-cards,
+  .home-summary {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+  }
+
+  .dashboard-cards,
+  .home-summary {
+    display: block;
+  }
+
+  /*
+   * Today / Todo / Reminder
+   */
+
+  .home-overview-row {
+    display: flex;
+    width: auto;
+    height: 96px;
+    margin: 0 -4px;
+    gap: 0;
+    align-items: stretch;
+  }
+
+  .home-overview-card {
+    width: calc(33.333% - 8px);
+    flex: 0 0 calc(33.333% - 8px);
+    height: 88px;
+    min-height: 88px;
+    margin: 4px;
+    padding: 11px 13px;
+    box-sizing: border-box;
+    border-radius: 15px;
+  }
+
+  .home-overview-card .dashboard-card-title {
+    font-size: 13px;
+  }
+
+  .home-overview-card .dashboard-card-body {
+    margin-top: 6px;
+    font-size: 13px;
+    line-height: 1.3;
+  }
+
+  #today-summary {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .todo-item {
+    padding: 2px 0;
+    font-size: 13px;
+  }
+
+  #reminder-list {
+    font-size: 13px;
+  }
+
+  /*
+   * Rooms
+   * Fixed 4 × 2 home matrix.
+   */
+
+  .area-overview {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: 360px;
+    margin: 5px -4px 0;
+    gap: 0;
+    align-content: flex-start;
+  }
+
+  .area-card {
+    width: calc(25% - 8px);
+    flex: 0 0 calc(25% - 8px);
+
+    height: 142px;
+    min-height: 142px;
+
+    margin: 4px;
+    padding: 14px 14px;
+    box-sizing: border-box;
+
+    border-radius: 16px;
+  }
+
+  .area-card-name {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .area-card-state {
+    margin-top: 10px;
+  }
+
+  .area-card-state-primary {
+    font-size: 21px;
+  }
+
+  .area-card-state-secondary {
+    margin-top: 6px;
+    font-size: 13px;
+  }
+
+  /*
+   * Bottom household dock.
+   * It is intentionally outside content-panel in the DOM.
+   */
+
+  .household-actions {
+    width: fit-content;
+    max-width: calc(100% - 30px);
+
+    margin: 8px auto 0;
+    padding: 3px;
+
+    border-radius: 15px;
+  }
+
+  .household-actions button {
+    min-width: 92px;
+    min-height: 36px;
+    padding: 0 14px;
+
+    font-size: 12px;
+  }
+
+  .update-status {
+    right: 2px;
+    bottom: 12px;
+
+    width: 7px;
+    height: 7px;
+  }
+}
+
+/*
+ * iPad Final Cards V1
+ * Approved 4:3 home-screen presentation.
+ *
+ * Presentation only:
+ * preserve dashboard semantics, room ordering,
+ * device identity and existing control paths.
+ */
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  /*
+   * Give the translucent iOS status area
+   * a little more breathing room.
+   */
+
+  .dashboard {
+    padding-top: 18px;
+  }
+
+  /*
+   * Today / Todo / Reminder.
+   * All three cards intentionally share
+   * exactly the same geometry and hierarchy.
+   */
+
+  .home-overview-row {
+    height: 112px;
+    margin: 0 -5px;
+  }
+
+  #today-card,
+  #todo-card,
+  #reminder-card {
+    width: calc(33.333% - 10px);
+    flex: 0 0 calc(33.333% - 10px);
+
+    height: 104px;
+    min-height: 104px;
+
+    margin: 5px;
+    padding: 14px 16px;
+
+    box-sizing: border-box;
+
+    border:
+      1px solid rgba(255, 255, 255, 0.065);
+
+    border-radius: 17px;
+
+    background:
+      linear-gradient(
+        145deg,
+        rgba(38, 43, 47, 0.80),
+        rgba(24, 29, 33, 0.76)
+      );
+
+    box-shadow:
+      inset 0 1px 0
+        rgba(255, 255, 255, 0.032),
+      0 7px 20px
+        rgba(0, 0, 0, 0.09);
+  }
+
+  .home-overview-card .dashboard-card-title {
+    color: rgba(245, 245, 247, 0.84);
+
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 580;
+  }
+
+  .home-overview-card .dashboard-card-body {
+    margin-top: 8px;
+
+    color: rgba(235, 235, 245, 0.68);
+
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  #today-summary {
+    margin-top: 0;
+
+    color: rgba(235, 235, 245, 0.72);
+
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+
+    letter-spacing: 0;
+  }
+
+  .todo-item {
+    padding: 1px 0;
+
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  #reminder-list {
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  /*
+   * Rooms remain the visual center of gravity.
+   * Keep the fixed 4 × 2 geometry required
+   * by the legacy-Safari tablet layout.
+   */
+
+  .area-card {
+    border:
+      1px solid rgba(255, 255, 255, 0.065);
+
+    border-radius: 17px;
+
+    background:
+      linear-gradient(
+        145deg,
+        rgba(37, 42, 46, 0.80),
+        rgba(24, 29, 33, 0.76)
+      );
+
+    box-shadow:
+      inset 0 1px 0
+        rgba(255, 255, 255, 0.03),
+      0 7px 20px
+        rgba(0, 0, 0, 0.085);
+  }
+
+  /*
+   * Bottom household dock.
+   */
+
+  .household-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: auto;
+    max-width: 620px;
+
+    gap: 3px;
+
+    margin: 9px auto 0;
+    padding: 5px;
+
+    box-sizing: border-box;
+
+    border:
+      1px solid rgba(255, 255, 255, 0.065);
+
+    border-radius: 20px;
+
+    background:
+      rgba(27, 32, 36, 0.74);
+
+    box-shadow:
+      inset 0 1px 0
+        rgba(255, 255, 255, 0.032),
+      0 8px 22px
+        rgba(0, 0, 0, 0.11);
+  }
+
+  .household-actions button,
+  .music-shortcut {
+    flex: 0 0 auto;
+
+    min-width: 90px;
+    min-height: 38px;
+
+    padding: 0 13px;
+
+    box-sizing: border-box;
+
+    border: 0;
+    border-radius: 14px;
+
+    background: transparent;
+
+    color: rgba(245, 245, 247, 0.68);
+
+    font-family:
+      -apple-system,
+      BlinkMacSystemFont,
+      "Helvetica Neue",
+      Arial,
+      sans-serif;
+
+    font-size: 12px;
+    line-height: 38px;
+    font-weight: 520;
+
+    text-align: center;
+    text-decoration: none;
+
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .household-actions button:active,
+  .music-shortcut:active {
+    background:
+      rgba(255, 255, 255, 0.075);
+
+    color:
+      rgba(255, 255, 255, 0.96);
+  }
+
+  .music-shortcut-icon {
+    display: inline-block;
+
+    margin-right: 5px;
+
+    color: #ff5f78;
+
+    font-size: 18px;
+    line-height: 1;
+
+    vertical-align: -1px;
+  }
+
+  /*
+   * Maintenance freshness indicator.
+   * It is deliberately quiet and separated
+   * from normal household actions.
+   */
+
+  .update-status {
+    position: relative;
+
+    display: inline-block;
+    flex: 0 0 auto;
+
+    width: 7px;
+    height: 7px;
+
+    margin:
+      0 11px
+      0 22px;
+
+    border-radius: 50%;
+
+    box-shadow:
+      0 0 0 1px
+        rgba(255, 255, 255, 0.06);
+  }
+
+  .update-status:before {
+    content: "";
+
+    position: absolute;
+
+    left: -15px;
+    top: 50%;
+
+    width: 1px;
+    height: 22px;
+
+    margin-top: -11px;
+
+    background:
+      rgba(255, 255, 255, 0.10);
+  }
+
+  .update-status-fresh {
+    box-shadow:
+      0 0 0 1px
+        rgba(255, 255, 255, 0.06),
+      0 0 7px
+        rgba(123, 138, 113, 0.32);
+  }
+
+  .update-status-error {
+    box-shadow:
+      0 0 0 1px
+        rgba(255, 255, 255, 0.06),
+      0 0 7px
+        rgba(155, 98, 92, 0.30);
+  }
+}
+
+/*
+ * Weather condition icon.
+ *
+ * Shared by desktop and iPad. Geometry belongs here;
+ * responsive blocks may adjust position only.
+ */
+.weather-icon {
+  position: absolute;
+
+  width: 55px;
+  height: 55px;
+}
+
+/* Cloud */
+.weather-icon-cloudy:before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 18px;
+
+  width: 55px;
+  height: 27px;
+
+  border-radius: 17px;
+
+  background: #e8f1f8;
+
+  box-shadow:
+    0 2px 10px
+      rgba(160, 205, 235, 0.18);
+}
+
+.weather-icon-cloudy:after {
+  content: "";
+
+  position: absolute;
+
+  left: 13px;
+  top: 5px;
+
+  width: 29px;
+  height: 29px;
+
+  border-radius: 50%;
+
+  background: #e8f1f8;
+
+  box-shadow:
+    20px 7px 0 -2px #e8f1f8;
+}
+
+/*
+ * Sun — explicit geometry.
+ *
+ * 40px disc.
+ * Eight independent 7px rays.
+ * One ray every 45 degrees.
+ */
+.weather-icon-sunny {
+  width: 64px;
+  height: 64px;
+
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.weather-icon-sunny:before,
+.weather-icon-sunny:after {
+  content: none;
+  display: none;
+}
+
+.weather-icon .sun-disc,
+.weather-icon .sun-ray {
+  display: none;
+}
+
+.weather-icon-sunny .sun-disc,
+.weather-icon-sunny .sun-ray {
+  display: block;
+  position: absolute;
+}
+
+.weather-icon-sunny .sun-disc {
+  left: 12px;
+  top: 12px;
+
+  width: 40px;
+  height: 40px;
+
+  box-sizing: border-box;
+
+  border: 3px solid #e8f1f8;
+  border-radius: 50%;
+
+  box-shadow:
+    0 2px 10px
+      rgba(160, 205, 235, 0.18);
+}
+
+/*
+ * Every ray starts at the same point:
+ * centred horizontally, 2px from the top.
+ *
+ * transform-origin is the exact sun centre:
+ * x = 1px
+ * y = 30px
+ */
+.weather-icon-sunny .sun-ray {
+  left: 31px;
+  top: 2px;
+
+  width: 2px;
+  height: 7px;
+
+  border-radius: 2px;
+
+  background: #e8f1f8;
+
+  transform-origin: 1px 30px;
+}
+
+.weather-icon-sunny .sun-ray-0 {
+  transform: rotate(0deg);
+}
+
+.weather-icon-sunny .sun-ray-1 {
+  transform: rotate(45deg);
+}
+
+.weather-icon-sunny .sun-ray-2 {
+  transform: rotate(90deg);
+}
+
+.weather-icon-sunny .sun-ray-3 {
+  transform: rotate(135deg);
+}
+
+.weather-icon-sunny .sun-ray-4 {
+  transform: rotate(180deg);
+}
+
+.weather-icon-sunny .sun-ray-5 {
+  transform: rotate(225deg);
+}
+
+.weather-icon-sunny .sun-ray-6 {
+  transform: rotate(270deg);
+}
+
+.weather-icon-sunny .sun-ray-7 {
+  transform: rotate(315deg);
+}
+
+/*
+ * iPad Final Polish V1
+ * Final weather and household-dock presentation.
+ *
+ * Presentation only.
+ * Final 4:3 legacy-Safari presentation layer.
+ */
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+
+  /*
+   * Final composition offset.
+   * Move the complete home presentation down
+   * without changing internal layout geometry.
+   */
+  .dashboard {
+    position: relative;
+    top: 6px;
+  }
+
+
+  /*
+   * Weather hero.
+   *
+   * Keep existing DOM and data paths.
+   * The cloud is CSS-drawn so old iOS does not
+   * substitute a colored emoji glyph.
+   */
+
+  .weather-panel {
+    position: relative;
+
+    min-height: 118px;
+
+    padding:
+      14px 0
+      10px 108px;
+
+    box-sizing: border-box;
+
+    text-align: left;
+  }
+
+  .weather-icon {
+    left: 37px;
+    top: 13px;
+  }
+
+  #condition {
+    display: block;
+
+    margin: 0 0 2px;
+
+    color:
+      rgba(245, 245, 247, 0.92);
+
+    font-size: 18px;
+    line-height: 1.1;
+    font-weight: 560;
+  }
+
+  #condition:before {
+    content: none;
+    display: none;
+  }
+
+  #temperature {
+    display: block;
+
+    margin: 0;
+
+    color:
+      rgba(255, 255, 255, 0.98);
+
+    font-size: 42px;
+    line-height: 1;
+    font-weight: 590;
+
+    letter-spacing: -1px;
+  }
+
+  .weather-details {
+    display: flex;
+
+    margin-top: 11px;
+    margin-left: -72px;
+
+    gap: 30px;
+
+    color:
+      rgba(235, 235, 245, 0.70);
+  }
+
+  #apparent-temperature,
+  #humidity,
+  #wind {
+    flex: 0 0 auto;
+
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+
+  /*
+   * Household dock.
+   *
+   * Visually associate it with the room grid,
+   * rather than letting it fall against the
+   * bottom edge of the screen.
+   */
+
+  .household-actions {
+    position: relative;
+    top: -30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 665px;
+    max-width: calc(100% - 24px);
+
+    min-height: 54px;
+
+    gap: 8px;
+
+    margin:
+      6px auto
+      6px;
+
+    padding:
+      6px 8px;
+
+    box-sizing: border-box;
+
+    border:
+      1px solid
+        rgba(120, 175, 215, 0.13);
+
+    border-radius: 27px;
+
+    background:
+      rgba(22, 29, 34, 0.80);
+
+    box-shadow:
+      inset 0 1px 0
+        rgba(255, 255, 255, 0.032),
+      0 8px 22px
+        rgba(0, 0, 0, 0.11);
+  }
+
+  .household-actions button,
+  .music-shortcut {
+    flex: 0 0 auto;
+
+    min-width: 108px;
+
+    height: 40px;
+    min-height: 40px;
+
+    padding:
+      0 13px;
+
+    box-sizing: border-box;
+
+    border:
+      1px solid
+        rgba(140, 190, 225, 0.13);
+
+    border-radius: 16px;
+
+    background:
+      linear-gradient(
+        145deg,
+        rgba(48, 59, 67, 0.84),
+        rgba(36, 45, 52, 0.78)
+      );
+
+    color:
+      rgba(250, 250, 252, 0.91);
+
+    font-size: 12px;
+    line-height: 40px;
+    font-weight: 560;
+
+    text-align: center;
+    text-decoration: none;
+
+    -webkit-tap-highlight-color:
+      transparent;
+  }
+
+  .household-actions button[
+    data-household-action="all_lights_off"
+  ] {
+    min-width: 122px;
+  }
+
+  .music-shortcut {
+    min-width: 110px;
+  }
+
+  .household-actions button:active,
+  .music-shortcut:active {
+    background:
+      rgba(64, 74, 82, 0.88);
+
+    color:
+      rgba(255, 255, 255, 0.98);
+  }
+
+  .music-shortcut-icon {
+    display: inline-block;
+
+    margin-right: 5px;
+
+    color: #ff5875;
+
+    font-size: 19px;
+    line-height: 1;
+
+    vertical-align: -2px;
+  }
+
+
+  /*
+   * Freshness status.
+   *
+   * Keep it on the dock's visual centerline.
+   */
+
+  .update-status {
+    position: relative;
+    top: -4px;
+    left: 3px;
+
+    display: inline-block;
+    flex: 0 0 auto;
+
+    width: 8px;
+    height: 8px;
+
+    margin:
+      0 8px
+      0 14px;
+
+    align-self: center;
+
+    border-radius: 50%;
+  }
+
+  .update-status:before {
+    content: "";
+
+    position: absolute;
+
+    left: -12px;
+    top: 50%;
+
+    width: 1px;
+    height: 26px;
+
+    margin-top: -13px;
+
+    background:
+      rgba(205, 220, 232, 0.18);
+  }
+
+  .update-status-fresh {
+    background: #71e86c;
+
+    box-shadow:
+      0 0 0 1px
+        rgba(255, 255, 255, 0.07),
+      0 0 7px
+        rgba(113, 232, 108, 0.38);
+  }
+
+  .update-status-pending {
+    background: #777b7d;
+  }
+
+  .update-status-error {
+    background: #c76d67;
+
+    box-shadow:
+      0 0 6px
+        rgba(199, 109, 103, 0.30);
+  }
+}
+
+
+/*
+ * Room Card Presentation V2 / B3
+ * Warm charcoal base with restrained
+ * champagne occupancy light.
+ */
+
+.area-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(43, 42, 40, 0.82),
+      rgba(27, 28, 28, 0.80)
+    );
+}
+
+.area-card-occupied {
+  border-color:
+    rgba(229, 204, 164, 0.12);
+
+  background:
+    radial-gradient(
+      circle at 88% 10%,
+      rgba(239, 190, 125, 0.10),
+      rgba(239, 190, 125, 0.035) 24%,
+      rgba(239, 190, 125, 0.0) 50%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(47, 44, 40, 0.88),
+      rgba(29, 30, 29, 0.84)
+    );
+
+  box-shadow:
+    inset 0 1px 0
+      rgba(255, 248, 236, 0.045),
+    0 7px 20px
+      rgba(0, 0, 0, 0.085);
+}
+
+.area-card-dim {
+  /*
+   * Dim is a secondary semantic state.
+   * Do not increase the whole card's visual weight.
+   */
+}
+
+.area-card-state-secondary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 8px;
+}
+
+.area-card-state-item {
+  display: inline-flex;
+  align-items: center;
+
+  min-height: 19px;
+  padding: 0 3px;
+
+  border: 0;
+  border-radius: 0;
+
+  background: transparent;
+
+  color:
+    rgba(239, 233, 224, 0.58);
+
+  font-size: 11px;
+  line-height: 19px;
+  white-space: nowrap;
+}
+
+.area-card-occupied
+.area-card-state-item:first-child::before {
+  content: "";
+
+  width: 6px;
+  height: 6px;
+  margin-right: 5px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(244, 190, 120, 0.92);
+
+  box-shadow:
+    0 0 7px
+      rgba(244, 190, 120, 0.22);
+}
+
+.area-card-dim
+.area-card-state-item:last-child::before {
+  content: "";
+
+  width: 6px;
+  height: 6px;
+  margin-right: 5px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(216, 166, 93, 0.82);
+
+  box-shadow:
+    0 0 6px
+      rgba(216, 166, 93, 0.16);
+}
+
+
+/*
+ * Room Card Lighting State
+ *
+ * A confirmed lighting power state is presented
+ * as ambient room light rather than another label.
+ */
+
+.area-card-lights-on {
+  border-color:
+    rgba(236, 207, 158, 0.14);
+
+  box-shadow:
+    inset 0 1px 0
+      rgba(255, 248, 236, 0.045),
+    inset -28px -5px 44px
+      rgba(242, 194, 117, 0.075),
+    0 7px 20px
+      rgba(0, 0, 0, 0.085);
+}
+
+.area-card-occupied.area-card-lights-on {
+  border-color:
+    rgba(237, 207, 160, 0.16);
+
+  box-shadow:
+    inset 0 1px 0
+      rgba(255, 248, 236, 0.05),
+    inset -30px -6px 48px
+      rgba(244, 195, 116, 0.09),
+    0 7px 20px
+      rgba(0, 0, 0, 0.085);
+}
+
+
+/*
+ * Area Sheet Presentation V2
+ *
+ * Wide compact room control surface for iPad landscape.
+ *
+ * Legacy-Safari-safe presentation:
+ * - flexbox instead of CSS Grid
+ * - explicit complex-device class instead of :has()
+ * - no viewport-height layout dependency
+ *
+ * Device identity, Device Data semantics, delegation and
+ * control dispatch remain owned by the existing pipeline.
+ */
+
+.area-sheet-backdrop {
+  background:
+    rgba(4, 5, 5, 0.72);
+}
+
+.area-sheet-panel {
+  top: 4%;
+  right: 3%;
+  bottom: 4%;
+
+  width: 74%;
+  max-width: 1180px;
+
+  padding: 20px 22px 22px;
+
+  border-color:
+    rgba(255, 255, 255, 0.12);
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(29, 29, 28, 0.985),
+      rgba(20, 20, 19, 0.99)
+    );
+
+  box-shadow:
+    0 30px 90px
+      rgba(0, 0, 0, 0.44),
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.035);
+}
+
+.area-sheet-header {
+  align-items: center;
+  min-height: 54px;
+  padding: 0 2px 12px;
+}
+
+.area-sheet-eyebrow {
+  color:
+    rgba(223, 217, 207, 0.45);
+
+  font-size: 12px;
+}
+
+#area-sheet-title {
+  margin-top: 2px;
+
+  color: #f3efe8;
+
+  font-size: 28px;
+  line-height: 1.08;
+  font-weight: 620;
+  letter-spacing: -0.7px;
+}
+
+.area-sheet-close {
+  width: 42px;
+  height: 42px;
+
+  border-color:
+    rgba(255, 255, 255, 0.13);
+
+  border-radius: 13px;
+
+  background:
+    rgba(255, 255, 255, 0.045);
+
+  color:
+    rgba(247, 243, 236, 0.92);
+
+  font-size: 27px;
+  line-height: 38px;
+}
+
+
+/*
+ * Flex room-device surface.
+ *
+ * Negative outer margins compensate the per-tile margins
+ * so three equal columns fit reliably without relying on
+ * CSS gap or Grid sizing.
+ */
+
+.area-sheet-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+
+  width: auto;
+
+  margin:
+    4px -5px 0;
+
+  padding-bottom: 4px;
+}
+
+.area-sheet-device {
+  margin: 0;
+  padding: 0;
+
+  border-top: 0;
+}
+
+.area-sheet-device-tile {
+  position: relative;
+
+  width:
+    calc(33.333% - 10px);
+
+  flex:
+    0 0 calc(33.333% - 10px);
+
+  min-width: 0;
+  min-height: 94px;
+
+  margin: 5px;
+  padding: 14px 15px;
+
+  box-sizing: border-box;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.075);
+
+  border-radius: 15px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(43, 42, 39, 0.78),
+      rgba(31, 31, 29, 0.82)
+    );
+
+  box-shadow:
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.025),
+    0 7px 20px
+      rgba(0, 0, 0, 0.09);
+}
+
+
+/*
+ * Complex devices get two columns.
+ *
+ * The class is assigned by renderAreaSheet(), avoiding
+ * CSS :has() on legacy Safari.
+ */
+
+.area-sheet-device-complex {
+  width:
+    calc(66.666% - 10px);
+
+  flex:
+    0 0 calc(66.666% - 10px);
+}
+
+.area-sheet-device-name {
+  min-width: 0;
+
+  padding-right: 6px;
+
+  color:
+    rgba(245, 241, 234, 0.94);
+
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 590;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.area-sheet-device-note {
+  margin-top: 5px;
+
+  color:
+    rgba(209, 202, 191, 0.48);
+
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+.area-sheet-control {
+  min-height: 32px;
+
+  margin-top: 9px;
+
+  gap: 10px;
+}
+
+.area-sheet-control-label {
+  min-width: 0;
+
+  color:
+    rgba(218, 211, 201, 0.50);
+
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+.area-sheet-control
+.device-control-buttons {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 6px;
+
+  justify-content: flex-end;
+}
+
+.area-sheet-control
+.device-control-buttons button {
+  min-height: 31px;
+
+  padding: 0 11px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.12);
+
+  border-radius: 10px;
+
+  background:
+    rgba(255, 255, 255, 0.035);
+
+  color:
+    rgba(233, 228, 220, 0.78);
+
+  font-size: 13px;
+}
+
+.area-sheet-control
+.device-control-buttons
+button.device-control-active {
+  border-color:
+    rgba(248, 241, 229, 0.68);
+
+  background:
+    rgba(236, 227, 213, 0.21);
+
+  color:
+    rgba(255, 252, 246, 0.97);
+
+  box-shadow:
+    inset 0 0 0 1px
+      rgba(255, 255, 255, 0.13);
+}
+
+
+/*
+ * Boolean controls.
+ */
+
+.area-sheet-control-boolean {
+  align-items: center;
+
+  margin-top: 10px;
+}
+
+.area-sheet-control-boolean
+.area-sheet-control-label {
+  display: none;
+}
+
+.area-sheet-control-boolean
+.device-control-buttons {
+  width: 100%;
+
+  flex-wrap: nowrap;
+
+  justify-content: flex-end;
+}
+
+.area-sheet-toggle {
+  position: relative;
+
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+
+  width: 136px;
+  min-width: 136px;
+
+  height: 48px;
+  min-height: 48px !important;
+
+  padding: 0 !important;
+
+  border-radius:
+    24px !important;
+}
+
+.area-sheet-toggle-knob {
+  position: absolute;
+
+  pointer-events: none;
+
+  transition:
+    left 140ms ease;
+
+  top: 4px;
+  left: 4px;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(244, 241, 235, 0.90);
+
+  box-shadow:
+    0 1px 4px
+      rgba(0, 0, 0, 0.28);
+}
+
+.area-sheet-toggle-on {
+  border-color:
+    rgba(235, 195, 128, 0.40)
+    !important;
+
+  background:
+    rgba(207, 157, 82, 0.42)
+    !important;
+}
+
+.area-sheet-toggle-on
+.area-sheet-toggle-knob {
+  left: 92px;
+
+  background:
+    rgba(255, 246, 226, 0.98);
+}
+
+.area-sheet-toggle-off {
+  background:
+    rgba(255, 255, 255, 0.055)
+    !important;
+}
+
+.area-sheet-toggle-unknown {
+  opacity: 0.38;
+}
+
+
+/*
+ * Read-only state tiles.
+ */
+
+.area-sheet-device-readonly,
+.area-sheet-device-state {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(36, 36, 34, 0.65),
+      rgba(27, 27, 26, 0.72)
+    );
+}
+
+.area-sheet-device-readonly
+.area-sheet-control,
+.area-sheet-device-state
+.area-sheet-control {
+  margin-top: 7px;
+}
+
+
+/*
+ * IAM purifier.
+ */
+
+.area-sheet-device-special {
+  background:
+    radial-gradient(
+      circle at 93% 12%,
+      rgba(229, 190, 126, 0.08),
+      rgba(229, 190, 126, 0) 42%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(44, 42, 38, 0.86),
+      rgba(30, 30, 28, 0.86)
+    );
+}
+
+.area-sheet-device-detail {
+  margin-top: 9px;
+
+  min-height: 31px;
+
+  padding: 0 12px;
+
+  border-color:
+    rgba(230, 207, 171, 0.20);
+
+  border-radius: 10px;
+
+  background:
+    rgba(222, 190, 140, 0.075);
+
+  color:
+    rgba(239, 225, 204, 0.88);
+
+  font-size: 12px;
+}
+
+
+/*
+ * iPad / tablet landscape.
+ *
+ * Keep this explicit rather than depending on Grid or
+ * viewport-height behaviour.
+ */
+
+@media screen and (min-width: 769px)
+  and (max-width: 1366px) {
+
+  /*
+   * iPad landscape is a complete control surface:
+   * fit the room in one sheet without normal vertical
+   * scrolling. Device semantics and control dispatch
+   * remain unchanged.
+   */
+
+  .area-sheet-panel {
+    top: 2%;
+    right: 2%;
+    bottom: 2%;
+
+    width: 78%;
+    max-width: none;
+
+    padding:
+      14px 15px 15px;
+
+    overflow-y: hidden;
+  }
+
+  .area-sheet-header {
+    min-height: 46px;
+
+    padding-bottom: 7px;
+  }
+
+  #area-sheet-title {
+    font-size: 27px;
+  }
+
+  .area-sheet-device-name {
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 620;
+  }
+
+  .area-sheet-control-label {
+    font-size: 13px;
+  }
+
+  .area-sheet-control
+  .device-control-buttons button:not(.area-sheet-toggle) {
+    min-height: 38px;
+
+    padding: 0 13px;
+
+    border-radius: 11px;
+
+    font-size: 14px;
+  }
+
+  .area-sheet-close {
+    width: 40px;
+    height: 40px;
+
+    line-height: 36px;
+  }
+
+  .area-sheet-content {
+    margin:
+      2px -3px 0;
+  }
+
+  .area-sheet-device-tile {
+    width:
+      calc(33.333% - 6px);
+
+    flex:
+      0 0 calc(33.333% - 6px);
+
+    min-height: 76px;
+
+    margin: 3px;
+    padding: 10px 11px;
+  }
+
+  /*
+   * Climate and other genuinely complex devices keep
+   * two columns. Their controls need horizontal room
+   * more than additional vertical whitespace.
+   */
+  .area-sheet-device-complex {
+    width:
+      calc(66.666% - 6px);
+
+    flex:
+      0 0 calc(66.666% - 6px);
+  }
+
+  /*
+   * A one-boolean device is intentionally compact.
+   * The switch already communicates the control type,
+   * so no secondary "开关" row is needed.
+   */
+  /*
+   * HA-inspired simple switch card.
+   *
+   * Identity and current state live together at the top;
+   * the entire lower width becomes a large touch surface.
+   */
+  .area-sheet-device-boolean {
+    display: block;
+
+    min-height: 118px;
+
+    padding:
+      12px 13px 13px;
+  }
+
+  .area-sheet-device-boolean
+  .area-sheet-device-header {
+    display: block;
+
+    min-width: 0;
+
+    padding-right: 0;
+  }
+
+  .area-sheet-device-boolean
+  .area-sheet-device-name {
+    font-size: 17px;
+    line-height: 1.18;
+    font-weight: 620;
+  }
+
+  .area-sheet-device-boolean
+  .area-sheet-device-name:after {
+    display: block;
+
+    margin-top: 3px;
+
+    color:
+      rgba(226, 220, 211, 0.62);
+
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 450;
+  }
+
+  .area-sheet-device-boolean-on
+  .area-sheet-device-name:after {
+    content: "开启";
+  }
+
+  .area-sheet-device-boolean-off
+  .area-sheet-device-name:after {
+    content: "关闭";
+  }
+
+  .area-sheet-device-boolean-unknown
+  .area-sheet-device-name:after {
+    content: "状态未知";
+  }
+
+  .area-sheet-device-boolean
+  .area-sheet-device-body {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 10px;
+  }
+
+  .area-sheet-device-boolean
+  .area-sheet-control {
+    display: block;
+
+    width: 100%;
+
+    min-height: 54px;
+
+    margin-top: 0;
+  }
+
+  .area-sheet-device-boolean
+  .area-sheet-control-boolean {
+    margin-top: 0;
+  }
+
+  .area-sheet-device-boolean
+  .device-control-buttons {
+    display: block;
+
+    width: 100%;
+  }
+
+  .area-sheet-device-boolean
+  .area-sheet-toggle {
+    width: 100%;
+    min-width: 0;
+
+    height: 54px;
+    min-height: 54px !important;
+
+    border-radius:
+      18px !important;
+  }
+
+  .area-sheet-device-boolean
+  .area-sheet-toggle-knob {
+    top: 5px;
+    left: 4px;
+
+    width: 44px;
+    height: 44px;
+  }
+
+  .area-sheet-device-boolean
+  .area-sheet-toggle-on
+  .area-sheet-toggle-knob {
+    left:
+      calc(100% - 48px);
+  }
+
+  /*
+   * HA boolean tile.
+   *
+   * Keep identity/state above the control and let the
+   * lower action occupy the available card width.
+   */
+  .area-sheet-device-boolean {
+    display: block;
+
+    min-height: 118px;
+
+    padding:
+      12px 13px 13px;
+  }
+
+  .area-sheet-device-boolean
+  .area-sheet-device-header {
+    display: block;
+
+    min-width: 0;
+
+    padding-right: 0;
+  }
+
+  .area-sheet-device-boolean
+  .area-sheet-device-name {
+    min-height: 0;
+
+    padding-right: 0;
+
+    font-size: 17px;
+    line-height: 1.18;
+    font-weight: 620;
+  }
+
+  .area-sheet-device-boolean
+  .area-sheet-device-name:after {
+    display: block;
+
+    margin-top: 3px;
+
+    color:
+      rgba(226, 220, 211, 0.62);
+
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 450;
+  }
+
+  .area-sheet-device-boolean-on
+  .area-sheet-device-name:after {
+    content: "开启";
+  }
+
+  .area-sheet-device-boolean-off
+  .area-sheet-device-name:after {
+    content: "关闭";
+  }
+
+  .area-sheet-device-boolean-unknown
+  .area-sheet-device-name:after {
+    content: "状态未知";
+  }
+
+  .area-sheet-device-boolean
+  .area-sheet-device-body {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 10px;
+  }
+
+  .area-sheet-device-boolean
+  .area-sheet-control-ha-tile {
+    display: block;
+
+    width: 100%;
+
+    min-height: 54px;
+
+    margin-top: 0;
+  }
+
+  .area-sheet-device-boolean
+  .area-sheet-control-ha-tile
+  .device-control-buttons {
+    display: block;
+
+    width: 100%;
+  }
+
+  .area-sheet-device-boolean
+  .area-sheet-ha-toggle {
+    position: relative;
+
+    top: auto;
+    right: auto;
+
+    width: 100%;
+    min-width: 0;
+
+    height: 54px;
+    min-height: 54px !important;
+
+    padding: 0 !important;
+
+    border-radius:
+      18px !important;
+
+    transform: none;
+  }
+
+
+  /*
+   * Read-only sensors should read like status cards,
+   * not tall control forms.
+   */
+  .area-sheet-device-readonly {
+    min-height: 72px;
+
+    padding:
+      9px 11px;
+  }
+
+  .area-sheet-device-readonly
+  .area-sheet-control {
+    min-height: 22px;
+
+    margin-top: 5px;
+  }
+
+  /*
+   * IAM stays visually distinct, but gives back
+   * unnecessary vertical space.
+   */
+  .area-sheet-device-special {
+    min-height: 132px;
+
+    padding:
+      10px 11px;
+  }
+
+  .area-sheet-device-special
+  .area-sheet-device-note {
+    margin-top: 3px;
+  }
+
+  .area-sheet-device-special
+  .area-sheet-device-detail {
+    margin-top: 5px;
+
+    min-height: 28px;
+  }
+
+  .area-sheet-device-special
+  .area-sheet-control {
+    margin-top: 5px;
+  }
+
+  /*
+   * Keep the larger touch switch, but make it fit
+   * naturally inside compact iPad cards.
+   */
+  .area-sheet-toggle {
+    width: 126px;
+    min-width: 126px;
+  }
+
+  .area-sheet-toggle-on
+  .area-sheet-toggle-knob {
+    left: 82px;
+  }
+}
+
+
+/*
+ * Narrow fallback.
+ */
+
+@media screen and (max-width: 768px) {
+  .area-sheet-panel {
+    top: 3%;
+    right: 3%;
+    bottom: 3%;
+    left: 3%;
+
+    width: auto;
+    max-width: none;
+  }
+
+  .area-sheet-device-tile {
+    width:
+      calc(50% - 10px);
+
+    flex:
+      0 0 calc(50% - 10px);
+  }
+
+  .area-sheet-device-complex {
+    width:
+      calc(100% - 10px);
+
+    flex:
+      0 0 calc(100% - 10px);
+  }
+}
+
+/*
+ * ==========================================================
+ * Area Sheet Adaptive Layout V2
+ *
+ * compact : 1-2 simple visible devices
+ * medium  : 3-6 ordinary visible devices
+ * complex : 3-6 devices with complex controls
+ * dense   : 7+ visible devices
+ *
+ * Small and medium sheets shrink vertically to content.
+ * Dense rooms retain the large whole-room control surface.
+ *
+ * Presentation only.
+ * ==========================================================
+ */
+
+@media screen and (min-width: 769px)
+  and (max-width: 1366px) {
+
+  /*
+   * Shared content-height behaviour.
+   */
+
+  .area-sheet-layout-compact
+  .area-sheet-panel,
+
+  .area-sheet-layout-medium
+  .area-sheet-panel,
+
+  .area-sheet-layout-complex
+  .area-sheet-panel {
+    bottom: auto;
+
+    height: auto;
+    max-height: 90%;
+
+    overflow-y: auto;
+  }
+
+
+  /*
+   * COMPACT
+   * 1–2 simple devices.
+   *
+   * Example: 过廊.
+   */
+
+  .area-sheet-layout-compact
+  .area-sheet-panel {
+    top: 8%;
+    right: 4%;
+
+    width: 50%;
+    max-width: 690px;
+
+    padding:
+      18px 18px 20px;
+  }
+
+  .area-sheet-layout-compact
+  .area-sheet-content {
+    margin:
+      6px -5px 0;
+  }
+
+  .area-sheet-layout-compact
+  .area-sheet-device-tile {
+    width:
+      calc(50% - 10px);
+
+    flex:
+      0 0 calc(50% - 10px);
+
+    margin: 5px;
+  }
+
+  .area-sheet-layout-compact
+  .area-sheet-device-complex {
+    width:
+      calc(100% - 10px);
+
+    flex:
+      0 0 calc(100% - 10px);
+  }
+
+
+  /*
+   * MEDIUM
+   * 3–6 ordinary devices.
+   *
+   * Example: 主卫.
+   */
+
+  .area-sheet-layout-medium
+  .area-sheet-panel {
+    top: 6%;
+    right: 3.5%;
+
+    width: 60%;
+    max-width: 820px;
+
+    padding:
+      18px 18px 20px;
+  }
+
+  .area-sheet-layout-medium
+  .area-sheet-content {
+    margin:
+      5px -5px 0;
+  }
+
+  .area-sheet-layout-medium
+  .area-sheet-device-tile {
+    width:
+      calc(50% - 10px);
+
+    flex:
+      0 0 calc(50% - 10px);
+
+    margin: 5px;
+  }
+
+
+  /*
+   * COMPLEX
+   * 3–6 devices containing climate, curtain position,
+   * robot multi-select, etc.
+   *
+   * Examples: 主卧 / 公主房 / 客卫.
+   */
+
+  .area-sheet-layout-complex
+  .area-sheet-panel {
+    top: 4%;
+    right: 3%;
+
+    width: 70%;
+    max-width: 960px;
+
+    padding:
+      18px 18px 20px;
+  }
+
+  .area-sheet-layout-complex
+  .area-sheet-content {
+    margin:
+      5px -5px 0;
+  }
+
+  .area-sheet-layout-complex
+  .area-sheet-device-tile {
+    width:
+      calc(50% - 10px);
+
+    flex:
+      0 0 calc(50% - 10px);
+
+    margin: 5px;
+  }
+
+  /*
+   * A presentation-configured wide device receives a full row
+   * on a two-column complex sheet.
+   */
+  .area-sheet-layout-complex
+  .area-sheet-device-complex {
+    width:
+      calc(100% - 10px);
+
+    flex:
+      0 0 calc(100% - 10px);
+  }
+
+
+  /*
+   * DENSE
+   * 7+ devices.
+   *
+   * Example: 客餐厅.
+   */
+
+  .area-sheet-layout-dense
+  .area-sheet-panel {
+    top: 2%;
+    right: 2%;
+    bottom: 2%;
+
+    width: 78%;
+    max-width: none;
+
+    height: auto;
+    max-height: none;
+
+    overflow-y: auto;
+  }
+
+  .area-sheet-layout-dense
+  .area-sheet-device-tile {
+    width:
+      calc(33.333% - 6px);
+
+    flex:
+      0 0 calc(33.333% - 6px);
+  }
+
+  .area-sheet-layout-dense
+  .area-sheet-device-complex {
+    width:
+      calc(66.666% - 6px);
+
+    flex:
+      0 0 calc(66.666% - 6px);
+  }
+}
+
+
+/*
+ * ==========================================================
+ * Area Sheet Component Polish V1
+ *
+ * HA-inspired touch controls for legacy iPad.
+ *
+ * Presentation only.
+ * ==========================================================
+ */
+
+
+/*
+ * Boolean control
+ *
+ * The moving element occupies half of the track.
+ * This creates a clear two-position control instead of
+ * the previous small circular switch.
+ */
+
+.area-sheet-toggle {
+  position: relative;
+
+  box-sizing: border-box;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.10)
+    !important;
+
+  background:
+    rgba(255, 255, 255, 0.09)
+    !important;
+
+  box-shadow:
+    inset 0 1px 2px
+      rgba(0, 0, 0, 0.20);
+}
+
+
+.area-sheet-toggle-knob {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 4px;
+  left: 4px;
+
+  width:
+    calc(50% - 4px);
+
+  height:
+    calc(100% - 8px);
+
+  box-sizing: border-box;
+
+  border-radius:
+    13px;
+
+  background:
+    rgba(189, 188, 185, 0.76);
+
+  box-shadow:
+    0 1px 3px
+      rgba(0, 0, 0, 0.18);
+
+  transition:
+    left 140ms ease,
+    background 140ms ease;
+}
+
+
+.area-sheet-toggle-off
+.area-sheet-toggle-knob {
+  left: 4px;
+
+  background:
+    rgba(191, 190, 187, 0.74);
+}
+
+
+.area-sheet-toggle-on {
+  border-color:
+    rgba(224, 175, 77, 0.26)
+    !important;
+
+  background:
+    rgba(121, 84, 26, 0.50)
+    !important;
+}
+
+
+.area-sheet-toggle-on
+.area-sheet-toggle-knob {
+  left: 50%;
+
+  background:
+    rgba(246, 174, 39, 0.96);
+}
+
+
+/*
+ * Small neutral power glyph.
+ *
+ * CSS-only so the old iPad requires no icon font or SVG.
+ */
+
+.area-sheet-toggle-symbol {
+  position: relative;
+
+  display: block;
+
+  width: 24px;
+  height: 24px;
+
+  opacity: 0.90;
+}
+
+
+.area-sheet-toggle-symbol:before {
+  content: "";
+
+  position: absolute;
+
+  top: 4px;
+  left: 5px;
+
+  width: 12px;
+  height: 12px;
+
+  border:
+    2px solid
+    rgba(255, 255, 255, 0.92);
+
+  border-top-color:
+    transparent;
+
+  border-radius: 50%;
+}
+
+
+.area-sheet-toggle-symbol:after {
+  content: "";
+
+  position: absolute;
+
+  top: 1px;
+  left: 11px;
+
+  width: 2px;
+  height: 10px;
+
+  border-radius: 1px;
+
+  background:
+    rgba(255, 255, 255, 0.94);
+}
+
+
+/*
+ * Curtain action row.
+ *
+ * "状态" is redundant; the three buttons already explain
+ * the action.
+ */
+
+.area-sheet-control-cover-state {
+  display: block;
+
+  width: 100%;
+
+  margin-top: 12px;
+}
+
+
+.area-sheet-control-cover-state
+.area-sheet-control-label {
+  display: none;
+}
+
+
+.area-sheet-control-cover-state
+.device-control-buttons {
+  display: flex;
+
+  width: 100%;
+
+  flex-wrap: nowrap;
+
+  gap: 8px;
+
+  justify-content: stretch;
+}
+
+
+.area-sheet-control-cover-state
+.device-control-buttons button {
+  flex: 1 1 0;
+
+  min-width: 0;
+}
+
+
+/*
+ * Xiaomi curtain position row.
+ */
+
+.area-sheet-control-cover-position {
+  width: 100%;
+
+  margin-top: 10px;
+}
+
+
+.area-sheet-control-cover-position
+.area-sheet-control-label {
+  min-width: 46px;
+}
+
+
+/*
+ * iPad touch sizing and typography.
+ */
+
+@media screen and (min-width: 769px)
+  and (max-width: 1366px) {
+
+  .area-sheet-device-name {
+    font-size: 17px;
+    line-height: 1.18;
+    font-weight: 620;
+  }
+
+
+  .area-sheet-control-label {
+    font-size: 13px;
+  }
+
+
+  .area-sheet-control
+  .device-control-buttons
+  button:not(.area-sheet-toggle) {
+    min-height: 40px;
+
+    padding:
+      0 13px;
+
+    border-radius:
+      11px;
+
+    font-size: 14px;
+  }
+
+
+  /*
+   * Simple Boolean device cards.
+   */
+
+  .area-sheet-device-boolean
+  .area-sheet-toggle {
+    width: 100%;
+    min-width: 0;
+
+    height: 56px;
+    min-height: 56px !important;
+
+    border-radius:
+      17px !important;
+  }
+
+
+  .area-sheet-device-boolean
+  .area-sheet-toggle-knob {
+    top: 4px;
+
+    width:
+      calc(50% - 4px);
+
+    height:
+      calc(100% - 8px);
+
+    border-radius:
+      13px;
+  }
+
+
+  .area-sheet-device-boolean
+  .area-sheet-toggle-off
+  .area-sheet-toggle-knob {
+    left: 4px;
+  }
+
+
+  .area-sheet-device-boolean
+  .area-sheet-toggle-on
+  .area-sheet-toggle-knob {
+    left: 50%;
+  }
+
+
+  /*
+   * Curtain actions.
+   */
+
+  .area-sheet-control-cover-state
+  .device-control-buttons button {
+    min-height: 42px;
+
+    font-size: 15px;
+  }
+
+
+  .area-sheet-control-cover-position
+  .device-control-buttons button {
+    min-height: 38px;
+  }
+}
+
+/*
+ * Purifier power.
+ */
+
+.area-sheet-control-purifier-power {
+  margin-top: 10px;
+
+  min-height: 44px;
+}
+
+.area-sheet-control-purifier-power
+.device-control-buttons {
+  display: flex;
+
+  width: 100%;
+
+  gap: 8px;
+}
+
+.area-sheet-control-purifier-power
+.device-control-buttons button {
+  flex: 1 1 50%;
+
+  min-height: 42px;
+
+  border-radius: 12px;
+}
+
+
+/*
+ * Robot primary actions.
+ */
+
+.area-sheet-device
+button[data-device-control="return_to_dock"] {
+  min-width: 92px;
+}
+
+
+/*
+ * Existing batteries should always remain readable.
+ */
+
+.area-sheet-device-readonly
+.area-sheet-readonly-value {
+  white-space: nowrap;
+}
+
+
+/*
+ * ==========================================================
+ * IAM Purifier Inline Controls V1
+ * ==========================================================
+ */
+
+.area-sheet-device-special {
+  min-height: 0;
+}
+
+.area-sheet-device-special
+.area-sheet-device-detail,
+.area-sheet-device-special
+.area-sheet-device-note {
+  display: none;
+}
+
+.area-sheet-device-special
+.area-sheet-control {
+  margin-top: 8px;
+}
+
+.area-sheet-device-special
+.area-sheet-control-label {
+  font-size: 13px;
+}
+
+.area-sheet-device-special
+.device-control-buttons button {
+  min-height: 36px;
+
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.area-sheet-control-purifier-power {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+}
+
+.area-sheet-control-purifier-power
+.area-sheet-control-label {
+  flex: 0 0 auto;
+}
+
+.area-sheet-control-purifier-power
+.device-control-buttons {
+  width: auto;
+
+  flex: 0 0 auto;
+}
+
+.area-sheet-control-purifier-power
+.device-control-buttons button {
+  min-width: 74px;
+}
+
+@media screen and (min-width: 769px)
+  and (max-width: 1366px) {
+
+  .area-sheet-device-special {
+    min-height: 0;
+  }
+
+  .area-sheet-device-special
+  .area-sheet-control {
+    margin-top: 6px;
+  }
+}
+
+/*
+ * ==========================================================
+ * IAM Purifier Inline Boolean Controls V2
+ * ==========================================================
+ */
+
+.area-sheet-device-special
+.area-sheet-control-purifier-boolean {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  margin-top: 7px;
+
+  min-height: 38px;
+}
+
+.area-sheet-device-special
+.area-sheet-control-purifier-boolean
+.area-sheet-control-label {
+  flex: 0 0 auto;
+
+  min-width: 52px;
+
+  font-size: 13px;
+}
+
+.area-sheet-device-special
+.area-sheet-control-purifier-boolean
+.device-control-buttons {
+  display: flex;
+
+  width: auto;
+
+  flex: 0 0 auto;
+
+  gap: 7px;
+
+  justify-content: flex-end;
+}
+
+.area-sheet-device-special
+.area-sheet-control-purifier-boolean
+.device-control-buttons button {
+  min-width: 72px;
+  min-height: 36px;
+
+  padding: 0 13px;
+
+  border-radius: 11px;
+
+  font-size: 13px;
+}
+
+
+/*
+ * Power is the primary purifier action.
+ */
+
+.area-sheet-device-special
+.area-sheet-control-purifier-boolean:first-of-type
+.device-control-buttons {
+  width: 100%;
+}
+
+.area-sheet-device-special
+.area-sheet-control-purifier-boolean:first-of-type
+.device-control-buttons button {
+  flex: 1 1 50%;
+
+  min-height: 42px;
+
+  font-size: 14px;
+}
+
+
+/*
+ * Selected purifier state.
+ */
+
+.area-sheet-device-special
+.area-sheet-control-purifier-boolean
+button.device-control-active {
+  border-color:
+    rgba(230, 188, 116, 0.42);
+
+  background:
+    rgba(201, 150, 69, 0.28);
+
+  color:
+    rgba(255, 247, 232, 0.98);
+}
+
+
+/*
+ * Keep the expanded purifier compact enough for iPad.
+ */
+
+@media screen and (min-width: 769px)
+  and (max-width: 1366px) {
+
+  .area-sheet-device-special {
+    padding:
+      11px 13px;
+  }
+
+  .area-sheet-device-special
+  .area-sheet-control {
+    margin-top: 6px;
+  }
+
+  .area-sheet-device-special
+  .area-sheet-control-purifier-boolean {
+    min-height: 36px;
+  }
+}
+
+/*
+ * ==========================================================
+ * Area Sheet Special Device Rules V1
+ *
+ * Purifier room summary, dedicated device page, and
+ * read-only device presentation refinements.
+ * ==========================================================
+ */
+
+
+/*
+ * IAM purifier summary card.
+ */
+.area-sheet-device-special
+.area-sheet-device-name-opener {
+  appearance: none;
+  -webkit-appearance: none;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 7px;
+
+  max-width: 100%;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  color:
+    rgba(245, 241, 234, 0.96);
+
+  font: inherit;
+  font-size: 17px;
+  font-weight: 620;
+
+  text-align: left;
+}
+
+.area-sheet-device-name-arrow {
+  color:
+    rgba(231, 193, 128, 0.72);
+
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+
+/*
+ * Purifier room card only contains Run / Stop.
+ */
+.area-sheet-device-special
+.area-sheet-control-purifier-boolean {
+  margin-top: 10px;
+}
+
+.area-sheet-device-special
+.area-sheet-control-purifier-boolean
+.device-control-buttons {
+  justify-content: flex-start;
+}
+
+.area-sheet-device-special
+.area-sheet-control-purifier-boolean
+.device-control-buttons button {
+  min-width: 88px;
+}
+
+
+/*
+ * Dedicated purifier device page.
+ * Existing special-device overlay is reused instead of
+ * introducing another navigation/control path.
+ */
+.special-device-overlay {
+  z-index: 3000;
+}
+
+.special-device-sheet {
+  width: 760px;
+  max-width: 86%;
+
+  max-height: 88%;
+
+  padding:
+    26px 28px 26px;
+
+  border-radius: 20px;
+}
+
+.special-device-body
+.device-control-section {
+  margin: 0;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+}
+
+
+/*
+ * Existing battery values should stay prominent/readable.
+ */
+.area-sheet-device-readonly
+.area-sheet-readonly-value {
+  white-space: nowrap;
+
+  color:
+    rgba(250, 247, 241, 0.96);
+}
+
+
+@media screen and (min-width: 769px)
+  and (max-width: 1366px) {
+
+  .special-device-sheet {
+    width: 72%;
+    max-width: 760px;
+
+    max-height: 86%;
+
+    padding:
+      22px 24px 22px;
+  }
+}
+
+/*
+ * ==========================================================
+ * Area Sheet HA-style Single-switch Geometry V1
+ *
+ * Shared geometry for light and single-boolean device tiles.
+ *
+ * Fixed switch geometry:
+ *   card:   260 x 156
+ *   track:  228 x 60
+ *   knob:   108 x 52; 4px inset from the outer track edge
+ *
+ * Presentation only.
+ * Applies to light and single-boolean device tiles.
+ * Other Area Sheet device types and column geometry remain
+ * unchanged.
+ * ==========================================================
+ */
+
+.area-sheet-device-light,
+.area-sheet-device-boolean:not(.area-sheet-device-light) {
+  width: 260px;
+  min-width: 260px;
+  max-width: 260px;
+
+  height: 156px;
+  min-height: 156px;
+  max-height: 156px;
+
+  padding: 16px;
+
+  box-sizing: border-box;
+
+  border-radius: 16px;
+}
+
+
+.area-sheet-device-light
+.area-sheet-device-header,
+.area-sheet-device-boolean:not(.area-sheet-device-light)
+.area-sheet-device-header {
+  width: 100%;
+  min-width: 0;
+}
+
+
+.area-sheet-device-light
+.area-sheet-device-icon,
+.area-sheet-device-boolean:not(.area-sheet-device-light)
+.area-sheet-device-icon {
+  width: 50px;
+  height: 50px;
+
+  min-width: 50px;
+
+  flex: 0 0 50px;
+}
+
+
+.area-sheet-device-light
+.area-sheet-device-body,
+.area-sheet-device-boolean:not(.area-sheet-device-light)
+.area-sheet-device-body {
+  width: 100%;
+  min-width: 0;
+}
+
+
+.area-sheet-device-light
+.area-sheet-control-boolean,
+.area-sheet-device-boolean:not(.area-sheet-device-light)
+.area-sheet-control-boolean {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100%;
+  min-width: 0;
+
+  margin-top: 10px;
+
+  flex: none;
+}
+
+
+.area-sheet-device-light
+.area-sheet-control-boolean
+.device-control-buttons,
+.area-sheet-device-boolean:not(.area-sheet-device-light)
+.area-sheet-control-boolean
+.device-control-buttons {
+  display: flex;
+
+  width: 228px;
+
+  flex: 0 0 228px;
+}
+
+
+.area-sheet-device-light
+.area-sheet-light-toggle,
+.area-sheet-device-boolean:not(.area-sheet-device-light)
+.area-sheet-toggle {
+  position: relative;
+
+  width: 228px !important;
+  min-width: 228px !important;
+  max-width: 228px !important;
+
+  height: 60px !important;
+  min-height: 60px !important;
+  max-height: 60px !important;
+
+  padding: 0 !important;
+
+  box-sizing: border-box;
+
+  border-radius: 16px !important;
+
+  background:
+    rgba(255, 255, 255, 0.08)
+    !important;
+}
+
+
+.area-sheet-device-light
+.area-sheet-light-toggle.area-sheet-toggle-off {
+  background:
+    rgba(255, 255, 255, 0.10)
+    !important;
+}
+
+
+.area-sheet-device-light
+.area-sheet-light-toggle.area-sheet-toggle-on {
+  background:
+    rgba(129, 91, 25, 0.58)
+    !important;
+}
+
+
+.area-sheet-device-light
+.area-sheet-light-toggle
+.area-sheet-toggle-knob,
+.area-sheet-device-boolean:not(.area-sheet-device-light)
+.area-sheet-toggle
+.area-sheet-toggle-knob {
+  position: absolute;
+
+  top: 3px !important;
+
+  width: 108px !important;
+  height: 52px !important;
+
+  border-radius: 12px !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    left 180ms ease,
+    background 180ms ease;
+}
+
+
+.area-sheet-device-light
+.area-sheet-light-toggle.area-sheet-toggle-off
+.area-sheet-toggle-knob {
+  left: 3px !important;
+
+  background:
+    rgba(185, 185, 185, 0.88)
+    !important;
+}
+
+
+.area-sheet-device-light
+.area-sheet-light-toggle.area-sheet-toggle-on
+.area-sheet-toggle-knob {
+  left: 115px !important;
+
+  background:
+    rgba(255, 183, 28, 0.98)
+    !important;
+}
+
+
+/* Single-switch state positions share the light track inset. */
+.area-sheet-device-boolean:not(.area-sheet-device-light)
+.area-sheet-toggle .area-sheet-toggle-knob {
+  left: 3px !important;
+}
+
+.area-sheet-device-boolean:not(.area-sheet-device-light)
+.area-sheet-toggle-on .area-sheet-toggle-knob {
+  left: 115px !important;
+}
+
+
+
+/*
+ * Light glyph size belongs to the authoritative light
+ * presentation above.  Keep it here so no later generic
+ * boolean rule controls light geometry.
+ */
+.area-sheet-device-light
+.area-sheet-light-toggle
+.area-sheet-toggle-light-icon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.area-sheet-device-light
+.area-sheet-light-toggle
+.area-sheet-toggle-light-icon svg {
+  display: block;
+
+  width: 34px;
+  height: 34px;
+}
+
+
+/*
+ * IAM purifier presentation.
+ *
+ * Area Sheet exposes live environmental readings and one
+ * entry point to the existing dedicated device controls.
+ * The detail panel continues to use the shared device-control
+ * presentation.
+ */
+
+.area-sheet-purifier-summary {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.area-sheet-purifier-reading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  width: 50%;
+  min-width: 0;
+
+  flex: 0 0 50%;
+
+  box-sizing: border-box;
+
+  gap: 8px;
+}
+
+.area-sheet-purifier-reading:nth-child(odd) {
+  padding-right: 12px;
+}
+
+.area-sheet-purifier-reading:nth-child(even) {
+  padding-left: 12px;
+}
+
+.area-sheet-purifier-label {
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.area-sheet-purifier-value {
+  color: rgba(255, 255, 255, 0.94);
+  font-size: 15px;
+  font-weight: 620;
+  white-space: nowrap;
+}
+
+#xingoo-air-purifier-controls
+.purifier-detail-readings {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px 0 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#xingoo-air-purifier-controls
+.purifier-detail-reading {
+  width: 25%;
+  min-width: 0;
+  flex: 1 1 25%;
+  padding: 0 14px;
+  box-sizing: border-box;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#xingoo-air-purifier-controls
+.purifier-detail-reading:first-child {
+  padding-left: 0;
+}
+
+#xingoo-air-purifier-controls
+.purifier-detail-reading:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+
+#xingoo-air-purifier-controls
+.purifier-detail-reading-value {
+  color: rgba(250, 247, 241, 0.96);
+  font-size: 20px;
+  font-weight: 620;
+  font-variant-numeric: tabular-nums;
+}
+
+#xingoo-air-purifier-controls
+.purifier-detail-reading-label {
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 12px;
+}
+
+/*
+ * IAM purifier detail control alignment.
+ *
+ * Presentation only. Keep every control in document order
+ * and reuse the existing shared control components.
+ */
+
+#xingoo-air-purifier-controls
+.device-control-group {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#xingoo-air-purifier-controls
+.device-control-label {
+  width: 72px;
+  min-width: 72px;
+  flex: 0 0 72px;
+}
+
+#xingoo-air-purifier-controls
+.device-control-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+#xingoo-air-purifier-controls
+.purifier-control-power
+.device-control-buttons,
+#xingoo-air-purifier-controls
+.purifier-control-mode
+.device-control-buttons {
+  max-width: 300px;
+}
+
+#xingoo-air-purifier-controls
+.purifier-control-power
+.device-control-buttons button,
+#xingoo-air-purifier-controls
+.purifier-control-mode
+.device-control-buttons button {
+  flex: 1 1 0;
+}
+
+#xingoo-air-purifier-controls
+.purifier-control-wind
+.device-control-buttons {
+  max-width: 440px;
+}
+
+#xingoo-air-purifier-controls
+.purifier-control-wind
+.device-control-buttons button {
+  flex: 1 1 0;
+}
+
+#xingoo-air-purifier-controls
+.purifier-control-secondary
+.device-control-buttons {
+  max-width: 300px;
+}
+
+#xingoo-air-purifier-controls
+.purifier-control-secondary
+.device-control-buttons button {
+  flex: 1 1 0;
+}
+
+
+/*
+ * Area Sheet boolean tile final presentation fixes.
+ *
+ * 1. The state subtitle belongs to .area-sheet-device-name-text.
+ *    Older iPad rules also attach a second state to the whole
+ *    .area-sheet-device-name container; suppress that duplicate.
+ *
+ * 2. Light power controls keep the existing HA-style switch
+ *    geometry but present a light glyph instead of the generic
+ *    power glyph.
+ */
+
+.area-sheet-device-boolean
+.area-sheet-device-name:after {
+  display: none !important;
+  content: none !important;
+}
+
+
+/*
+ * Light toggle glyph.
+ *
+ * Reuse the same SVG geometry as the Area Sheet device
+ * light icon.  Presentation only; control semantics and
+ * dispatch remain unchanged.
+ */
+
+.area-sheet-toggle-light-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+
+  pointer-events: none;
+}
+
+.area-sheet-toggle-light-icon svg {
+  display: block;
+
+  width: 24px;
+  height: 24px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+/*
+ * HA-inspired light state SVG.
+ *
+ * Geometry lives in dashboard.js.
+ * CSS controls only visual treatment and shared sizing.
+ */
+
+.area-sheet-light-state-svg {
+  display: block;
+
+  fill: none;
+  stroke: currentColor;
+
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+/*
+ * Slider glyphs are white in both states.
+ */
+.area-sheet-toggle-light-icon
+.area-sheet-light-state-svg-on,
+.area-sheet-toggle-light-icon
+.area-sheet-light-state-svg-off {
+  color:
+    rgba(255, 255, 255, 0.96);
+}
+
+
+.area-sheet-light-state-svg-on
+.area-sheet-light-bulb-fill {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+
+.area-sheet-light-state-svg-on
+.area-sheet-light-rays {
+  fill: none;
+  stroke: currentColor;
+
+  stroke-width: 1.9;
+}
+
+
+.area-sheet-light-state-svg-off
+.area-sheet-light-off-bulb,
+.area-sheet-light-state-svg-off
+.area-sheet-light-off-base {
+  fill: none;
+  stroke: currentColor;
+
+  stroke-width: 2.05;
+}
+
+
+.area-sheet-light-state-svg-off
+.area-sheet-light-slash {
+  fill: none;
+  stroke: currentColor;
+
+  stroke-width: 2.8;
+}
+
+
+/*
+ * Device-header light icons share the same size in both states.
+ */
+.area-sheet-device-light
+.area-sheet-device-icon
+.area-sheet-light-state-svg-on,
+.area-sheet-device-light
+.area-sheet-device-icon
+.area-sheet-light-state-svg-off {
+  width: 24px;
+  height: 24px;
+}
+
+
+/*
+ * Slider light icons share the same size in both states.
+ *
+ * These dimensions affect only the SVG inside the already
+ * fixed 108 x 52 moving surface.
+ */
+.area-sheet-device-light
+.area-sheet-light-toggle
+.area-sheet-toggle-light-icon
+.area-sheet-light-state-svg-on,
+.area-sheet-device-light
+.area-sheet-light-toggle
+.area-sheet-toggle-light-icon
+.area-sheet-light-state-svg-off {
+  width: 32px;
+  height: 32px;
+}
+
+
+/*
+ * ==========================================================
+ * Climate Area Sheet presentation.
+ *
+ * Presentation only.
+ *
+ * Climate devices use the existing generic control renderer,
+ * values, actions and dispatch semantics. The Area Sheet
+ * presents a compact label-free control column for mode,
+ * target temperature and fan speed, plus the read-only
+ * current room temperature in the header.
+ * ==========================================================
+ */
+
+.area-sheet-device-climate
+.area-sheet-device-body {
+  width: 100%;
+}
+
+.area-sheet-device-climate
+.area-sheet-control {
+  display: flex;
+
+  width: 100%;
+  min-height: 0;
+
+  margin-top: 4px;
+
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 0;
+}
+
+.area-sheet-device-climate
+.area-sheet-control:first-child {
+  margin-top: 2px;
+}
+
+.area-sheet-device-climate
+.area-sheet-control-label {
+  display: none;
+}
+
+.area-sheet-device-climate
+.device-control-buttons {
+  display: flex;
+
+  width: 252px;
+  min-width: 0;
+
+  flex: 0 0 252px;
+  flex-wrap: nowrap;
+
+  justify-content: flex-end;
+
+  gap: 7px;
+}
+
+.area-sheet-device-climate
+.device-control-buttons button {
+  min-width: 58px;
+}
+
+.area-sheet-device-climate
+.area-sheet-control-climate-mode
+.device-control-buttons button {
+  min-width: 0;
+
+  flex: 1 1 0;
+}
+
+.area-sheet-device-climate
+.area-sheet-control-climate-temperature
+.device-control-buttons {
+  justify-content: flex-end;
+}
+
+.area-sheet-device-climate
+.area-sheet-control-climate-temperature
+.device-control-buttons button {
+  width: 76px;
+  min-width: 76px;
+
+  flex: 0 0 76px;
+}
+
+.area-sheet-device-climate
+.area-sheet-control-climate-fan
+.device-control-buttons button {
+  min-width: 0;
+
+  flex: 1 1 0;
+}
+
+
+/*
+ * Climate current room temperature.
+ *
+ * Read-only presentation of the existing
+ * current_temperature Device Data parameter.
+ */
+
+.area-sheet-device-climate
+.area-sheet-device-header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+}
+
+.area-sheet-climate-current {
+  flex: 0 0 auto;
+
+  color:
+    rgba(218, 211, 201, 0.62);
+
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  font-variant-numeric:
+    tabular-nums;
+}
+
+
+/*
+ * Living / dining compact read-only cards V1.
+ *
+ * Presentation only.
+ *
+ * These three cards retain the normal dense-sheet
+ * one-column width. Only their vertical presentation is
+ * compacted. Climate and dining power-group presentation
+ * are intentionally untouched.
+ */
+
+.area-sheet-device-living-environment,
+.area-sheet-device-living-doorbell,
+.area-sheet-device-living-door {
+  min-height: 0;
+  padding:
+    8px 11px;
+}
+
+.area-sheet-device-living-environment
+.area-sheet-device-header,
+.area-sheet-device-living-doorbell
+.area-sheet-device-header,
+.area-sheet-device-living-door
+.area-sheet-device-header {
+  min-height: 24px;
+}
+
+.area-sheet-device-living-environment
+.area-sheet-device-name,
+.area-sheet-device-living-doorbell
+.area-sheet-device-name,
+.area-sheet-device-living-door
+.area-sheet-device-name {
+  min-width: 0;
+}
+
+.area-sheet-device-living-environment
+.area-sheet-device-name-text,
+.area-sheet-device-living-doorbell
+.area-sheet-device-name-text,
+.area-sheet-device-living-door
+.area-sheet-device-name-text {
+  white-space: nowrap;
+}
+
+/*
+ * Doorbell and entry-door sensor are deliberately compact
+ * one-line cards. Their one-column width is unchanged.
+ */
+.area-sheet-device-living-doorbell,
+.area-sheet-device-living-door {
+  min-height: 44px;
+}
+
+
+/*
+ * ==========================================================
+ * Living / dining compact read-only cards V2
+ *
+ * Presentation only.
+ *
+ * Environment: header + one compact values row, with battery
+ * in the top-right corner.
+ *
+ * Doorbell / entry door: one-line cards with the state on the
+ * right. Existing one-column tile width is unchanged.
+ * ==========================================================
+ */
+
+.area-sheet-device-living-environment,
+.area-sheet-device-living-doorbell,
+.area-sheet-device-living-door {
+  position: relative;
+}
+
+.area-sheet-device-living-environment {
+  min-height: 62px;
+}
+
+.area-sheet-device-living-environment
+.area-sheet-device-body {
+  margin-top: 4px;
+}
+
+.area-sheet-living-environment-values {
+  padding-left: 26px;
+
+  color:
+    rgba(250, 247, 241, 0.88);
+
+  font-size: 13px;
+  line-height: 18px;
+
+  white-space: nowrap;
+
+  font-variant-numeric:
+    tabular-nums;
+}
+
+.area-sheet-living-battery {
+  position: absolute;
+
+  top: 9px;
+  right: 11px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 4px;
+
+  color:
+    rgba(218, 211, 201, 0.66);
+
+  font-size: 12px;
+  line-height: 18px;
+
+  font-variant-numeric:
+    tabular-nums;
+}
+
+.area-sheet-living-battery-icon {
+  position: relative;
+
+  display: inline-block;
+
+  width: 15px;
+  height: 8px;
+
+  box-sizing: border-box;
+
+  border:
+    1px solid rgba(218, 211, 201, 0.58);
+
+  border-radius: 2px;
+}
+
+.area-sheet-living-battery-icon::after {
+  content: "";
+
+  position: absolute;
+
+  top: 2px;
+  right: -3px;
+
+  width: 2px;
+  height: 4px;
+
+  border-radius:
+    0 1px 1px 0;
+
+  background:
+    rgba(218, 211, 201, 0.58);
+}
+
+.area-sheet-device-living-doorbell,
+.area-sheet-device-living-door {
+  min-height: 44px;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.area-sheet-device-living-doorbell
+.area-sheet-device-header,
+.area-sheet-device-living-door
+.area-sheet-device-header {
+  width: 100%;
+
+  min-width: 0;
+
+  padding-right: 72px;
+}
+
+.area-sheet-device-living-doorbell
+.area-sheet-device-body,
+.area-sheet-device-living-door
+.area-sheet-device-body {
+  position: static;
+}
+
+.area-sheet-living-inline-state {
+  position: absolute;
+
+  top: 50%;
+  right: 11px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 4px;
+
+  transform:
+    translateY(-50%);
+
+  color:
+    rgba(250, 247, 241, 0.82);
+
+  font-size: 13px;
+  line-height: 18px;
+
+  white-space: nowrap;
+
+  font-variant-numeric:
+    tabular-nums;
+}
+
+
+/*
+ * ==========================================================
+ * Living / Dining Area Sheet Composition V1
+ *
+ * Presentation only.
+ *
+ * This section controls only the visual composition of the
+ * living/dining Area Sheet. Device identity, upstream power
+ * grouping, state collection and control dispatch remain
+ * unchanged.
+ * ==========================================================
+ */
+
+.area-sheet-living-dining
+.area-sheet-panel {
+  width: 78%;
+  max-width: 980px;
+}
+
+
+/*
+ * Keep the living/dining sheet on the three-column visual
+ * rhythm used by the approved design.
+ */
+.area-sheet-living-dining
+.area-sheet-content {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-content: flex-start;
+  align-items: flex-start;
+
+  margin:
+    4px -5px 0;
+}
+
+
+/*
+ * Normal device tile = one visual column.
+ */
+.area-sheet-living-dining
+.area-sheet-device-tile {
+  width:
+    calc(33.333% - 10px);
+
+  flex:
+    0 0 calc(33.333% - 10px);
+
+  margin: 5px;
+}
+
+
+/*
+ * Climate stays one column in this particular sheet.
+ *
+ * Its compact controls already have their own climate
+ * presentation rules; it must not consume two columns here.
+ */
+.area-sheet-living-dining
+.area-sheet-device-climate {
+  width:
+    calc(33.333% - 10px);
+
+  flex:
+    0 0 calc(33.333% - 10px);
+}
+
+
+/*
+ * IAM is a room-summary tile here. Full controls continue
+ * to live in the existing dedicated device panel.
+ */
+.area-sheet-living-dining
+.area-sheet-device-special {
+  width:
+    calc(33.333% - 10px);
+
+  flex:
+    0 0 calc(33.333% - 10px);
+}
+
+
+/*
+ * Compact environmental information follows the same
+ * one-column geometry so it can form the lower information
+ * row together with doorbell / entry-door state.
+ */
+.area-sheet-living-dining
+.area-sheet-device-living-environment,
+.area-sheet-living-dining
+.area-sheet-device-living-doorbell,
+.area-sheet-living-dining
+.area-sheet-device-living-door {
+  width:
+    calc(33.333% - 10px);
+
+  flex:
+    0 0 calc(33.333% - 10px);
+
+  margin: 5px;
+}
+
+
+/*
+ * iPad landscape.
+ *
+ * Preserve the same three-column composition instead of
+ * allowing the generic adaptive sheet rules to change the
+ * approved living/dining arrangement.
+ */
+@media screen and (min-width: 769px)
+  and (max-width: 1366px) {
+
+  .area-sheet-living-dining
+  .area-sheet-panel {
+    top: 3%;
+    right: 2.5%;
+    bottom: 3%;
+
+    width: 82%;
+    max-width: none;
+
+    padding:
+      16px 18px 14px;
+  }
+
+  .area-sheet-living-dining
+  .area-sheet-content {
+    margin:
+      2px -3px 0;
+  }
+
+  .area-sheet-living-dining
+  .area-sheet-device-tile,
+  .area-sheet-living-dining
+  .area-sheet-device-climate,
+  .area-sheet-living-dining
+  .area-sheet-device-special,
+  .area-sheet-living-dining
+  .area-sheet-device-living-environment,
+  .area-sheet-living-dining
+  .area-sheet-device-living-doorbell,
+  .area-sheet-living-dining
+  .area-sheet-device-living-door {
+    width: 260px;
+    min-width: 260px;
+    max-width: 260px;
+
+    flex:
+      0 0 260px;
+
+    margin: 3px;
+  }
+}
+
+
+/*
+ * ==========================================================
+ * Living / Dining Area Sheet Vertical Rhythm V1
+ *
+ * Presentation only.
+ *
+ * Primary controllable devices share a stable visual floor.
+ * Compact read-only information cards deliberately retain
+ * their smaller intrinsic heights.
+ * ==========================================================
+ */
+
+.area-sheet-living-dining
+.area-sheet-device-boolean,
+.area-sheet-living-dining
+.area-sheet-device-climate,
+.area-sheet-living-dining
+.area-sheet-device-special {
+  min-height: 118px;
+}
+
+
+/*
+ * Curtain is a primary room control as well. Keep it aligned
+ * with the controllable-device row without changing its
+ * control renderer or semantics.
+ */
+.area-sheet-living-dining
+.area-sheet-device-cover {
+  height: 129px;
+  min-height: 129px;
+}
+
+
+/*
+ * Read-only information cards intentionally remain compact.
+ * Do not inherit the primary-device visual floor.
+ */
+.area-sheet-living-dining
+.area-sheet-device-living-environment {
+  min-height: 62px;
+}
+
+.area-sheet-living-dining
+.area-sheet-device-living-doorbell,
+.area-sheet-living-dining
+.area-sheet-device-living-door {
+  min-height: 44px;
+}
+
+
+/*
+ * ==========================================================
+ * HA-inspired Light Toggle Presentation V2
+ *
+ * Presentation only.
+ *
+ * Keep the existing button / drag / dispatch semantics.
+ * The visible switch is slimmer and more elongated, while
+ * retaining a generous touch target through the surrounding
+ * boolean-control area.
+ * ==========================================================
+ */
+
+/*
+ * ==========================================================
+ * Living / Dining Compact Status Stack FINAL
+ *
+ * Presentation only.
+ *
+ * The three read-only status cards keep explicit intrinsic
+ * heights. The stack gap is the sole source of vertical
+ * spacing; child tiles must not flex-grow into that space.
+ *
+ * Environment = 50px
+ * Doorbell    = 39px
+ * Door        = 39px
+ * Gap         = 10px
+ *
+ * Total       = 148px
+ *
+ * Device identity, state collection and control semantics
+ * remain unchanged.
+ * ==========================================================
+ */
+
+.area-sheet-living-dining
+.area-sheet-living-status-stack {
+  width:
+    calc(33.333% - 10px);
+
+  flex:
+    0 0 calc(33.333% - 10px);
+
+  margin: 5px;
+
+  display: flex;
+  flex-direction: column;
+
+  /*
+   * Do not rely on flex-gap here.
+   * Older iPad Safari/WebKit may ignore gap on flex
+   * containers. Child margins below provide the actual
+   * inter-card spacing.
+   */
+  gap: 0;
+
+  min-width: 0;
+
+  height: auto;
+  min-height: 0;
+  max-height: none;
+
+  align-self: flex-start;
+
+  box-sizing: border-box;
+}
+
+
+.area-sheet-living-dining
+.area-sheet-living-status-stack
+.area-sheet-device-living-environment,
+.area-sheet-living-dining
+.area-sheet-living-status-stack
+.area-sheet-device-living-doorbell,
+.area-sheet-living-dining
+.area-sheet-living-status-stack
+.area-sheet-device-living-door {
+  width: 100%;
+
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+
+/*
+ * Legacy iPad/WebKit-safe vertical spacing.
+ *
+ * Match the 6px visual spacing used by the surrounding
+ * iPad tiles. Use child margin instead of flex-gap so the
+ * separation also works on older Safari engines.
+ */
+.area-sheet-living-dining
+.area-sheet-living-status-stack
+.area-sheet-device-living-doorbell,
+.area-sheet-living-dining
+.area-sheet-living-status-stack
+.area-sheet-device-living-door {
+  margin-top: 6px;
+}
+
+
+.area-sheet-living-dining
+.area-sheet-living-status-stack
+.area-sheet-device-living-environment {
+  height: 50px;
+  min-height: 50px;
+  max-height: 50px;
+
+  flex: 0 0 50px;
+
+  padding:
+    5px 11px;
+}
+
+
+.area-sheet-living-dining
+.area-sheet-living-status-stack
+.area-sheet-device-living-doorbell,
+.area-sheet-living-dining
+.area-sheet-living-status-stack
+.area-sheet-device-living-door {
+  height: 39px;
+  min-height: 39px;
+  max-height: 39px;
+
+  flex: 0 0 39px;
+
+  padding:
+    5px 11px;
+}
+
+
+.area-sheet-living-dining
+.area-sheet-living-status-stack
+.area-sheet-device-living-environment
+.area-sheet-device-header {
+  min-height: 20px;
+}
+
+
+.area-sheet-living-dining
+.area-sheet-living-status-stack
+.area-sheet-device-living-environment
+.area-sheet-device-body {
+  margin-top: 0;
+}
+
+
+.area-sheet-living-dining
+.area-sheet-living-status-stack
+.area-sheet-living-environment-values {
+  position: absolute;
+
+  right: 11px;
+  bottom: 3px;
+
+  padding-left: 0;
+
+  font-size: 11px;
+  line-height: 13px;
+}
+
+
+@media screen and (min-width: 769px)
+  and (max-width: 1366px) {
+
+  .area-sheet-living-dining
+  .area-sheet-living-status-stack {
+    width: 260px;
+    min-width: 260px;
+    max-width: 260px;
+
+    flex:
+      0 0 260px;
+
+    margin: 3px;
+
+    gap: 0;
+  }
+}
+
+
+/*
+ * Area Sheet content containment (SC-3000 APA-001 / APA-005).
+ * Fixed-size switch tiles must participate in wrapping at their real width.
+ * Lights with additional controls grow to contain those controls.
+ */
+.area-sheet:not(.area-sheet-living-dining)
+.area-sheet-content .area-sheet-device-light,
+.area-sheet:not(.area-sheet-living-dining)
+.area-sheet-content .area-sheet-device-boolean {
+  flex: 0 0 260px;
+}
+
+.area-sheet-device-light:not(.area-sheet-device-boolean) {
+  height: auto;
+  min-height: 156px;
+  max-height: none;
+}
+
+.area-sheet-device-light:not(.area-sheet-device-boolean)
+.area-sheet-control:not(.area-sheet-control-boolean) {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.area-sheet-device-light:not(.area-sheet-device-boolean)
+.area-sheet-control:not(.area-sheet-control-boolean)
+.area-sheet-control-label {
+  margin-bottom: 4px;
+}
+
+.area-sheet-device-light:not(.area-sheet-device-boolean)
+.area-sheet-control:not(.area-sheet-control-boolean)
+.device-control-buttons {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* One or two devices: stack vertically rather than clipping the second tile. */
+.area-sheet-layout-compact .area-sheet-content {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.area-sheet-layout-compact .area-sheet-device-tile {
+  flex: 0 0 auto;
+}
+
+.area-sheet-layout-compact .area-sheet-panel {
+  overflow-y: auto;
+}
+
+
+/* Content-sized cards and grouped complex sheets: presentation only.
+ * SC-3000 APA-001 / APA-005: preserve device state and control semantics.
+ */
+.area-sheet:not(.area-sheet-living-dining)
+.area-sheet-content .area-sheet-device-boolean {
+  height: auto;
+  min-height: 156px;
+  max-height: none;
+}
+
+.area-sheet-layout-compact .area-sheet-panel {
+  width: 310px;
+  max-width: 94%;
+  height: auto;
+  bottom: auto;
+  max-height: 88%;
+  padding: 18px 18px 20px;
+}
+
+/* Lights first, then multi-control appliances, then read-only information. */
+.area-sheet-layout-complex .area-sheet-panel {
+  width: 850px;
+  max-width: 94%;
+  right: 3%;
+}
+
+.area-sheet-layout-complex .area-sheet-device-tile {
+  order: 2;
+}
+
+.area-sheet-layout-complex .area-sheet-device-light {
+  order: 1;
+}
+
+.area-sheet-layout-complex .area-sheet-device-readonly {
+  order: 3;
+}
+
+
+/* Room-selection appliance presentation (SC-3000 APA-001 / APA-005).
+ * Keep every existing action and status; only change their arrangement.
+ */
+.area-sheet-layout-room-selector .area-sheet-panel {
+  width: 580px;
+  max-width: 94%;
+  padding: 18px 18px 20px;
+}
+
+.area-sheet-layout-room-selector .area-sheet-device-room-selector {
+  width: calc(100% - 10px);
+  max-width: none;
+  flex: 0 0 calc(100% - 10px);
+}
+
+.area-sheet-device-room-selector .area-sheet-device-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.area-sheet-device-room-selector .area-sheet-control {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.area-sheet-device-room-selector .device-control-buttons {
+  justify-content: flex-start;
+}
+
+.area-sheet-device-room-selector .area-sheet-control-label {
+  min-width: 64px;
+}
+
+.area-sheet-device-room-selector
+.area-sheet-control.area-sheet-status-reading {
+  display: block;
+  width: 25%;
+  flex: 0 0 25%;
+  min-height: 58px;
+  margin-top: 8px;
+  padding: 10px 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.area-sheet-device-room-selector
+.area-sheet-status-reading .area-sheet-readonly-value {
+  margin-top: 5px;
+  font-size: 15px;
+  line-height: 1.4;
+  text-align: left;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+/* Resident-authored Todo management.
+ * Homepage remains summary-only; management lives in an isolated overlay.
+ */
+
+#todo-card {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#todo-card:focus {
+  outline: 2px solid rgba(229, 185, 89, 0.82);
+  outline-offset: 2px;
+}
+
+.todo-summary-item {
+  white-space: nowrap;
+}
+
+.todo-summary-item:before {
+  content: "•";
+  margin-right: 6px;
+  color: rgba(235, 235, 245, 0.42);
+}
+
+.todo-summary-more {
+  margin-top: 2px;
+  color: rgba(235, 235, 245, 0.42);
+  font-size: 12px;
+}
+
+.todo-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1200;
+  display: none;
+}
+
+.todo-overlay.todo-overlay-open {
+  display: block;
+}
+
+.todo-overlay-backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: rgba(0, 0, 0, 0.58);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.todo-overlay-panel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  width: min(680px, calc(100% - 48px));
+  max-height: calc(100% - 48px);
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(39, 42, 44, 0.98),
+      rgba(23, 26, 28, 0.98)
+    );
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.045),
+    0 24px 70px rgba(0, 0, 0, 0.42);
+}
+
+.todo-overlay-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 22px 14px;
+}
+
+.todo-overlay-eyebrow {
+  margin-bottom: 3px;
+  color: rgba(235, 235, 245, 0.46);
+  font-size: 12px;
+}
+
+#todo-overlay-title {
+  margin: 0;
+  color: rgba(245, 245, 247, 0.96);
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.todo-overlay-close {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(245, 245, 247, 0.82);
+  font-size: 28px;
+  line-height: 44px;
+  cursor: pointer;
+}
+
+.todo-overlay-content {
+  min-height: 0;
+  padding: 0 22px 22px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.todo-overlay .todo-add-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.todo-overlay .todo-input-label {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+}
+
+.todo-overlay input {
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 10px;
+
+  background: rgba(12, 14, 15, 0.48);
+  color: rgba(245, 245, 247, 0.95);
+  font: inherit;
+}
+
+.todo-overlay button {
+  flex-shrink: 0;
+  min-height: 44px;
+  margin-left: 7px;
+  padding: 8px 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.075);
+  color: rgba(245, 245, 247, 0.90);
+  font: inherit;
+  cursor: pointer;
+}
+
+.todo-overlay button:disabled {
+  opacity: 0.5;
+}
+
+.todo-overlay button:focus,
+.todo-overlay input:focus {
+  outline: 2px solid rgba(229, 185, 89, 0.82);
+  outline-offset: 2px;
+}
+
+#todo-feedback {
+  min-height: 20px;
+  color: #dfc798;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.todo-overlay-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2px 0 8px;
+}
+
+.todo-overlay-toolbar #todo-show-completed {
+  margin-left: 0;
+  font-size: 13px;
+}
+
+.todo-overlay #todo-list {
+  width: 100%;
+}
+
+.todo-overlay .todo-item {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 6px 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.todo-overlay .todo-item + .todo-item {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.todo-overlay .todo-title {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.todo-overlay .todo-toggle {
+  min-width: 44px;
+  margin: 0 8px 0 0;
+}
+
+.todo-overlay .todo-completed .todo-title {
+  text-decoration: line-through;
+  opacity: 0.55;
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .todo-overlay-panel {
+    width: min(700px, calc(100% - 72px));
+    max-height: calc(100% - 40px);
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+  .todo-overlay-panel {
+    width: calc(100% - 24px);
+    max-height: calc(100% - 24px);
+  }
+
+  .todo-overlay .todo-item {
+    flex-wrap: wrap;
+  }
+
+  .todo-overlay .todo-title {
+    min-width: 45%;
+  }
+}
+
+
+/*
+ * Todo Overlay iPad Presentation V1
+ *
+ * Dedicated legacy-iPad presentation adjustment.
+ * Keep this isolated from the base Todo overlay styles.
+ */
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .todo-overlay-panel {
+    /*
+     * Dedicated iPad Todo width.
+     */
+    width: 700px;
+    max-width: calc(100% - 64px);
+  }
+
+  .todo-overlay-content {
+    /*
+     * Give the input/form more breathing room below
+     * the Todo heading.
+     */
+    padding-top: 10px;
+  }
+
+  /*
+   * Blur the dashboard itself instead of relying on
+   * backdrop-filter, which is unreliable on this iPad.
+   * The Todo overlay is outside .dashboard and remains sharp.
+   */
+  .dashboard.todo-background-blurred {
+    -webkit-filter: blur(7px);
+    filter: blur(7px);
+  }
+
+  .todo-overlay-backdrop {
+    background: rgba(0, 0, 0, 0.46);
+  }
+
+  .todo-overlay .todo-toggle {
+    /*
+     * Keep the touch target stable while making the
+     * visible completion circle approximately 2x.
+     */
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    min-height: 50px;
+
+    margin: 0 10px 0 0;
+    padding: 0;
+
+    font-size: 30px;
+    line-height: 48px;
+    text-align: center;
+  }
+}
+
+
+/*
+ * Calendar Overlay V1
+ *
+ * Isolated from Todo presentation.
+ * Uses the same proven interaction geometry without
+ * changing the existing Todo overlay cascade.
+ */
+.calendar-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1200;
+  display: none;
+}
+
+.calendar-overlay.calendar-overlay-open {
+  display: block;
+}
+
+.calendar-overlay-backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: rgba(0, 0, 0, 0.58);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.calendar-overlay-panel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  width: min(680px, calc(100% - 48px));
+  max-height: calc(100% - 48px);
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(39, 42, 44, 0.98),
+      rgba(23, 26, 28, 0.98)
+    );
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.045),
+    0 24px 70px rgba(0, 0, 0, 0.42);
+}
+
+.calendar-overlay-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 22px 14px;
+}
+
+.calendar-overlay-eyebrow {
+  margin-bottom: 3px;
+  color: rgba(235, 235, 245, 0.46);
+  font-size: 12px;
+}
+
+#calendar-overlay-title {
+  margin: 0;
+  color: rgba(245, 245, 247, 0.96);
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.calendar-overlay-close {
+  width: 44px;
+  height: 44px;
+  min-height: 44px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(245, 245, 247, 0.82);
+  font-size: 28px;
+  line-height: 44px;
+  cursor: pointer;
+}
+
+.calendar-overlay-content {
+  min-height: 0;
+  padding: 0 22px 22px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.calendar-overlay-day {
+  padding: 13px 0 7px;
+  color: rgba(235, 235, 245, 0.50);
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.calendar-overlay-event {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 6px 0;
+  box-sizing: border-box;
+}
+
+.calendar-overlay-event +
+.calendar-overlay-event {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.calendar-overlay-time {
+  width: 58px;
+  flex: 0 0 58px;
+  color: rgba(235, 235, 245, 0.48);
+  font-size: 13px;
+}
+
+.calendar-overlay-event-title {
+  flex: 1;
+  min-width: 0;
+  color: rgba(245, 245, 247, 0.92);
+  font-size: 15px;
+  line-height: 1.35;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.calendar-overlay-empty {
+  padding: 24px 0;
+  color: rgba(235, 235, 245, 0.48);
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .calendar-overlay-panel {
+    width: 700px;
+    max-width: calc(100% - 64px);
+    max-height: calc(100% - 40px);
+  }
+
+  .calendar-overlay-content {
+    padding-top: 10px;
+  }
+
+  .dashboard.calendar-background-blurred {
+    -webkit-filter: blur(7px);
+    filter: blur(7px);
+  }
+
+  .calendar-overlay-backdrop {
+    background: rgba(0, 0, 0, 0.46);
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .calendar-overlay-panel {
+    width: calc(100% - 24px);
+    max-height: calc(100% - 24px);
+  }
+}
+
+/*
+ * ==========================================================
+ * Area Sheet Climate Category Geometry V1
+ *
+ * iPad / tablet landscape only.
+ *
+ * Device-category geometry:
+ *
+ *   card width:       260px
+ *   horizontal pad:    11px
+ *   content width:    238px
+ *
+ * Mode / fan:
+ *   4 equal buttons
+ *   7px gaps
+ *
+ * Temperature:
+ *   68px / 7px / 76px / 7px / 68px
+ *
+ * Presentation only.
+ * No Device Data, action or dispatch changes.
+ * No vertical geometry changes.
+ * ==========================================================
+ */
+
+@media screen and (min-width: 769px)
+  and (max-width: 1366px) {
+
+  /*
+   * Climate is a fixed-size device category.
+   * Room layout may position the card but does not determine
+   * its width.
+   */
+  .area-sheet
+  .area-sheet-device-climate {
+    width: 260px;
+    min-width: 260px;
+    max-width: 260px;
+
+    flex:
+      0 0 260px;
+
+    padding-left: 11px;
+    padding-right: 11px;
+
+    box-sizing: border-box;
+  }
+
+
+  /*
+   * Remove previous positional compensation.
+   * Controls now fit inside the real 238px content width.
+   */
+  .area-sheet-device-climate
+  .area-sheet-device-body {
+    position: static;
+
+    left: auto;
+
+    width: 100%;
+    min-width: 0;
+  }
+
+
+  /*
+   * Shared climate control row.
+   */
+  .area-sheet-device-climate
+  .device-control-buttons {
+    width: 238px;
+    min-width: 238px;
+    max-width: 238px;
+
+    flex:
+      0 0 238px;
+
+    gap: 7px;
+  }
+
+
+  /*
+   * Mode:
+   * (238 - 3 * 7) / 4 = 54.25px each.
+   */
+  .area-sheet-device-climate
+  .area-sheet-control-climate-mode
+  .device-control-buttons button {
+    width: auto;
+    min-width: 0;
+
+    flex:
+      1 1 0;
+  }
+
+
+  /*
+   * Fan:
+   * same four-column geometry as mode.
+   */
+  .area-sheet-device-climate
+  .area-sheet-control-climate-fan
+  .device-control-buttons button {
+    width: auto;
+    min-width: 0;
+
+    flex:
+      1 1 0;
+  }
+
+
+  /*
+   * Temperature:
+   *
+   * 6 + 68 + 7 + 76 + 7 + 68 + 6 = 238px
+   *
+   * Use normal layout instead of left/right compensation.
+   */
+  .area-sheet-device-climate
+  .area-sheet-control-climate-temperature
+  .device-control-buttons {
+    position: static;
+
+    left: auto;
+
+    width: 238px;
+    min-width: 238px;
+    max-width: 238px;
+
+    flex:
+      0 0 238px;
+
+    justify-content: center;
+
+    /*
+     * Legacy iPad/WebKit-safe:
+     * spacing is provided by button margins below.
+     */
+    gap: 0;
+  }
+
+
+  .area-sheet-device-climate
+  .area-sheet-control-climate-temperature
+  .device-control-buttons button {
+    flex:
+      0 0 68px;
+
+    width: 68px;
+    min-width: 68px;
+    max-width: 68px;
+  }
+
+
+  .area-sheet-device-climate
+  .area-sheet-control-climate-temperature
+  .device-control-buttons button + button {
+    margin-left: 7px;
+  }
+
+
+  .area-sheet-device-climate
+  .area-sheet-control-climate-temperature
+  .device-control-buttons button:nth-child(2) {
+    flex:
+      0 0 76px;
+
+    width: 76px;
+    min-width: 76px;
+    max-width: 76px;
+  }
+}

@@ -1,0 +1,25 @@
+manifestVersion: "1.0"
+
+id: com.smartscreen.capability.clock
+
+name: Clock
+
+category: System
+
+version: 1.0.0
+
+provider: SmartScreenOS
+
+description: System Clock Capability
+
+entryPoint: ClockCapability
+
+contracts:
+  - ObservationProvider
+
+dependencies:
+  required: []
+
+  optional: []
+
+configuration: {}

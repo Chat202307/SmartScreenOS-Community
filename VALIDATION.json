@@ -1,0 +1,36 @@
+{
+  "candidate_version": "2026-11-17-public-source-1",
+  "python_version": "3.13",
+  "offline_tests": {
+    "passed": 2072,
+    "failed": 0,
+    "private_household_assertion_functions_excluded": 63
+  },
+  "demo_smoke": {
+    "snapshot_status": 200,
+    "snapshot_valid": true,
+    "/": 200,
+    "/api/dashboard": 200,
+    "/api/todos": 200,
+    "passed": true
+  },
+  "known_personal_identifier_scan": "no findings in selected files",
+  "docker_build": "passed on maintainer iMac; see docs/verification/docker-amd64.json",
+  "python_311": "not executed",
+  "legacy_ipad": "not executed",
+  "live_integrations_retested": false,
+  "nas_modified": false,
+  "private_repository_modified": false,
+  "project_license": "Apache-2.0 (original project materials)",
+  "author": "Sunny Engineering",
+  "dependency_notice_review": {
+    "pinned_distributions": 27,
+    "bundled_license_texts": true,
+    "scope": "source release; no binary images published"
+  },
+  "docker_verifier_unit_tests": {
+    "passed": 6,
+    "real_docker_build": false
+  },
+  "release_gate": "third-party source review and Docker verification passed"
+}

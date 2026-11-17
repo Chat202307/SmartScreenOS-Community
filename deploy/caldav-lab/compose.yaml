@@ -1,0 +1,33 @@
+name: smartscreenos-caldav-lab
+services:
+  calendar-probe:
+    image: smartscreenos:icloud-caldav-lab
+    platform: linux/amd64
+    container_name: smartscreenos-caldav-lab-probe
+    entrypoint: [python, -m, src.smartscreen_display.calendar_test_server]
+    command: [--host, 0.0.0.0, --port, '19081', --fixture, /lab/events.json]
+    user: '10001:10001'
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 32
+    mem_limit: 256m
+    cpus: '0.50'
+    restart: 'no'
+    # Never publish a host port. Use SSH forwarding to this internal endpoint.
+    expose: ['19081']
+    networks: [calendar-lab]
+    volumes:
+      - type: bind
+        source: ./fixtures
+        target: /lab
+        read_only: true
+        bind:
+          create_host_path: false
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,nodev,uid=10001,gid=10001,mode=0700,size=16m
+      - /test-data:rw,noexec,nosuid,nodev,uid=10001,gid=10001,mode=0700,size=8m
+networks:
+  calendar-lab:
+    name: smartscreenos_caldav_lab_internal
+    internal: true

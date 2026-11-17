@@ -1,0 +1,10 @@
+services:
+  demo:
+    build: .
+    ports:
+      - "127.0.0.1:8080:8080"
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,nodev,uid=10001,gid=10001,mode=0700,size=32m
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
