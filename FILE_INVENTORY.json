@@ -32,7 +32,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "aa826884ef5a4255cef2970884c91f03e7e5b6586f3de8f257b9807d6aa7701d"
+      "sha256": "b8b5c63279dae43aea897a01b005125de701c0888ce7a4d885b84f2595781dbb"
     },
     {
       "path": "RELEASE_PREPARATION.md",
@@ -193,6 +193,10 @@
     {
       "path": "deploy/caldav-lab/fixtures/events.json",
       "sha256": "32056e12941f67a88987e4456544fb06fbd49a52704a514873856c91a811b6a7"
+    },
+    {
+      "path": "docs/USER_GUIDE.zh-CN.md",
+      "sha256": "dcb2f90c6db182f6eeda8b8c251ea2ceb66de9dad647df395d82fd5d3e338743"
     },
     {
       "path": "docs/verification/docker-amd64.json",

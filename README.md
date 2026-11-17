@@ -1,5 +1,7 @@
 # SmartScreenOS
 
+中文安装与操作步骤：[使用说明书](docs/USER_GUIDE.zh-CN.md)。
+
 SmartScreenOS 是一个家庭状态展示与控制项目，目标是让旧平板通过浏览器显示家庭信息，并接入 Home Assistant、Dnake MQTT 和 iCloud CalDAV 等服务。作者 Sunny Engineering；项目原创代码采用 Apache License 2.0。
 
 此社区版本从虚构演示配置开始，不包含维护者的家庭配置、照片、凭据、NAS 部署工具、备份或原私有仓库历史。
